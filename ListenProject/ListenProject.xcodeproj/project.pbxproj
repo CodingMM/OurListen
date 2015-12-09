@@ -31,6 +31,10 @@
 		844CB68C1C1717CC00710E8D /* UIView+KGViewExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 844CB66F1C1717CC00710E8D /* UIView+KGViewExtend.m */; };
 		84BA23341C18621F00251393 /* CCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BA232E1C18621F00251393 /* CCNavigationController.m */; };
 		84BA23351C18621F00251393 /* CCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BA23301C18621F00251393 /* CCTabBarController.m */; };
+		84BA233B1C18650000251393 /* CCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BA233A1C18650000251393 /* CCBaseViewController.m */; };
+		84BA233E1C18651500251393 /* CCDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BA233D1C18651500251393 /* CCDiscoverViewController.m */; };
+		84BA23451C1866CF00251393 /* CCDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BA23431C1866CF00251393 /* CCDownloadViewController.m */; };
+		84BA23461C1866CF00251393 /* CCDownloadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BA23441C1866CF00251393 /* CCDownloadViewController.xib */; };
 		A55244751C17DB4C0089CC04 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A55244401C17DB4C0089CC04 /* AFHTTPRequestOperation.m */; };
 		A55244761C17DB4C0089CC04 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A55244421C17DB4C0089CC04 /* AFHTTPRequestOperationManager.m */; };
 		A55244771C17DB4C0089CC04 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A55244441C17DB4C0089CC04 /* AFHTTPSessionManager.m */; };
@@ -118,6 +122,13 @@
 		84BA232E1C18621F00251393 /* CCNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCNavigationController.m; sourceTree = "<group>"; };
 		84BA232F1C18621F00251393 /* CCTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTabBarController.h; sourceTree = "<group>"; };
 		84BA23301C18621F00251393 /* CCTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCTabBarController.m; sourceTree = "<group>"; };
+		84BA23391C18650000251393 /* CCBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBaseViewController.h; sourceTree = "<group>"; };
+		84BA233A1C18650000251393 /* CCBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBaseViewController.m; sourceTree = "<group>"; };
+		84BA233C1C18651500251393 /* CCDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCDiscoverViewController.h; sourceTree = "<group>"; };
+		84BA233D1C18651500251393 /* CCDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCDiscoverViewController.m; sourceTree = "<group>"; };
+		84BA23421C1866CF00251393 /* CCDownloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCDownloadViewController.h; sourceTree = "<group>"; };
+		84BA23431C1866CF00251393 /* CCDownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCDownloadViewController.m; sourceTree = "<group>"; };
+		84BA23441C1866CF00251393 /* CCDownloadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCDownloadViewController.xib; sourceTree = "<group>"; };
 		A552443F1C17DB4C0089CC04 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		A55244401C17DB4C0089CC04 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		A55244411C17DB4C0089CC04 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -370,6 +381,8 @@
 				84BA232E1C18621F00251393 /* CCNavigationController.m */,
 				84BA232F1C18621F00251393 /* CCTabBarController.h */,
 				84BA23301C18621F00251393 /* CCTabBarController.m */,
+				84BA23391C18650000251393 /* CCBaseViewController.h */,
+				84BA233A1C18650000251393 /* CCBaseViewController.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -377,6 +390,8 @@
 		84BA23311C18621F00251393 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				84BA233C1C18651500251393 /* CCDiscoverViewController.h */,
+				84BA233D1C18651500251393 /* CCDiscoverViewController.m */,
 			);
 			path = Discover;
 			sourceTree = "<group>";
@@ -384,6 +399,9 @@
 		84BA23321C18621F00251393 /* Download */ = {
 			isa = PBXGroup;
 			children = (
+				84BA23421C1866CF00251393 /* CCDownloadViewController.h */,
+				84BA23431C1866CF00251393 /* CCDownloadViewController.m */,
+				84BA23441C1866CF00251393 /* CCDownloadViewController.xib */,
 			);
 			path = Download;
 			sourceTree = "<group>";
@@ -596,6 +614,7 @@
 			files = (
 				844CB6831C1717CC00710E8D /* home_Nav.png in Resources */,
 				844CB6841C1717CC00710E8D /* home_Nav@2x.png in Resources */,
+				84BA23461C1866CF00251393 /* CCDownloadViewController.xib in Resources */,
 				A552447F1C17DB4C0089CC04 /* MJRefresh.bundle in Resources */,
 				844CB6301C17179900710E8D /* Main.storyboard in Resources */,
 				844CB6851C1717CC00710E8D /* Tabar_background@2x.png in Resources */,
@@ -623,6 +642,7 @@
 				844CB6871C1717CC00710E8D /* LeftViewController.m in Sources */,
 				844CB62D1C17179900710E8D /* ViewController.m in Sources */,
 				A552448A1C17DB4C0089CC04 /* UIProgressView+AFNetworking.m in Sources */,
+				84BA233B1C18650000251393 /* CCBaseViewController.m in Sources */,
 				A55244771C17DB4C0089CC04 /* AFHTTPSessionManager.m in Sources */,
 				844CB62A1C17179900710E8D /* AppDelegate.m in Sources */,
 				A552448B1C17DB4C0089CC04 /* UIRefreshControl+AFNetworking.m in Sources */,
@@ -643,6 +663,7 @@
 				844CB6891C1717CC00710E8D /* YYLetfItemCell.m in Sources */,
 				84BA23341C18621F00251393 /* CCNavigationController.m in Sources */,
 				84BA23351C18621F00251393 /* CCTabBarController.m in Sources */,
+				84BA23451C1866CF00251393 /* CCDownloadViewController.m in Sources */,
 				844CB6821C1717CC00710E8D /* QHConfiguredObj.m in Sources */,
 				844CB6861C1717CC00710E8D /* SliderViewController.m in Sources */,
 				A55244A01C182B920089CC04 /* DataAPI.m in Sources */,
@@ -652,6 +673,7 @@
 				A55244891C17DB4C0089CC04 /* UIImageView+AFNetworking.m in Sources */,
 				844CB68B1C1717CC00710E8D /* QHBasicViewController.m in Sources */,
 				A55244791C17DB4C0089CC04 /* AFSecurityPolicy.m in Sources */,
+				84BA233E1C18651500251393 /* CCDiscoverViewController.m in Sources */,
 				844CB68A1C1717CC00710E8D /* YYTabBaseViewController.m in Sources */,
 				A55244761C17DB4C0089CC04 /* AFHTTPRequestOperationManager.m in Sources */,
 				A55244841C17DB4C0089CC04 /* UIButton+StrechableBgImage.m in Sources */,

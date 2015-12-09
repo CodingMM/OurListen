@@ -1,27 +1,23 @@
 //
-//  CCNavigationController.m
+//  CCDownloadViewController.m
 //  ListenProject
 //
 //  Created by 夏婷 on 15/12/9.
 //  Copyright (c) 2015年 夏婷. All rights reserved.
 //
 
-#import "CCNavigationController.h"
+#import "CCDownloadViewController.h"
 
-@interface CCNavigationController ()
-
+@interface CCDownloadViewController ()
 
 @end
 
-@implementation CCNavigationController
+@implementation CCDownloadViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Do any additional setup after loading the view.
-    
+    // Do any additional setup after loading the view from its nib.
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

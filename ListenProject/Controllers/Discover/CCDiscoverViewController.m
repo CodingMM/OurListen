@@ -1,27 +1,23 @@
 //
-//  CCNavigationController.m
+//  CCDiscoverViewController.m
 //  ListenProject
 //
 //  Created by 夏婷 on 15/12/9.
 //  Copyright (c) 2015年 夏婷. All rights reserved.
 //
 
-#import "CCNavigationController.h"
+#import "CCDiscoverViewController.h"
 
-@interface CCNavigationController ()
-
+@interface CCDiscoverViewController ()
 
 @end
 
-@implementation CCNavigationController
+@implementation CCDiscoverViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     // Do any additional setup after loading the view.
-    
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
