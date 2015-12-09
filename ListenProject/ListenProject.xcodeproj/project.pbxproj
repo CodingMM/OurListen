@@ -29,6 +29,8 @@
 		844CB68A1C1717CC00710E8D /* YYTabBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844CB66A1C1717CC00710E8D /* YYTabBaseViewController.m */; };
 		844CB68B1C1717CC00710E8D /* QHBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844CB66D1C1717CC00710E8D /* QHBasicViewController.m */; };
 		844CB68C1C1717CC00710E8D /* UIView+KGViewExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 844CB66F1C1717CC00710E8D /* UIView+KGViewExtend.m */; };
+		84BA23341C18621F00251393 /* CCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BA232E1C18621F00251393 /* CCNavigationController.m */; };
+		84BA23351C18621F00251393 /* CCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BA23301C18621F00251393 /* CCTabBarController.m */; };
 		A55244751C17DB4C0089CC04 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A55244401C17DB4C0089CC04 /* AFHTTPRequestOperation.m */; };
 		A55244761C17DB4C0089CC04 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A55244421C17DB4C0089CC04 /* AFHTTPRequestOperationManager.m */; };
 		A55244771C17DB4C0089CC04 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A55244441C17DB4C0089CC04 /* AFHTTPSessionManager.m */; };
@@ -112,6 +114,10 @@
 		844CB66D1C1717CC00710E8D /* QHBasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHBasicViewController.m; sourceTree = "<group>"; };
 		844CB66E1C1717CC00710E8D /* UIView+KGViewExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KGViewExtend.h"; sourceTree = "<group>"; };
 		844CB66F1C1717CC00710E8D /* UIView+KGViewExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KGViewExtend.m"; sourceTree = "<group>"; };
+		84BA232D1C18621F00251393 /* CCNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNavigationController.h; sourceTree = "<group>"; };
+		84BA232E1C18621F00251393 /* CCNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCNavigationController.m; sourceTree = "<group>"; };
+		84BA232F1C18621F00251393 /* CCTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTabBarController.h; sourceTree = "<group>"; };
+		84BA23301C18621F00251393 /* CCTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCTabBarController.m; sourceTree = "<group>"; };
 		A552443F1C17DB4C0089CC04 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		A55244401C17DB4C0089CC04 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		A55244411C17DB4C0089CC04 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -192,6 +198,7 @@
 		844CB6181C17179900710E8D = {
 			isa = PBXGroup;
 			children = (
+				84BA232B1C18621F00251393 /* Controllers */,
 				A55244921C17DC1D0089CC04 /* Tool */,
 				A552443C1C17DAE40089CC04 /* Base */,
 				844CB64A1C1717CC00710E8D /* OtherSource */,
@@ -343,6 +350,49 @@
 				844CB66F1C1717CC00710E8D /* UIView+KGViewExtend.m */,
 			);
 			path = ViewExtend;
+			sourceTree = "<group>";
+		};
+		84BA232B1C18621F00251393 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84BA232C1C18621F00251393 /* Common */,
+				84BA23311C18621F00251393 /* Discover */,
+				84BA23321C18621F00251393 /* Download */,
+				84BA23331C18621F00251393 /* Player */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		84BA232C1C18621F00251393 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				84BA232D1C18621F00251393 /* CCNavigationController.h */,
+				84BA232E1C18621F00251393 /* CCNavigationController.m */,
+				84BA232F1C18621F00251393 /* CCTabBarController.h */,
+				84BA23301C18621F00251393 /* CCTabBarController.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		84BA23311C18621F00251393 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		84BA23321C18621F00251393 /* Download */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Download;
+			sourceTree = "<group>";
+		};
+		84BA23331C18621F00251393 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Player;
 			sourceTree = "<group>";
 		};
 		A552443C1C17DAE40089CC04 /* Base */ = {
@@ -591,6 +641,8 @@
 				844CB67E1C1717CC00710E8D /* MLBlackTransition.m in Sources */,
 				844CB6811C1717CC00710E8D /* QHCommonUtil.m in Sources */,
 				844CB6891C1717CC00710E8D /* YYLetfItemCell.m in Sources */,
+				84BA23341C18621F00251393 /* CCNavigationController.m in Sources */,
+				84BA23351C18621F00251393 /* CCTabBarController.m in Sources */,
 				844CB6821C1717CC00710E8D /* QHConfiguredObj.m in Sources */,
 				844CB6861C1717CC00710E8D /* SliderViewController.m in Sources */,
 				A55244A01C182B920089CC04 /* DataAPI.m in Sources */,
