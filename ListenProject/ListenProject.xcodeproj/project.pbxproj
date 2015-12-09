@@ -38,7 +38,6 @@
 		A552447B1C17DB4C0089CC04 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = A552444D1C17DB4C0089CC04 /* AFURLRequestSerialization.m */; };
 		A552447C1C17DB4C0089CC04 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = A552444F1C17DB4C0089CC04 /* AFURLResponseSerialization.m */; };
 		A552447D1C17DB4C0089CC04 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A55244511C17DB4C0089CC04 /* AFURLSessionManager.m */; };
-		A552447E1C17DB4C0089CC04 /* ISNull.m in Sources */ = {isa = PBXBuildFile; fileRef = A55244531C17DB4C0089CC04 /* ISNull.m */; };
 		A552447F1C17DB4C0089CC04 /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A55244551C17DB4C0089CC04 /* MJRefresh.bundle */; };
 		A55244801C17DB4C0089CC04 /* MJRefreshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = A55244581C17DB4C0089CC04 /* MJRefreshBaseView.m */; };
 		A55244811C17DB4C0089CC04 /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = A552445A1C17DB4C0089CC04 /* MJRefreshConst.m */; };
@@ -131,8 +130,6 @@
 		A552444F1C17DB4C0089CC04 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		A55244501C17DB4C0089CC04 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		A55244511C17DB4C0089CC04 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
-		A55244521C17DB4C0089CC04 /* ISNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISNull.h; sourceTree = "<group>"; };
-		A55244531C17DB4C0089CC04 /* ISNull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISNull.m; sourceTree = "<group>"; };
 		A55244551C17DB4C0089CC04 /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJRefresh.bundle; sourceTree = "<group>"; };
 		A55244561C17DB4C0089CC04 /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefresh.h; sourceTree = "<group>"; };
 		A55244571C17DB4C0089CC04 /* MJRefreshBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBaseView.h; sourceTree = "<group>"; };
@@ -357,8 +354,6 @@
 			isa = PBXGroup;
 			children = (
 				A552443E1C17DB4C0089CC04 /* AFNetworking */,
-				A55244521C17DB4C0089CC04 /* ISNull.h */,
-				A55244531C17DB4C0089CC04 /* ISNull.m */,
 				A55244541C17DB4C0089CC04 /* MJRefresh */,
 				A552445F1C17DB4C0089CC04 /* UIButton+StrechableBgImage.h */,
 				A55244601C17DB4C0089CC04 /* UIButton+StrechableBgImage.m */,
@@ -587,7 +582,6 @@
 				844CB6881C1717CC00710E8D /* MainTabViewController.m in Sources */,
 				844CB67F1C1717CC00710E8D /* MLTransitionAnimation.m in Sources */,
 				A55244821C17DB4C0089CC04 /* MJRefreshFooterView.m in Sources */,
-				A552447E1C17DB4C0089CC04 /* ISNull.m in Sources */,
 				A55244891C17DB4C0089CC04 /* UIImageView+AFNetworking.m in Sources */,
 				844CB68B1C1717CC00710E8D /* QHBasicViewController.m in Sources */,
 				A55244791C17DB4C0089CC04 /* AFSecurityPolicy.m in Sources */,
