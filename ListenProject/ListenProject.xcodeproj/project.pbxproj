@@ -54,6 +54,7 @@
 		A552448B1C17DB4C0089CC04 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = A55244701C17DB4C0089CC04 /* UIRefreshControl+AFNetworking.m */; };
 		A552448C1C17DB4C0089CC04 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = A55244721C17DB4C0089CC04 /* UIWebView+AFNetworking.m */; };
 		A552448D1C17DB4C0089CC04 /* UIView+IPhoneView.m in Sources */ = {isa = PBXBuildFile; fileRef = A55244741C17DB4C0089CC04 /* UIView+IPhoneView.m */; };
+		A55244911C17DBAB0089CC04 /* BaseHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A55244901C17DBAB0089CC04 /* BaseHttpClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -162,6 +163,8 @@
 		A55244721C17DB4C0089CC04 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		A55244731C17DB4C0089CC04 /* UIView+IPhoneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+IPhoneView.h"; sourceTree = "<group>"; };
 		A55244741C17DB4C0089CC04 /* UIView+IPhoneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+IPhoneView.m"; sourceTree = "<group>"; };
+		A552448F1C17DBAB0089CC04 /* BaseHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseHttpClient.h; sourceTree = "<group>"; };
+		A55244901C17DBAB0089CC04 /* BaseHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseHttpClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -340,6 +343,7 @@
 		A552443C1C17DAE40089CC04 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				A552448E1C17DB790089CC04 /* NetWork */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -425,6 +429,15 @@
 				A55244721C17DB4C0089CC04 /* UIWebView+AFNetworking.m */,
 			);
 			path = "UIKit+AFNetworking";
+			sourceTree = "<group>";
+		};
+		A552448E1C17DB790089CC04 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				A552448F1C17DBAB0089CC04 /* BaseHttpClient.h */,
+				A55244901C17DBAB0089CC04 /* BaseHttpClient.m */,
+			);
+			path = NetWork;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -544,6 +557,7 @@
 				A55244801C17DB4C0089CC04 /* MJRefreshBaseView.m in Sources */,
 				A55244751C17DB4C0089CC04 /* AFHTTPRequestOperation.m in Sources */,
 				A552447B1C17DB4C0089CC04 /* AFURLRequestSerialization.m in Sources */,
+				A55244911C17DBAB0089CC04 /* BaseHttpClient.m in Sources */,
 				A552447A1C17DB4C0089CC04 /* AFURLConnectionOperation.m in Sources */,
 				A55244851C17DB4C0089CC04 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				A552448D1C17DB4C0089CC04 /* UIView+IPhoneView.m in Sources */,
