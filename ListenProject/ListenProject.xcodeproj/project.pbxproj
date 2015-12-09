@@ -54,7 +54,7 @@
 		A552448B1C17DB4C0089CC04 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = A55244701C17DB4C0089CC04 /* UIRefreshControl+AFNetworking.m */; };
 		A552448C1C17DB4C0089CC04 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = A55244721C17DB4C0089CC04 /* UIWebView+AFNetworking.m */; };
 		A552448D1C17DB4C0089CC04 /* UIView+IPhoneView.m in Sources */ = {isa = PBXBuildFile; fileRef = A55244741C17DB4C0089CC04 /* UIView+IPhoneView.m */; };
-		A55244911C17DBAB0089CC04 /* BaseHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A55244901C17DBAB0089CC04 /* BaseHttpClient.m */; };
+		A55244951C17DC4F0089CC04 /* ISNull.m in Sources */ = {isa = PBXBuildFile; fileRef = A55244941C17DC4F0089CC04 /* ISNull.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,8 +163,8 @@
 		A55244721C17DB4C0089CC04 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		A55244731C17DB4C0089CC04 /* UIView+IPhoneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+IPhoneView.h"; sourceTree = "<group>"; };
 		A55244741C17DB4C0089CC04 /* UIView+IPhoneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+IPhoneView.m"; sourceTree = "<group>"; };
-		A552448F1C17DBAB0089CC04 /* BaseHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseHttpClient.h; sourceTree = "<group>"; };
-		A55244901C17DBAB0089CC04 /* BaseHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseHttpClient.m; sourceTree = "<group>"; };
+		A55244931C17DC4F0089CC04 /* ISNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISNull.h; sourceTree = "<group>"; };
+		A55244941C17DC4F0089CC04 /* ISNull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISNull.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +188,7 @@
 		844CB6181C17179900710E8D = {
 			isa = PBXGroup;
 			children = (
+				A55244921C17DC1D0089CC04 /* Tool */,
 				A552443C1C17DAE40089CC04 /* Base */,
 				844CB64A1C1717CC00710E8D /* OtherSource */,
 				844CB6231C17179900710E8D /* ListenProject */,
@@ -434,10 +435,17 @@
 		A552448E1C17DB790089CC04 /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
-				A552448F1C17DBAB0089CC04 /* BaseHttpClient.h */,
-				A55244901C17DBAB0089CC04 /* BaseHttpClient.m */,
 			);
 			path = NetWork;
+			sourceTree = "<group>";
+		};
+		A55244921C17DC1D0089CC04 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				A55244931C17DC4F0089CC04 /* ISNull.h */,
+				A55244941C17DC4F0089CC04 /* ISNull.m */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -557,7 +565,6 @@
 				A55244801C17DB4C0089CC04 /* MJRefreshBaseView.m in Sources */,
 				A55244751C17DB4C0089CC04 /* AFHTTPRequestOperation.m in Sources */,
 				A552447B1C17DB4C0089CC04 /* AFURLRequestSerialization.m in Sources */,
-				A55244911C17DBAB0089CC04 /* BaseHttpClient.m in Sources */,
 				A552447A1C17DB4C0089CC04 /* AFURLConnectionOperation.m in Sources */,
 				A55244851C17DB4C0089CC04 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				A552448D1C17DB4C0089CC04 /* UIView+IPhoneView.m in Sources */,
@@ -582,6 +589,7 @@
 				A55244841C17DB4C0089CC04 /* UIButton+StrechableBgImage.m in Sources */,
 				A552448C1C17DB4C0089CC04 /* UIWebView+AFNetworking.m in Sources */,
 				844CB68C1C1717CC00710E8D /* UIView+KGViewExtend.m in Sources */,
+				A55244951C17DC4F0089CC04 /* ISNull.m in Sources */,
 				A55244861C17DB4C0089CC04 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				A552447C1C17DB4C0089CC04 /* AFURLResponseSerialization.m in Sources */,
 			);
