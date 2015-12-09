@@ -55,6 +55,7 @@
 		A552448C1C17DB4C0089CC04 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = A55244721C17DB4C0089CC04 /* UIWebView+AFNetworking.m */; };
 		A552448D1C17DB4C0089CC04 /* UIView+IPhoneView.m in Sources */ = {isa = PBXBuildFile; fileRef = A55244741C17DB4C0089CC04 /* UIView+IPhoneView.m */; };
 		A55244951C17DC4F0089CC04 /* ISNull.m in Sources */ = {isa = PBXBuildFile; fileRef = A55244941C17DC4F0089CC04 /* ISNull.m */; };
+		A55244981C17DCB60089CC04 /* BaseHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A55244971C17DCB60089CC04 /* BaseHttpClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,6 +166,9 @@
 		A55244741C17DB4C0089CC04 /* UIView+IPhoneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+IPhoneView.m"; sourceTree = "<group>"; };
 		A55244931C17DC4F0089CC04 /* ISNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISNull.h; sourceTree = "<group>"; };
 		A55244941C17DC4F0089CC04 /* ISNull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISNull.m; sourceTree = "<group>"; };
+		A55244961C17DCB60089CC04 /* BaseHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseHttpClient.h; sourceTree = "<group>"; };
+		A55244971C17DCB60089CC04 /* BaseHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseHttpClient.m; sourceTree = "<group>"; };
+		A55244991C17DD1E0089CC04 /* RequestURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestURL.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -435,6 +439,9 @@
 		A552448E1C17DB790089CC04 /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
+				A55244961C17DCB60089CC04 /* BaseHttpClient.h */,
+				A55244971C17DCB60089CC04 /* BaseHttpClient.m */,
+				A55244991C17DD1E0089CC04 /* RequestURL.h */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -587,6 +594,7 @@
 				844CB68A1C1717CC00710E8D /* YYTabBaseViewController.m in Sources */,
 				A55244761C17DB4C0089CC04 /* AFHTTPRequestOperationManager.m in Sources */,
 				A55244841C17DB4C0089CC04 /* UIButton+StrechableBgImage.m in Sources */,
+				A55244981C17DCB60089CC04 /* BaseHttpClient.m in Sources */,
 				A552448C1C17DB4C0089CC04 /* UIWebView+AFNetworking.m in Sources */,
 				844CB68C1C1717CC00710E8D /* UIView+KGViewExtend.m in Sources */,
 				A55244951C17DC4F0089CC04 /* ISNull.m in Sources */,
