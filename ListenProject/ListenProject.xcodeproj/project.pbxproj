@@ -55,7 +55,7 @@
 		A552448D1C17DB4C0089CC04 /* UIView+IPhoneView.m in Sources */ = {isa = PBXBuildFile; fileRef = A55244741C17DB4C0089CC04 /* UIView+IPhoneView.m */; };
 		A55244951C17DC4F0089CC04 /* ISNull.m in Sources */ = {isa = PBXBuildFile; fileRef = A55244941C17DC4F0089CC04 /* ISNull.m */; };
 		A55244981C17DCB60089CC04 /* BaseHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A55244971C17DCB60089CC04 /* BaseHttpClient.m */; };
-		A552449D1C182AF80089CC04 /* DataAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = A552449C1C182AF80089CC04 /* DataAPI.m */; };
+		A55244A01C182B920089CC04 /* DataAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = A552449F1C182B920089CC04 /* DataAPI.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -167,8 +167,8 @@
 		A55244961C17DCB60089CC04 /* BaseHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseHttpClient.h; sourceTree = "<group>"; };
 		A55244971C17DCB60089CC04 /* BaseHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseHttpClient.m; sourceTree = "<group>"; };
 		A55244991C17DD1E0089CC04 /* RequestURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestURL.h; sourceTree = "<group>"; };
-		A552449B1C182AF80089CC04 /* DataAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataAPI.h; sourceTree = "<group>"; };
-		A552449C1C182AF80089CC04 /* DataAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataAPI.m; sourceTree = "<group>"; };
+		A552449E1C182B920089CC04 /* DataAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataAPI.h; sourceTree = "<group>"; };
+		A552449F1C182B920089CC04 /* DataAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataAPI.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -458,8 +458,8 @@
 		A552449A1C181BB80089CC04 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				A552449B1C182AF80089CC04 /* DataAPI.h */,
-				A552449C1C182AF80089CC04 /* DataAPI.m */,
+				A552449E1C182B920089CC04 /* DataAPI.h */,
+				A552449F1C182B920089CC04 /* DataAPI.m */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -573,7 +573,6 @@
 				844CB6871C1717CC00710E8D /* LeftViewController.m in Sources */,
 				844CB62D1C17179900710E8D /* ViewController.m in Sources */,
 				A552448A1C17DB4C0089CC04 /* UIProgressView+AFNetworking.m in Sources */,
-				A552449D1C182AF80089CC04 /* DataAPI.m in Sources */,
 				A55244771C17DB4C0089CC04 /* AFHTTPSessionManager.m in Sources */,
 				844CB62A1C17179900710E8D /* AppDelegate.m in Sources */,
 				A552448B1C17DB4C0089CC04 /* UIRefreshControl+AFNetworking.m in Sources */,
@@ -594,6 +593,7 @@
 				844CB6891C1717CC00710E8D /* YYLetfItemCell.m in Sources */,
 				844CB6821C1717CC00710E8D /* QHConfiguredObj.m in Sources */,
 				844CB6861C1717CC00710E8D /* SliderViewController.m in Sources */,
+				A55244A01C182B920089CC04 /* DataAPI.m in Sources */,
 				844CB6881C1717CC00710E8D /* MainTabViewController.m in Sources */,
 				844CB67F1C1717CC00710E8D /* MLTransitionAnimation.m in Sources */,
 				A55244821C17DB4C0089CC04 /* MJRefreshFooterView.m in Sources */,
