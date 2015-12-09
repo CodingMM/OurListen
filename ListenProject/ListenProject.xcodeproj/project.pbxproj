@@ -55,6 +55,7 @@
 		A552448D1C17DB4C0089CC04 /* UIView+IPhoneView.m in Sources */ = {isa = PBXBuildFile; fileRef = A55244741C17DB4C0089CC04 /* UIView+IPhoneView.m */; };
 		A55244951C17DC4F0089CC04 /* ISNull.m in Sources */ = {isa = PBXBuildFile; fileRef = A55244941C17DC4F0089CC04 /* ISNull.m */; };
 		A55244981C17DCB60089CC04 /* BaseHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A55244971C17DCB60089CC04 /* BaseHttpClient.m */; };
+		A552449D1C182AF80089CC04 /* DataAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = A552449C1C182AF80089CC04 /* DataAPI.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -166,6 +167,8 @@
 		A55244961C17DCB60089CC04 /* BaseHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseHttpClient.h; sourceTree = "<group>"; };
 		A55244971C17DCB60089CC04 /* BaseHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseHttpClient.m; sourceTree = "<group>"; };
 		A55244991C17DD1E0089CC04 /* RequestURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestURL.h; sourceTree = "<group>"; };
+		A552449B1C182AF80089CC04 /* DataAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataAPI.h; sourceTree = "<group>"; };
+		A552449C1C182AF80089CC04 /* DataAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataAPI.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,7 +255,6 @@
 			isa = PBXGroup;
 			children = (
 				A552443D1C17DB4C0089CC04 /* AFNetworking */,
-				844CB64B1C1717CC00710E8D /* SliderViewController */,
 			);
 			path = OtherSource;
 			sourceTree = "<group>";
@@ -271,7 +273,8 @@
 				844CB6621C1717CC00710E8D /* TabControllers */,
 				844CB66B1C1717CC00710E8D /* ViewExtend */,
 			);
-			path = SliderViewController;
+			name = SliderViewController;
+			path = ../SliderViewController;
 			sourceTree = "<group>";
 		};
 		844CB64D1C1717CC00710E8D /* MLBlackTransition */ = {
@@ -346,6 +349,7 @@
 			isa = PBXGroup;
 			children = (
 				A552448E1C17DB790089CC04 /* NetWork */,
+				A552449A1C181BB80089CC04 /* API */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -354,10 +358,11 @@
 			isa = PBXGroup;
 			children = (
 				A552443E1C17DB4C0089CC04 /* AFNetworking */,
+				A55244611C17DB4C0089CC04 /* UIKit+AFNetworking */,
 				A55244541C17DB4C0089CC04 /* MJRefresh */,
+				844CB64B1C1717CC00710E8D /* SliderViewController */,
 				A552445F1C17DB4C0089CC04 /* UIButton+StrechableBgImage.h */,
 				A55244601C17DB4C0089CC04 /* UIButton+StrechableBgImage.m */,
-				A55244611C17DB4C0089CC04 /* UIKit+AFNetworking */,
 				A55244731C17DB4C0089CC04 /* UIView+IPhoneView.h */,
 				A55244741C17DB4C0089CC04 /* UIView+IPhoneView.m */,
 			);
@@ -448,6 +453,15 @@
 				A55244941C17DC4F0089CC04 /* ISNull.m */,
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		A552449A1C181BB80089CC04 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				A552449B1C182AF80089CC04 /* DataAPI.h */,
+				A552449C1C182AF80089CC04 /* DataAPI.m */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -559,6 +573,7 @@
 				844CB6871C1717CC00710E8D /* LeftViewController.m in Sources */,
 				844CB62D1C17179900710E8D /* ViewController.m in Sources */,
 				A552448A1C17DB4C0089CC04 /* UIProgressView+AFNetworking.m in Sources */,
+				A552449D1C182AF80089CC04 /* DataAPI.m in Sources */,
 				A55244771C17DB4C0089CC04 /* AFHTTPSessionManager.m in Sources */,
 				844CB62A1C17179900710E8D /* AppDelegate.m in Sources */,
 				A552448B1C17DB4C0089CC04 /* UIRefreshControl+AFNetworking.m in Sources */,
