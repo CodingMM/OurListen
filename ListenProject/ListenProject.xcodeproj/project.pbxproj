@@ -43,6 +43,7 @@
 		84B29A041C19546300870099 /* JSONModel+networking.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B299F71C19546300870099 /* JSONModel+networking.m */; };
 		84B29A051C19546300870099 /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B299FA1C19546300870099 /* JSONKeyMapper.m */; };
 		84B29A061C19546300870099 /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B299FC1C19546300870099 /* JSONValueTransformer.m */; };
+		84B29A0A1C196A6600870099 /* CCPlayerBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B29A091C196A6600870099 /* CCPlayerBtn.m */; };
 		84BA23341C18621F00251393 /* CCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BA232E1C18621F00251393 /* CCNavigationController.m */; };
 		84BA23351C18621F00251393 /* CCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BA23301C18621F00251393 /* CCTabBarController.m */; };
 		84BA233B1C18650000251393 /* CCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BA233A1C18650000251393 /* CCBaseViewController.m */; };
@@ -158,6 +159,9 @@
 		84B299FA1C19546300870099 /* JSONKeyMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKeyMapper.m; sourceTree = "<group>"; };
 		84B299FB1C19546300870099 /* JSONValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONValueTransformer.h; sourceTree = "<group>"; };
 		84B299FC1C19546300870099 /* JSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONValueTransformer.m; sourceTree = "<group>"; };
+		84B29A081C196A6600870099 /* CCPlayerBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPlayerBtn.h; sourceTree = "<group>"; };
+		84B29A091C196A6600870099 /* CCPlayerBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPlayerBtn.m; sourceTree = "<group>"; };
+		84B29A0B1C1974AF00870099 /* CCGlobalHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCGlobalHeader.h; sourceTree = "<group>"; };
 		84BA232D1C18621F00251393 /* CCNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNavigationController.h; sourceTree = "<group>"; };
 		84BA232E1C18621F00251393 /* CCNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCNavigationController.m; sourceTree = "<group>"; };
 		84BA232F1C18621F00251393 /* CCTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTabBarController.h; sourceTree = "<group>"; };
@@ -249,11 +253,12 @@
 		844CB6181C17179900710E8D = {
 			isa = PBXGroup;
 			children = (
+				84B29A071C1960D800870099 /* View */,
+				A55244921C17DC1D0089CC04 /* Tool */,
+				844CB64A1C1717CC00710E8D /* OtherSource */,
 				A552443C1C17DAE40089CC04 /* Base */,
 				84B299DD1C19508100870099 /* Model */,
 				84BA232B1C18621F00251393 /* Controllers */,
-				A55244921C17DC1D0089CC04 /* Tool */,
-				844CB64A1C1717CC00710E8D /* OtherSource */,
 				844CB6231C17179900710E8D /* ListenProject */,
 				844CB63D1C17179900710E8D /* ListenProjectTests */,
 				844CB6221C17179900710E8D /* Products */,
@@ -482,6 +487,15 @@
 			path = JSONModelTransformations;
 			sourceTree = "<group>";
 		};
+		84B29A071C1960D800870099 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84B29A081C196A6600870099 /* CCPlayerBtn.h */,
+				84B29A091C196A6600870099 /* CCPlayerBtn.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		84BA232B1C18621F00251393 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -540,6 +554,7 @@
 			children = (
 				A552448E1C17DB790089CC04 /* NetWork */,
 				A552449A1C181BB80089CC04 /* API */,
+				84B29A0B1C1974AF00870099 /* CCGlobalHeader.h */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -781,6 +796,7 @@
 				A55244751C17DB4C0089CC04 /* AFHTTPRequestOperation.m in Sources */,
 				A552447B1C17DB4C0089CC04 /* AFURLRequestSerialization.m in Sources */,
 				84B29A041C19546300870099 /* JSONModel+networking.m in Sources */,
+				84B29A0A1C196A6600870099 /* CCPlayerBtn.m in Sources */,
 				84B29A051C19546300870099 /* JSONKeyMapper.m in Sources */,
 				A552447A1C17DB4C0089CC04 /* AFURLConnectionOperation.m in Sources */,
 				84B29A031C19546300870099 /* JSONHTTPClient.m in Sources */,
