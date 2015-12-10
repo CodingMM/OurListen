@@ -7,17 +7,65 @@
 //
 
 #import "CCTabBarController.h"
+#import "CCDiscoverViewController.h"
+#import "CCPlayerViewController.h"
+#import "CCDownloadViewController.h"
+#import "CCNavigationController.h"
 
 @interface CCTabBarController ()
 
+
+
 @end
 
+
 @implementation CCTabBarController
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self tabBarSetting];
+    
 }
+#pragma mark - 设置tabBar
+
+-(void)tabBarSetting
+{
+    self.tabBar.shadowImage = [[UIImage alloc] init];
+    
+    self.tabBar.backgroundImage = [UIImage imageNamed:@"bg_statusbar"];
+    
+    NSArray * tabbarNArray = @[@"tabbar_find_n", @"tabbar_download_n"];
+    NSArray * tabbarHArray = @[@"tabbar_find_h", @"tabbar_download_h"];
+    
+    NSArray * vcClass = @[[CCDiscoverViewController class],  [CCDownloadViewController class]];
+    
+    NSMutableArray * vcs = [NSMutableArray array];
+    
+    for (NSInteger i = 0; i < 2; i++) {
+        
+        UIViewController * vc = [[vcClass[i] alloc] init];
+        CCNavigationController * naV = [[CCNavigationController alloc] initWithRootViewController:vc];
+        UIImage * tabImg = [[UIImage imageNamed:tabbarNArray[i]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        UIImage * selectedImg = [[UIImage imageNamed:tabbarHArray[i]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        
+        naV.tabBarItem = [[UITabBarItem alloc] initWithTitle:nil image:tabImg selectedImage:selectedImg];
+        if (i == 0) {
+            naV.tabBarItem.imageInsets = UIEdgeInsetsMake(5, -15, -5, 15);
+        }else {
+            naV.tabBarItem.imageInsets = UIEdgeInsetsMake(5, 15, -5, -15);
+        }
+        
+        
+        [vcs addObject:naV];
+    }
+    
+    self.viewControllers = vcs;
+ 
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

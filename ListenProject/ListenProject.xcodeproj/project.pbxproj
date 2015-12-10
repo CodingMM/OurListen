@@ -29,6 +29,8 @@
 		844CB68A1C1717CC00710E8D /* YYTabBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844CB66A1C1717CC00710E8D /* YYTabBaseViewController.m */; };
 		844CB68B1C1717CC00710E8D /* QHBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844CB66D1C1717CC00710E8D /* QHBasicViewController.m */; };
 		844CB68C1C1717CC00710E8D /* UIView+KGViewExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 844CB66F1C1717CC00710E8D /* UIView+KGViewExtend.m */; };
+		84B299DB1C191A9600870099 /* CCPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B299D91C191A9600870099 /* CCPlayerViewController.m */; };
+		84B299DC1C191A9600870099 /* CCPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84B299DA1C191A9600870099 /* CCPlayerViewController.xib */; };
 		84BA23341C18621F00251393 /* CCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BA232E1C18621F00251393 /* CCNavigationController.m */; };
 		84BA23351C18621F00251393 /* CCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BA23301C18621F00251393 /* CCTabBarController.m */; };
 		84BA233B1C18650000251393 /* CCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BA233A1C18650000251393 /* CCBaseViewController.m */; };
@@ -118,6 +120,9 @@
 		844CB66D1C1717CC00710E8D /* QHBasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHBasicViewController.m; sourceTree = "<group>"; };
 		844CB66E1C1717CC00710E8D /* UIView+KGViewExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KGViewExtend.h"; sourceTree = "<group>"; };
 		844CB66F1C1717CC00710E8D /* UIView+KGViewExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KGViewExtend.m"; sourceTree = "<group>"; };
+		84B299D81C191A9600870099 /* CCPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPlayerViewController.h; sourceTree = "<group>"; };
+		84B299D91C191A9600870099 /* CCPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPlayerViewController.m; sourceTree = "<group>"; };
+		84B299DA1C191A9600870099 /* CCPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCPlayerViewController.xib; sourceTree = "<group>"; };
 		84BA232D1C18621F00251393 /* CCNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNavigationController.h; sourceTree = "<group>"; };
 		84BA232E1C18621F00251393 /* CCNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCNavigationController.m; sourceTree = "<group>"; };
 		84BA232F1C18621F00251393 /* CCTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTabBarController.h; sourceTree = "<group>"; };
@@ -409,6 +414,9 @@
 		84BA23331C18621F00251393 /* Player */ = {
 			isa = PBXGroup;
 			children = (
+				84B299D81C191A9600870099 /* CCPlayerViewController.h */,
+				84B299D91C191A9600870099 /* CCPlayerViewController.m */,
+				84B299DA1C191A9600870099 /* CCPlayerViewController.xib */,
 			);
 			path = Player;
 			sourceTree = "<group>";
@@ -616,6 +624,7 @@
 				844CB6841C1717CC00710E8D /* home_Nav@2x.png in Resources */,
 				84BA23461C1866CF00251393 /* CCDownloadViewController.xib in Resources */,
 				A552447F1C17DB4C0089CC04 /* MJRefresh.bundle in Resources */,
+				84B299DC1C191A9600870099 /* CCPlayerViewController.xib in Resources */,
 				844CB6301C17179900710E8D /* Main.storyboard in Resources */,
 				844CB6851C1717CC00710E8D /* Tabar_background@2x.png in Resources */,
 				844CB6351C17179900710E8D /* LaunchScreen.xib in Resources */,
@@ -660,6 +669,7 @@
 				A55244871C17DB4C0089CC04 /* UIAlertView+AFNetworking.m in Sources */,
 				844CB67E1C1717CC00710E8D /* MLBlackTransition.m in Sources */,
 				844CB6811C1717CC00710E8D /* QHCommonUtil.m in Sources */,
+				84B299DB1C191A9600870099 /* CCPlayerViewController.m in Sources */,
 				844CB6891C1717CC00710E8D /* YYLetfItemCell.m in Sources */,
 				84BA23341C18621F00251393 /* CCNavigationController.m in Sources */,
 				84BA23351C18621F00251393 /* CCTabBarController.m in Sources */,
