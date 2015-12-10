@@ -55,7 +55,17 @@
     
     // 1.获得年月日
     NSCalendar *calendar = [NSCalendar currentCalendar];
+    /**
+     *  解决警告 __xiating
+     */
+#if __IPHONE_OS_VERSION_MAX_ALLOWED > __IPHONE_8_0
+    
+    NSUInteger unitFlags = NSCalendarUnitYear| NSCalendarUnitMonth | NSCalendarUnitDay |NSCalendarUnitHour |NSCalendarUnitMinute;
+
+#else
+    
     NSUInteger unitFlags = NSYearCalendarUnit| NSMonthCalendarUnit | NSDayCalendarUnit |NSHourCalendarUnit |NSMinuteCalendarUnit;
+#endif
     NSDateComponents *cmp1 = [calendar components:unitFlags fromDate:_lastUpdateTime];
     NSDateComponents *cmp2 = [calendar components:unitFlags fromDate:[NSDate date]];
     
