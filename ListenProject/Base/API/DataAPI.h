@@ -11,6 +11,7 @@
 
 @interface DataAPI : NSObject
 
+<<<<<<< HEAD
 //请求语音详情
 + (NSURL *)getVoiceDetailWithTrackId:(NSString *)trackId andSuccessBlock:(httpSuccessBlock)sucHandler andFailBlock:(httpFailBlock)errorHandler;
 
@@ -55,5 +56,8 @@
 
 //获取热门搜索数据
 + (NSURL *)getHotSearchDataWithSuccessBlock:(httpSuccessBlock)sucHandler andFailBlock:(httpFailBlock)errorHandler;
+=======
+
+>>>>>>> origin/master
 
 @end

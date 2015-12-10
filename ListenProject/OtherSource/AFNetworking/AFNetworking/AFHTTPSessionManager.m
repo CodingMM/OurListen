@@ -286,7 +286,18 @@
     if (!configuration) {
         NSString *configurationIdentifier = [decoder decodeObjectForKey:@"identifier"];
         if (configurationIdentifier) {
+            
+            /**
+             *  解决警告  夏婷
+             */
+#if  __IPHONE_OS_VERSION_MAX_ALLOWED > __IPHONE_8_0
+            
+            configuration = [NSURLSessionConfiguration backgroundSessionConfigurationWithIdentifier:configurationIdentifier];
+#else
             configuration = [NSURLSessionConfiguration backgroundSessionConfiguration:configurationIdentifier];
+            
+#endif
+        
         }
     }
 

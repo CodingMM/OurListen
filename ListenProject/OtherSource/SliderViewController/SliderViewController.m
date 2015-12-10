@@ -125,6 +125,7 @@ typedef NS_ENUM(NSInteger, RMoveDirection) {
     [self showContentControllerWithModel:_MainVC!=nil?NSStringFromClass([_MainVC class]):@"MainViewController"];
     
     if((self.wantsFullScreenLayout=_MainVC.wantsFullScreenLayout)){
+        
         _rightSideView.frame=[UIScreen mainScreen].bounds;
         _leftSideView.frame=[UIScreen mainScreen].bounds;
         _mainContentView.frame=[UIScreen mainScreen].bounds;
