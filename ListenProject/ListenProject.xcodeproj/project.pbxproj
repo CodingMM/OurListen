@@ -265,11 +265,11 @@
 		844CB6181C17179900710E8D = {
 			isa = PBXGroup;
 			children = (
-				84B29A071C1960D800870099 /* View */,
 				A55244921C17DC1D0089CC04 /* Tool */,
 				844CB64A1C1717CC00710E8D /* OtherSource */,
 				A552443C1C17DAE40089CC04 /* Base */,
 				84B299DD1C19508100870099 /* Model */,
+				84B29A071C1960D800870099 /* View */,
 				84BA232B1C18621F00251393 /* Controllers */,
 				844CB6231C17179900710E8D /* ListenProject */,
 				844CB63D1C17179900710E8D /* ListenProjectTests */,
@@ -517,6 +517,7 @@
 				84BA232C1C18621F00251393 /* Common */,
 				84BA23321C18621F00251393 /* Download */,
 				84BA23331C18621F00251393 /* Player */,
+				A576314F1C1ABE9B001EF8B8 /* Scanner */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -751,6 +752,14 @@
 				A576314A1C1AB88F001EF8B8 /* AJNotificationView.m */,
 			);
 			path = AJNotificationView;
+			sourceTree = "<group>";
+		};
+		A576314F1C1ABE9B001EF8B8 /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Scanner;
+			path = Player/Scanner;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
