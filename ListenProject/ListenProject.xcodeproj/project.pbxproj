@@ -80,6 +80,7 @@
 		A57631461C1AB792001EF8B8 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A57631421C1AB792001EF8B8 /* SVProgressHUD.bundle */; };
 		A57631471C1AB792001EF8B8 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A57631441C1AB792001EF8B8 /* SVProgressHUD.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A576314B1C1AB88F001EF8B8 /* AJNotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = A576314A1C1AB88F001EF8B8 /* AJNotificationView.m */; };
+		A576314E1C1ABD88001EF8B8 /* CCBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A576314D1C1ABD88001EF8B8 /* CCBaseTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -239,6 +240,8 @@
 		A57631441C1AB792001EF8B8 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		A57631491C1AB88F001EF8B8 /* AJNotificationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJNotificationView.h; sourceTree = "<group>"; };
 		A576314A1C1AB88F001EF8B8 /* AJNotificationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJNotificationView.m; sourceTree = "<group>"; };
+		A576314C1C1ABD88001EF8B8 /* CCBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBaseTableViewController.h; sourceTree = "<group>"; };
+		A576314D1C1ABD88001EF8B8 /* CCBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBaseTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -527,6 +530,8 @@
 				84BA23301C18621F00251393 /* CCTabBarController.m */,
 				84BA23391C18650000251393 /* CCBaseViewController.h */,
 				84BA233A1C18650000251393 /* CCBaseViewController.m */,
+				A576314C1C1ABD88001EF8B8 /* CCBaseTableViewController.h */,
+				A576314D1C1ABD88001EF8B8 /* CCBaseTableViewController.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -862,6 +867,7 @@
 				84B29A021C19546300870099 /* JSONAPI.m in Sources */,
 				84EE7A0A1C1ABBA10033BF5E /* CCDiscoverViewController.m in Sources */,
 				A552448A1C17DB4C0089CC04 /* UIProgressView+AFNetworking.m in Sources */,
+				A576314E1C1ABD88001EF8B8 /* CCBaseTableViewController.m in Sources */,
 				84BA233B1C18650000251393 /* CCBaseViewController.m in Sources */,
 				A55244771C17DB4C0089CC04 /* AFHTTPSessionManager.m in Sources */,
 				84B29A061C19546300870099 /* JSONValueTransformer.m in Sources */,
