@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 
+#import "AJNotificationView.h"
+#import "SVProgressHUD.h"
+
 #import "CCTabBarController.h"
 #import "CCPlayerViewController.h"
 #import "CCPlayerBtn.h"
@@ -93,8 +96,104 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+#pragma mark - 全局提示信息
 
+//提示网络状态（不带block）
+-(void)showNoticeMsg:(NSString *)msg WithInterval:(float)timer
+{
+    [AJNotificationView showNoticeInView:self.window
+                                    type:AJNotificationTypeBlue
+                                   title:msg
+                         linedBackground:AJLinedBackgroundTypeAnimated
+                               hideAfter:timer
+                                response:^{
+                                    // NSLog(@"Response block");
+                                }];
+}
+//提示网络状态（带block）
+-(void)showNoticeMsg:(NSString *)msg WithInterval:(float)timer Block:(void (^)(void))response
+{
+    [AJNotificationView showNoticeInView:self.window
+                                    type:AJNotificationTypeBlue
+                                   title:msg
+                         linedBackground:AJLinedBackgroundTypeAnimated
+                               hideAfter:timer offset:0.0f delay:0.0f detailDisclosure:YES
+                                response:response];
+}
 
+//提示正在提交
+-(void)showLoading:(NSString *)msg
+{
+    NSString *content;
+    
+    if (msg==nil) {
+        content=@"正在提交数据，请稍后…"; //正在提交数据，请稍后…
+    }
+    else
+    {
+        content=msg;
+    }
+    
+    [SVProgressHUD showWithStatus:content maskType:SVProgressHUDMaskTypeClear];
+}
 
+//关闭提示
+-(void)hideLoading
+{
+    [SVProgressHUD dismiss];
+}
+
+//提示成功信息 并在几秒后自动关闭
+-(void)hideLoadingWithSuc:(NSString *)msg WithInterval:(float)timer
+{
+    [SVProgressHUD dismissWithSuccess:msg afterDelay:timer];
+}
+
+//提示错误信息 并在几秒后自动关闭
+-(void)hideLoadingWithErr:(NSString *)msg WithInterval:(float)timer
+{
+    [SVProgressHUD dismissWithError:msg afterDelay:timer];
+}
+
+//提示成功
+-(void)showSucMsg:(NSString *)msg WithInterval:(float)timer
+{
+    NSString *content;
+    
+    if (msg==nil) {
+        content=@"成功"; //成功
+    }
+    else
+    {
+        content=msg;
+    }
+    
+    [SVProgressHUD show];
+    [SVProgressHUD dismissWithSuccess:content afterDelay:timer];
+}
+
+//提示失败
+-(void)showErrMsg:(NSString *)msg WithInterval:(float)timer
+{
+    NSString *content = nil;
+    
+    if (msg==nil) {
+        content = @"失败";  //失败
+    }
+    else
+    {
+        content = msg;
+    }
+    
+    [SVProgressHUD show];
+    [SVProgressHUD dismissWithError:content afterDelay:timer];
+}
+
+//提示网络错误
+- (void)showNetworkError
+{
+    [SVProgressHUD show];
+    [SVProgressHUD dismissWithError:@"网络错误" afterDelay:1.5];
+}
 
 @end
