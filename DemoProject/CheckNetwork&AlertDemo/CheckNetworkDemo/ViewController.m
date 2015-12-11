@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "AppDelegate.h"
+#import "Reachability.h"
 @interface ViewController ()
 
 @end
@@ -45,6 +46,33 @@
     
    
 }
+#pragma mark -- 检测wifi
+- (void)viewDidAppear:(BOOL)animated{
+    
+    [super viewDidAppear:animated];
+    
+    
+    BOOL isOK = [self IsConnectWIFI];
+    AppDelegate * appDelegate = [UIApplication sharedApplication].delegate;
+    
+    
+    
+    if (isOK) {
+        
+        [appDelegate showSucMsg:@"WI-FI已连接" WithInterval:1.5];
+        
+    }else{
+        
+        [appDelegate showErrMsg:@"WI-FI未连接" WithInterval:1.5];
+    }
+    
+}
+
+-(BOOL)IsConnectWIFI {
+    return ([[Reachability reachabilityForLocalWiFi] currentReachabilityStatus] == ReachableViaWiFi);
+}
+
+
 
 - (void)btnClick:(id)sender{
 
