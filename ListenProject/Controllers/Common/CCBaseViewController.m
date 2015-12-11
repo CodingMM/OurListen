@@ -17,6 +17,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self setUpAppDelegate];
+    
+   
+    
+}
+
+- (void)setUpAppDelegate{
+
+     self.appDelegate = [UIApplication sharedApplication].delegate;
 }
 
 - (void)didReceiveMemoryWarning {

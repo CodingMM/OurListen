@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "AppDelegate.h"
 @interface CCBaseViewController : UIViewController
-
+@property (nonatomic,weak)AppDelegate * appDelegate;
 @end
