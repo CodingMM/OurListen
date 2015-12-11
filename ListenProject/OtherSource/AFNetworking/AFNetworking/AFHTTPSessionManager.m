@@ -46,7 +46,7 @@
 @end
 
 @implementation AFHTTPSessionManager
-
+@synthesize responseSerializer = _responseSerializer;
 + (instancetype)manager {
     return [[[self class] alloc] initWithBaseURL:nil];
 }
