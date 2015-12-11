@@ -78,6 +78,9 @@
 		A55244951C17DC4F0089CC04 /* ISNull.m in Sources */ = {isa = PBXBuildFile; fileRef = A55244941C17DC4F0089CC04 /* ISNull.m */; };
 		A55244981C17DCB60089CC04 /* BaseHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A55244971C17DCB60089CC04 /* BaseHttpClient.m */; };
 		A55244A01C182B920089CC04 /* DataAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = A552449F1C182B920089CC04 /* DataAPI.m */; };
+		A57631451C1AB792001EF8B8 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A57631401C1AB792001EF8B8 /* Reachability.m */; };
+		A57631461C1AB792001EF8B8 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A57631421C1AB792001EF8B8 /* SVProgressHUD.bundle */; };
+		A57631471C1AB792001EF8B8 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A57631441C1AB792001EF8B8 /* SVProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -233,6 +236,11 @@
 		A55244991C17DD1E0089CC04 /* RequestURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestURL.h; sourceTree = "<group>"; };
 		A552449E1C182B920089CC04 /* DataAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataAPI.h; sourceTree = "<group>"; };
 		A552449F1C182B920089CC04 /* DataAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataAPI.m; sourceTree = "<group>"; };
+		A576313F1C1AB792001EF8B8 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		A57631401C1AB792001EF8B8 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		A57631421C1AB792001EF8B8 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		A57631431C1AB792001EF8B8 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		A57631441C1AB792001EF8B8 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -321,6 +329,8 @@
 		844CB64A1C1717CC00710E8D /* OtherSource */ = {
 			isa = PBXGroup;
 			children = (
+				A576313E1C1AB792001EF8B8 /* Reachability */,
+				A57631411C1AB792001EF8B8 /* SVProgressHUD */,
 				84B299E31C19546300870099 /* JSONModel */,
 				A552443D1C17DB4C0089CC04 /* AFNetworking */,
 			);
@@ -674,6 +684,25 @@
 			path = API;
 			sourceTree = "<group>";
 		};
+		A576313E1C1AB792001EF8B8 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				A576313F1C1AB792001EF8B8 /* Reachability.h */,
+				A57631401C1AB792001EF8B8 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		A57631411C1AB792001EF8B8 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				A57631421C1AB792001EF8B8 /* SVProgressHUD.bundle */,
+				A57631431C1AB792001EF8B8 /* SVProgressHUD.h */,
+				A57631441C1AB792001EF8B8 /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -761,6 +790,7 @@
 				A552447F1C17DB4C0089CC04 /* MJRefresh.bundle in Resources */,
 				84B299DC1C191A9600870099 /* CCPlayerViewController.xib in Resources */,
 				844CB6301C17179900710E8D /* Main.storyboard in Resources */,
+				A57631461C1AB792001EF8B8 /* SVProgressHUD.bundle in Resources */,
 				844CB6851C1717CC00710E8D /* Tabar_background@2x.png in Resources */,
 				844CB6351C17179900710E8D /* LaunchScreen.xib in Resources */,
 				844CB6321C17179900710E8D /* Images.xcassets in Resources */,
@@ -799,9 +829,11 @@
 				A55244781C17DB4C0089CC04 /* AFNetworkReachabilityManager.m in Sources */,
 				A55244801C17DB4C0089CC04 /* MJRefreshBaseView.m in Sources */,
 				A55244751C17DB4C0089CC04 /* AFHTTPRequestOperation.m in Sources */,
+				A57631471C1AB792001EF8B8 /* SVProgressHUD.m in Sources */,
 				A552447B1C17DB4C0089CC04 /* AFURLRequestSerialization.m in Sources */,
 				84B29A041C19546300870099 /* JSONModel+networking.m in Sources */,
 				84B29A0A1C196A6600870099 /* CCPlayerBtn.m in Sources */,
+				A57631451C1AB792001EF8B8 /* Reachability.m in Sources */,
 				84B29A051C19546300870099 /* JSONKeyMapper.m in Sources */,
 				A552447A1C17DB4C0089CC04 /* AFURLConnectionOperation.m in Sources */,
 				84B29A031C19546300870099 /* JSONHTTPClient.m in Sources */,
