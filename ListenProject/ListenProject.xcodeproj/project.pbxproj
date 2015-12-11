@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		844CB6271C17179900710E8D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 844CB6261C17179900710E8D /* main.m */; };
 		844CB62A1C17179900710E8D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 844CB6291C17179900710E8D /* AppDelegate.m */; };
-		844CB62D1C17179900710E8D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844CB62C1C17179900710E8D /* ViewController.m */; };
-		844CB6301C17179900710E8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844CB62E1C17179900710E8D /* Main.storyboard */; };
 		844CB6321C17179900710E8D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844CB6311C17179900710E8D /* Images.xcassets */; };
 		844CB6351C17179900710E8D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844CB6331C17179900710E8D /* LaunchScreen.xib */; };
 		844CB6411C17179900710E8D /* ListenProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 844CB6401C17179900710E8D /* ListenProjectTests.m */; };
@@ -100,9 +98,6 @@
 		844CB6261C17179900710E8D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		844CB6281C17179900710E8D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		844CB6291C17179900710E8D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		844CB62B1C17179900710E8D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		844CB62C1C17179900710E8D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		844CB62F1C17179900710E8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		844CB6311C17179900710E8D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		844CB6341C17179900710E8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		844CB63A1C17179900710E8D /* ListenProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListenProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -293,9 +288,6 @@
 			children = (
 				844CB6281C17179900710E8D /* AppDelegate.h */,
 				844CB6291C17179900710E8D /* AppDelegate.m */,
-				844CB62B1C17179900710E8D /* ViewController.h */,
-				844CB62C1C17179900710E8D /* ViewController.m */,
-				844CB62E1C17179900710E8D /* Main.storyboard */,
 				844CB6311C17179900710E8D /* Images.xcassets */,
 				844CB6331C17179900710E8D /* LaunchScreen.xib */,
 				844CB6241C17179900710E8D /* Supporting Files */,
@@ -802,7 +794,6 @@
 				84BA23461C1866CF00251393 /* CCDownloadViewController.xib in Resources */,
 				A552447F1C17DB4C0089CC04 /* MJRefresh.bundle in Resources */,
 				84B299DC1C191A9600870099 /* CCPlayerViewController.xib in Resources */,
-				844CB6301C17179900710E8D /* Main.storyboard in Resources */,
 				A57631461C1AB792001EF8B8 /* SVProgressHUD.bundle in Resources */,
 				844CB6851C1717CC00710E8D /* Tabar_background@2x.png in Resources */,
 				844CB6351C17179900710E8D /* LaunchScreen.xib in Resources */,
@@ -828,7 +819,6 @@
 				A55244881C17DB4C0089CC04 /* UIButton+AFNetworking.m in Sources */,
 				844CB6801C1717CC00710E8D /* UIViewController+MLTransition.m in Sources */,
 				844CB6871C1717CC00710E8D /* LeftViewController.m in Sources */,
-				844CB62D1C17179900710E8D /* ViewController.m in Sources */,
 				84B29A021C19546300870099 /* JSONAPI.m in Sources */,
 				A552448A1C17DB4C0089CC04 /* UIProgressView+AFNetworking.m in Sources */,
 				84BA233B1C18650000251393 /* CCBaseViewController.m in Sources */,
@@ -909,14 +899,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		844CB62E1C17179900710E8D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				844CB62F1C17179900710E8D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		844CB6331C17179900710E8D /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
