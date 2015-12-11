@@ -77,9 +77,9 @@
 		A55244951C17DC4F0089CC04 /* ISNull.m in Sources */ = {isa = PBXBuildFile; fileRef = A55244941C17DC4F0089CC04 /* ISNull.m */; };
 		A55244981C17DCB60089CC04 /* BaseHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A55244971C17DCB60089CC04 /* BaseHttpClient.m */; };
 		A55244A01C182B920089CC04 /* DataAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = A552449F1C182B920089CC04 /* DataAPI.m */; };
-		A57631451C1AB792001EF8B8 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A57631401C1AB792001EF8B8 /* Reachability.m */; };
+		A57631451C1AB792001EF8B8 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A57631401C1AB792001EF8B8 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A57631461C1AB792001EF8B8 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A57631421C1AB792001EF8B8 /* SVProgressHUD.bundle */; };
-		A57631471C1AB792001EF8B8 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A57631441C1AB792001EF8B8 /* SVProgressHUD.m */; };
+		A57631471C1AB792001EF8B8 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A57631441C1AB792001EF8B8 /* SVProgressHUD.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A576314B1C1AB88F001EF8B8 /* AJNotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = A576314A1C1AB88F001EF8B8 /* AJNotificationView.m */; };
 /* End PBXBuildFile section */
 
