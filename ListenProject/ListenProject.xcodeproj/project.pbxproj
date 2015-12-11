@@ -81,6 +81,7 @@
 		A57631451C1AB792001EF8B8 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A57631401C1AB792001EF8B8 /* Reachability.m */; };
 		A57631461C1AB792001EF8B8 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A57631421C1AB792001EF8B8 /* SVProgressHUD.bundle */; };
 		A57631471C1AB792001EF8B8 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A57631441C1AB792001EF8B8 /* SVProgressHUD.m */; };
+		A576314B1C1AB88F001EF8B8 /* AJNotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = A576314A1C1AB88F001EF8B8 /* AJNotificationView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -241,6 +242,8 @@
 		A57631421C1AB792001EF8B8 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
 		A57631431C1AB792001EF8B8 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
 		A57631441C1AB792001EF8B8 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		A57631491C1AB88F001EF8B8 /* AJNotificationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJNotificationView.h; sourceTree = "<group>"; };
+		A576314A1C1AB88F001EF8B8 /* AJNotificationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJNotificationView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -329,6 +332,7 @@
 		844CB64A1C1717CC00710E8D /* OtherSource */ = {
 			isa = PBXGroup;
 			children = (
+				A57631481C1AB88F001EF8B8 /* AJNotificationView */,
 				A576313E1C1AB792001EF8B8 /* Reachability */,
 				A57631411C1AB792001EF8B8 /* SVProgressHUD */,
 				84B299E31C19546300870099 /* JSONModel */,
@@ -703,6 +707,15 @@
 			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
+		A57631481C1AB88F001EF8B8 /* AJNotificationView */ = {
+			isa = PBXGroup;
+			children = (
+				A57631491C1AB88F001EF8B8 /* AJNotificationView.h */,
+				A576314A1C1AB88F001EF8B8 /* AJNotificationView.m */,
+			);
+			path = AJNotificationView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -844,6 +857,7 @@
 				844CB6271C17179900710E8D /* main.m in Sources */,
 				84B299FE1C19546300870099 /* JSONModelArray.m in Sources */,
 				A55244871C17DB4C0089CC04 /* UIAlertView+AFNetworking.m in Sources */,
+				A576314B1C1AB88F001EF8B8 /* AJNotificationView.m in Sources */,
 				844CB67E1C1717CC00710E8D /* MLBlackTransition.m in Sources */,
 				844CB6811C1717CC00710E8D /* QHCommonUtil.m in Sources */,
 				84B299DB1C191A9600870099 /* CCPlayerViewController.m in Sources */,
