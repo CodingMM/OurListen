@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface CCPlayerBtn : UIButton
++(CCPlayerBtn *)sharePlayerBtn;
 
 @property (nonatomic, strong) UIImageView * rotationView;
 @property (nonatomic, strong) UIImageView * imageView2;

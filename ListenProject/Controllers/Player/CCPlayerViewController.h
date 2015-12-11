@@ -9,5 +9,31 @@
 #import "CCBaseViewController.h"
 
 @interface CCPlayerViewController : CCBaseViewController
+/**
+ *  播放次数
+ */
+@property (nonatomic, assign) NSInteger isFirstPlay;
+/**
+ *  歌曲列表
+ */
+@property (nonatomic, retain) NSMutableArray * songList;
+/**
+ * 曲目ID
+ */
+@property (nonatomic, assign) NSInteger trackId;
+/**
+ *  曲目名
+ */
+@property (nonatomic, copy) NSString * name;
+
+
++(CCPlayerViewController *)sharePlayerViewController;
+
+- (void)createPlayer;
+
+- (void)createAudioPlayer;
+
+- (void)reloaddataWithCommentNum:(NSInteger)num andTrackID:(NSInteger)trackid;
+
 
 @end

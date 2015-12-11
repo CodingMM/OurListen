@@ -10,6 +10,7 @@
 
 #import "CCTabBarController.h"
 #import "CCPlayerViewController.h"
+#import "CCPlayerBtn.h"
 //#import "SliderViewController.h"
 
 
@@ -27,8 +28,49 @@
     [_window makeKeyAndVisible];
     CCTabBarController *tab = [[CCTabBarController alloc]init];
     _window.rootViewController = tab;
+
+    /*创建播放按钮*/
+    [self createPlayerBtn];
+    
     return YES;
 }
+
+#pragma mark - 创建播放按钮
+- (void)createPlayerBtn
+{
+    CCPlayerBtn *playerBtn = [CCPlayerBtn sharePlayerBtn];
+    [playerBtn addTarget:self action:@selector(playerBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [self.window addSubview:playerBtn];
+}
+/**
+ *  播放按钮点击事件
+ */
+-(void)playerBtnClicked:(CCPlayerBtn *)sender
+{
+    CCPlayerViewController * player = [CCPlayerViewController sharePlayerViewController];
+    [self.window.rootViewController presentViewController:player animated:YES completion:^{
+        CCPlayerBtn *playerBtn = [CCPlayerBtn sharePlayerBtn];
+        playerBtn.hidden = YES;
+        NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
+        
+        if (player.isFirstPlay == 0) {
+            // 根据NSUserDefaults里存储的信息，初始化播放器
+            
+            NSString * title = [defaults objectForKey:@"title"];
+            NSInteger track = [[defaults objectForKey:@"trackid"] integerValue];
+            NSInteger comment = [[defaults objectForKey:@"comment"] integerValue];
+            NSMutableArray * array = [defaults objectForKey:@"songlist"];
+            player.songList = array;
+            player.trackId = track;
+            player.name = title;
+            [player createPlayer];
+            [player reloaddataWithCommentNum:comment andTrackID:track];
+        }
+        
+    }];
+
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -51,5 +93,8 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+
+
 
 @end

@@ -12,7 +12,22 @@
 
 #import "CCPlayerBtn.h"
 
+#define PLAYERBTN_FRAME CGRectMake(SCREEN_SIZE.width/5 * 2, SCREEN_SIZE.height - 65, SCREEN_SIZE.width/5, 65)
+
 @implementation CCPlayerBtn
+
++(CCPlayerBtn *)sharePlayerBtn
+{
+    static CCPlayerBtn *playerBtn = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        if (playerBtn == nil) {
+            
+            playerBtn = [[CCPlayerBtn alloc]initWithFrame:PLAYERBTN_FRAME];
+        }
+    });
+    return playerBtn;
+}
 
 -(instancetype)initWithFrame:(CGRect)frame
 {
@@ -42,6 +57,7 @@
     [self addSubview:self.imageView2];
     [self addSubview:self.rotationView];
 }
+
 
 /*
 // Only override drawRect: if you perform custom drawing.

@@ -10,4 +10,8 @@
 
 @interface CCDiscoverViewController : CCBaseViewController
 
+
+
+
+
 @end

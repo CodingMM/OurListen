@@ -7,6 +7,8 @@
 //
 
 #import "CCDiscoverViewController.h"
+#import "CCGlobalHeader.h"
+#import "CCTitleLabel.h"
 
 @interface CCDiscoverViewController ()
 
