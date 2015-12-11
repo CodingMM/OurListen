@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 @interface CCBaseTableViewController : UITableViewController
-
-@property (nonatomic,weak)AppDelegate * appDelegate;
-
+@property (nonatomic,weak) AppDelegate * appDelegate;
 
 @end

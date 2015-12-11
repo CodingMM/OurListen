@@ -80,7 +80,8 @@
 		A57631461C1AB792001EF8B8 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A57631421C1AB792001EF8B8 /* SVProgressHUD.bundle */; };
 		A57631471C1AB792001EF8B8 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A57631441C1AB792001EF8B8 /* SVProgressHUD.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A576314B1C1AB88F001EF8B8 /* AJNotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = A576314A1C1AB88F001EF8B8 /* AJNotificationView.m */; };
-		A576314E1C1ABD88001EF8B8 /* CCBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A576314D1C1ABD88001EF8B8 /* CCBaseTableViewController.m */; };
+		A57631521C1AC24C001EF8B8 /* CCAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = A57631511C1AC24C001EF8B8 /* CCAlertView.m */; };
+		A57631551C1AC26F001EF8B8 /* CCBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A57631541C1AC26F001EF8B8 /* CCBaseTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -240,8 +241,10 @@
 		A57631441C1AB792001EF8B8 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		A57631491C1AB88F001EF8B8 /* AJNotificationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJNotificationView.h; sourceTree = "<group>"; };
 		A576314A1C1AB88F001EF8B8 /* AJNotificationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJNotificationView.m; sourceTree = "<group>"; };
-		A576314C1C1ABD88001EF8B8 /* CCBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBaseTableViewController.h; sourceTree = "<group>"; };
-		A576314D1C1ABD88001EF8B8 /* CCBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBaseTableViewController.m; sourceTree = "<group>"; };
+		A57631501C1AC24C001EF8B8 /* CCAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAlertView.h; sourceTree = "<group>"; };
+		A57631511C1AC24C001EF8B8 /* CCAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAlertView.m; sourceTree = "<group>"; };
+		A57631531C1AC26F001EF8B8 /* CCBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBaseTableViewController.h; sourceTree = "<group>"; };
+		A57631541C1AC26F001EF8B8 /* CCBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBaseTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -506,6 +509,8 @@
 				84B29A091C196A6600870099 /* CCPlayerBtn.m */,
 				84EE79EF1C1AAEC20033BF5E /* CCTitleLabel.h */,
 				84EE79F01C1AAEC20033BF5E /* CCTitleLabel.m */,
+				A57631501C1AC24C001EF8B8 /* CCAlertView.h */,
+				A57631511C1AC24C001EF8B8 /* CCAlertView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -531,8 +536,8 @@
 				84BA23301C18621F00251393 /* CCTabBarController.m */,
 				84BA23391C18650000251393 /* CCBaseViewController.h */,
 				84BA233A1C18650000251393 /* CCBaseViewController.m */,
-				A576314C1C1ABD88001EF8B8 /* CCBaseTableViewController.h */,
-				A576314D1C1ABD88001EF8B8 /* CCBaseTableViewController.m */,
+				A57631531C1AC26F001EF8B8 /* CCBaseTableViewController.h */,
+				A57631541C1AC26F001EF8B8 /* CCBaseTableViewController.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -876,7 +881,6 @@
 				84B29A021C19546300870099 /* JSONAPI.m in Sources */,
 				84EE7A0A1C1ABBA10033BF5E /* CCDiscoverViewController.m in Sources */,
 				A552448A1C17DB4C0089CC04 /* UIProgressView+AFNetworking.m in Sources */,
-				A576314E1C1ABD88001EF8B8 /* CCBaseTableViewController.m in Sources */,
 				84BA233B1C18650000251393 /* CCBaseViewController.m in Sources */,
 				A55244771C17DB4C0089CC04 /* AFHTTPSessionManager.m in Sources */,
 				84B29A061C19546300870099 /* JSONValueTransformer.m in Sources */,
@@ -900,6 +904,7 @@
 				A552448D1C17DB4C0089CC04 /* UIView+IPhoneView.m in Sources */,
 				A55244831C17DB4C0089CC04 /* MJRefreshHeaderView.m in Sources */,
 				A552447D1C17DB4C0089CC04 /* AFURLSessionManager.m in Sources */,
+				A57631551C1AC26F001EF8B8 /* CCBaseTableViewController.m in Sources */,
 				844CB6271C17179900710E8D /* main.m in Sources */,
 				84B299FE1C19546300870099 /* JSONModelArray.m in Sources */,
 				A55244871C17DB4C0089CC04 /* UIAlertView+AFNetworking.m in Sources */,
@@ -930,6 +935,7 @@
 				A552448C1C17DB4C0089CC04 /* UIWebView+AFNetworking.m in Sources */,
 				844CB68C1C1717CC00710E8D /* UIView+KGViewExtend.m in Sources */,
 				A55244951C17DC4F0089CC04 /* ISNull.m in Sources */,
+				A57631521C1AC24C001EF8B8 /* CCAlertView.m in Sources */,
 				A55244861C17DB4C0089CC04 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				A552447C1C17DB4C0089CC04 /* AFURLResponseSerialization.m in Sources */,
 			);
