@@ -82,6 +82,12 @@
 		A576314B1C1AB88F001EF8B8 /* AJNotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = A576314A1C1AB88F001EF8B8 /* AJNotificationView.m */; };
 		A57631521C1AC24C001EF8B8 /* CCAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = A57631511C1AC24C001EF8B8 /* CCAlertView.m */; };
 		A57631551C1AC26F001EF8B8 /* CCBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A57631541C1AC26F001EF8B8 /* CCBaseTableViewController.m */; };
+		A5E30E191C1F27F900F630F8 /* NSString+category.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E30E181C1F27F900F630F8 /* NSString+category.m */; };
+		A5E30E221C1F281C00F630F8 /* CCScannerDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E30E1F1C1F281C00F630F8 /* CCScannerDetailController.m */; };
+		A5E30E231C1F281C00F630F8 /* CCScannerDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5E30E201C1F281C00F630F8 /* CCScannerDetailController.xib */; };
+		A5E30E261C1F289200F630F8 /* CCLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E30E251C1F289200F630F8 /* CCLabel.m */; };
+		A5E30E2A1C1F293C00F630F8 /* CCScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E30E281C1F293C00F630F8 /* CCScannerViewController.m */; };
+		A5E30E2B1C1F293C00F630F8 /* CCScannerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5E30E291C1F293C00F630F8 /* CCScannerViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -245,6 +251,16 @@
 		A57631511C1AC24C001EF8B8 /* CCAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAlertView.m; sourceTree = "<group>"; };
 		A57631531C1AC26F001EF8B8 /* CCBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBaseTableViewController.h; sourceTree = "<group>"; };
 		A57631541C1AC26F001EF8B8 /* CCBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBaseTableViewController.m; sourceTree = "<group>"; };
+		A5E30E171C1F27F900F630F8 /* NSString+category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+category.h"; sourceTree = "<group>"; };
+		A5E30E181C1F27F900F630F8 /* NSString+category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+category.m"; sourceTree = "<group>"; };
+		A5E30E1E1C1F281C00F630F8 /* CCScannerDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCScannerDetailController.h; sourceTree = "<group>"; };
+		A5E30E1F1C1F281C00F630F8 /* CCScannerDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCScannerDetailController.m; sourceTree = "<group>"; };
+		A5E30E201C1F281C00F630F8 /* CCScannerDetailController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCScannerDetailController.xib; sourceTree = "<group>"; };
+		A5E30E241C1F289200F630F8 /* CCLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLabel.h; sourceTree = "<group>"; };
+		A5E30E251C1F289200F630F8 /* CCLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCLabel.m; sourceTree = "<group>"; };
+		A5E30E271C1F293C00F630F8 /* CCScannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCScannerViewController.h; sourceTree = "<group>"; };
+		A5E30E281C1F293C00F630F8 /* CCScannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCScannerViewController.m; sourceTree = "<group>"; };
+		A5E30E291C1F293C00F630F8 /* CCScannerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCScannerViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -511,6 +527,8 @@
 				84EE79F01C1AAEC20033BF5E /* CCTitleLabel.m */,
 				A57631501C1AC24C001EF8B8 /* CCAlertView.h */,
 				A57631511C1AC24C001EF8B8 /* CCAlertView.m */,
+				A5E30E241C1F289200F630F8 /* CCLabel.h */,
+				A5E30E251C1F289200F630F8 /* CCLabel.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -718,6 +736,8 @@
 			children = (
 				A55244931C17DC4F0089CC04 /* ISNull.h */,
 				A55244941C17DC4F0089CC04 /* ISNull.m */,
+				A5E30E171C1F27F900F630F8 /* NSString+category.h */,
+				A5E30E181C1F27F900F630F8 /* NSString+category.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -762,9 +782,23 @@
 		A576314F1C1ABE9B001EF8B8 /* Scanner */ = {
 			isa = PBXGroup;
 			children = (
+				A5E30E271C1F293C00F630F8 /* CCScannerViewController.h */,
+				A5E30E281C1F293C00F630F8 /* CCScannerViewController.m */,
+				A5E30E291C1F293C00F630F8 /* CCScannerViewController.xib */,
+				A5E30E1A1C1F281C00F630F8 /* Detail */,
 			);
 			name = Scanner;
 			path = Player/Scanner;
+			sourceTree = "<group>";
+		};
+		A5E30E1A1C1F281C00F630F8 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				A5E30E1E1C1F281C00F630F8 /* CCScannerDetailController.h */,
+				A5E30E1F1C1F281C00F630F8 /* CCScannerDetailController.m */,
+				A5E30E201C1F281C00F630F8 /* CCScannerDetailController.xib */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -851,10 +885,12 @@
 				844CB6831C1717CC00710E8D /* home_Nav.png in Resources */,
 				844CB6841C1717CC00710E8D /* home_Nav@2x.png in Resources */,
 				84BA23461C1866CF00251393 /* CCDownloadViewController.xib in Resources */,
+				A5E30E2B1C1F293C00F630F8 /* CCScannerViewController.xib in Resources */,
 				A552447F1C17DB4C0089CC04 /* MJRefresh.bundle in Resources */,
 				84B299DC1C191A9600870099 /* CCPlayerViewController.xib in Resources */,
 				A57631461C1AB792001EF8B8 /* SVProgressHUD.bundle in Resources */,
 				844CB6851C1717CC00710E8D /* Tabar_background@2x.png in Resources */,
+				A5E30E231C1F281C00F630F8 /* CCScannerDetailController.xib in Resources */,
 				844CB6351C17179900710E8D /* LaunchScreen.xib in Resources */,
 				844CB6321C17179900710E8D /* Images.xcassets in Resources */,
 				84B299E11C19509300870099 /* findtab.plist in Resources */,
@@ -880,9 +916,11 @@
 				844CB6871C1717CC00710E8D /* LeftViewController.m in Sources */,
 				84B29A021C19546300870099 /* JSONAPI.m in Sources */,
 				84EE7A0A1C1ABBA10033BF5E /* CCDiscoverViewController.m in Sources */,
+				A5E30E221C1F281C00F630F8 /* CCScannerDetailController.m in Sources */,
 				A552448A1C17DB4C0089CC04 /* UIProgressView+AFNetworking.m in Sources */,
 				84BA233B1C18650000251393 /* CCBaseViewController.m in Sources */,
 				A55244771C17DB4C0089CC04 /* AFHTTPSessionManager.m in Sources */,
+				A5E30E261C1F289200F630F8 /* CCLabel.m in Sources */,
 				84B29A061C19546300870099 /* JSONValueTransformer.m in Sources */,
 				84B299FF1C19546300870099 /* JSONModelClassProperty.m in Sources */,
 				844CB62A1C17179900710E8D /* AppDelegate.m in Sources */,
@@ -917,6 +955,7 @@
 				84BA23351C18621F00251393 /* CCTabBarController.m in Sources */,
 				84BA23451C1866CF00251393 /* CCDownloadViewController.m in Sources */,
 				844CB6821C1717CC00710E8D /* QHConfiguredObj.m in Sources */,
+				A5E30E2A1C1F293C00F630F8 /* CCScannerViewController.m in Sources */,
 				84B29A011C19546300870099 /* NSArray+JSONModel.m in Sources */,
 				844CB6861C1717CC00710E8D /* SliderViewController.m in Sources */,
 				A55244A01C182B920089CC04 /* DataAPI.m in Sources */,
@@ -931,6 +970,7 @@
 				A55244761C17DB4C0089CC04 /* AFHTTPRequestOperationManager.m in Sources */,
 				A55244841C17DB4C0089CC04 /* UIButton+StrechableBgImage.m in Sources */,
 				84EE79F11C1AAEC20033BF5E /* CCTitleLabel.m in Sources */,
+				A5E30E191C1F27F900F630F8 /* NSString+category.m in Sources */,
 				A55244981C17DCB60089CC04 /* BaseHttpClient.m in Sources */,
 				A552448C1C17DB4C0089CC04 /* UIWebView+AFNetworking.m in Sources */,
 				844CB68C1C1717CC00710E8D /* UIView+KGViewExtend.m in Sources */,
