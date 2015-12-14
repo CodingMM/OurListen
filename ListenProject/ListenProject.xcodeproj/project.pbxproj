@@ -27,10 +27,10 @@
 		844CB68A1C1717CC00710E8D /* YYTabBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844CB66A1C1717CC00710E8D /* YYTabBaseViewController.m */; };
 		844CB68B1C1717CC00710E8D /* QHBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844CB66D1C1717CC00710E8D /* QHBasicViewController.m */; };
 		844CB68C1C1717CC00710E8D /* UIView+KGViewExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 844CB66F1C1717CC00710E8D /* UIView+KGViewExtend.m */; };
-		846E7C531C1E6B0B00CBAE9D /* CCRecomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846E7C511C1E6B0B00CBAE9D /* CCRecomViewController.m */; };
-		846E7C541C1E6B0B00CBAE9D /* CCRecomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846E7C521C1E6B0B00CBAE9D /* CCRecomViewController.xib */; };
-		846E7C581C1EA1E300CBAE9D /* CCLiveTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846E7C561C1EA1E300CBAE9D /* CCLiveTableViewController.m */; };
-		846E7C591C1EA1E300CBAE9D /* CCLiveTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846E7C571C1EA1E300CBAE9D /* CCLiveTableViewController.xib */; };
+		846E7C691C1EB02A00CBAE9D /* CCRecomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846E7C671C1EB02A00CBAE9D /* CCRecomViewController.m */; };
+		846E7C6A1C1EB02A00CBAE9D /* CCRecomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846E7C681C1EB02A00CBAE9D /* CCRecomViewController.xib */; };
+		846E7C6E1C1EB08000CBAE9D /* CCLiveTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846E7C6C1C1EB08000CBAE9D /* CCLiveTableViewController.m */; };
+		846E7C6F1C1EB08000CBAE9D /* CCLiveTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846E7C6D1C1EB08000CBAE9D /* CCLiveTableViewController.xib */; };
 		84B299DB1C191A9600870099 /* CCPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B299D91C191A9600870099 /* CCPlayerViewController.m */; };
 		84B299DC1C191A9600870099 /* CCPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84B299DA1C191A9600870099 /* CCPlayerViewController.xib */; };
 		84B299E11C19509300870099 /* findtab.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84B299DF1C19509300870099 /* findtab.plist */; };
@@ -143,12 +143,12 @@
 		844CB66D1C1717CC00710E8D /* QHBasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHBasicViewController.m; sourceTree = "<group>"; };
 		844CB66E1C1717CC00710E8D /* UIView+KGViewExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KGViewExtend.h"; sourceTree = "<group>"; };
 		844CB66F1C1717CC00710E8D /* UIView+KGViewExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KGViewExtend.m"; sourceTree = "<group>"; };
-		846E7C501C1E6B0B00CBAE9D /* CCRecomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCRecomViewController.h; path = ../../../../../../Documents/CCRecomViewController.h; sourceTree = "<group>"; };
-		846E7C511C1E6B0B00CBAE9D /* CCRecomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCRecomViewController.m; path = ../../../../../../Documents/CCRecomViewController.m; sourceTree = "<group>"; };
-		846E7C521C1E6B0B00CBAE9D /* CCRecomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CCRecomViewController.xib; path = ../../../../../../Documents/CCRecomViewController.xib; sourceTree = "<group>"; };
-		846E7C551C1EA1E300CBAE9D /* CCLiveTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCLiveTableViewController.h; path = ../../../../../../Documents/CCLiveTableViewController.h; sourceTree = "<group>"; };
-		846E7C561C1EA1E300CBAE9D /* CCLiveTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCLiveTableViewController.m; path = ../../../../../../Documents/CCLiveTableViewController.m; sourceTree = "<group>"; };
-		846E7C571C1EA1E300CBAE9D /* CCLiveTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CCLiveTableViewController.xib; path = ../../../../../../Documents/CCLiveTableViewController.xib; sourceTree = "<group>"; };
+		846E7C661C1EB02A00CBAE9D /* CCRecomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCRecomViewController.h; sourceTree = "<group>"; };
+		846E7C671C1EB02A00CBAE9D /* CCRecomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCRecomViewController.m; sourceTree = "<group>"; };
+		846E7C681C1EB02A00CBAE9D /* CCRecomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCRecomViewController.xib; sourceTree = "<group>"; };
+		846E7C6B1C1EB08000CBAE9D /* CCLiveTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLiveTableViewController.h; sourceTree = "<group>"; };
+		846E7C6C1C1EB08000CBAE9D /* CCLiveTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCLiveTableViewController.m; sourceTree = "<group>"; };
+		846E7C6D1C1EB08000CBAE9D /* CCLiveTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCLiveTableViewController.xib; sourceTree = "<group>"; };
 		84B299D81C191A9600870099 /* CCPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPlayerViewController.h; sourceTree = "<group>"; };
 		84B299D91C191A9600870099 /* CCPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPlayerViewController.m; sourceTree = "<group>"; };
 		84B299DA1C191A9600870099 /* CCPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCPlayerViewController.xib; sourceTree = "<group>"; };
@@ -445,6 +445,26 @@
 			path = ViewExtend;
 			sourceTree = "<group>";
 		};
+		846E7C5A1C1EA73C00CBAE9D /* live */ = {
+			isa = PBXGroup;
+			children = (
+				846E7C6B1C1EB08000CBAE9D /* CCLiveTableViewController.h */,
+				846E7C6C1C1EB08000CBAE9D /* CCLiveTableViewController.m */,
+				846E7C6D1C1EB08000CBAE9D /* CCLiveTableViewController.xib */,
+			);
+			path = live;
+			sourceTree = "<group>";
+		};
+		846E7C5B1C1EA73C00CBAE9D /* recommend */ = {
+			isa = PBXGroup;
+			children = (
+				846E7C661C1EB02A00CBAE9D /* CCRecomViewController.h */,
+				846E7C671C1EB02A00CBAE9D /* CCRecomViewController.m */,
+				846E7C681C1EB02A00CBAE9D /* CCRecomViewController.xib */,
+			);
+			path = recommend;
+			sourceTree = "<group>";
+		};
 		84B299DD1C19508100870099 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -585,10 +605,10 @@
 		84EE7A021C1ABBA10033BF5E /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				846E7C5A1C1EA73C00CBAE9D /* live */,
+				846E7C5B1C1EA73C00CBAE9D /* recommend */,
 				84EE7A031C1ABBA10033BF5E /* classification */,
 				84EE7A041C1ABBA10033BF5E /* home */,
-				84EE7A071C1ABBA10033BF5E /* live */,
-				84EE7A081C1ABBA10033BF5E /* recommended */,
 				84EE7A091C1ABBA10033BF5E /* sarch */,
 			);
 			path = Discover;
@@ -611,26 +631,6 @@
 				84EE7A061C1ABBA10033BF5E /* CCDiscoverViewController.m */,
 			);
 			path = home;
-			sourceTree = "<group>";
-		};
-		84EE7A071C1ABBA10033BF5E /* live */ = {
-			isa = PBXGroup;
-			children = (
-				846E7C551C1EA1E300CBAE9D /* CCLiveTableViewController.h */,
-				846E7C561C1EA1E300CBAE9D /* CCLiveTableViewController.m */,
-				846E7C571C1EA1E300CBAE9D /* CCLiveTableViewController.xib */,
-			);
-			path = live;
-			sourceTree = "<group>";
-		};
-		84EE7A081C1ABBA10033BF5E /* recommended */ = {
-			isa = PBXGroup;
-			children = (
-				846E7C501C1E6B0B00CBAE9D /* CCRecomViewController.h */,
-				846E7C511C1E6B0B00CBAE9D /* CCRecomViewController.m */,
-				846E7C521C1E6B0B00CBAE9D /* CCRecomViewController.xib */,
-			);
-			path = recommended;
 			sourceTree = "<group>";
 		};
 		84EE7A091C1ABBA10033BF5E /* sarch */ = {
@@ -880,19 +880,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				84B299E21C19509300870099 /* province.plist in Resources */,
+				846E7C6A1C1EB02A00CBAE9D /* CCRecomViewController.xib in Resources */,
 				844CB6831C1717CC00710E8D /* home_Nav.png in Resources */,
 				844CB6841C1717CC00710E8D /* home_Nav@2x.png in Resources */,
 				84DC23721C1E566900452960 /* CCSearchViewController.xib in Resources */,
 				84BA23461C1866CF00251393 /* CCDownloadViewController.xib in Resources */,
 				A552447F1C17DB4C0089CC04 /* MJRefresh.bundle in Resources */,
+				846E7C6F1C1EB08000CBAE9D /* CCLiveTableViewController.xib in Resources */,
 				84B299DC1C191A9600870099 /* CCPlayerViewController.xib in Resources */,
-				846E7C591C1EA1E300CBAE9D /* CCLiveTableViewController.xib in Resources */,
 				84DC23681C1E516E00452960 /* CCCategoryViewController.xib in Resources */,
 				A57631461C1AB792001EF8B8 /* SVProgressHUD.bundle in Resources */,
 				844CB6851C1717CC00710E8D /* Tabar_background@2x.png in Resources */,
 				844CB6351C17179900710E8D /* LaunchScreen.xib in Resources */,
 				844CB6321C17179900710E8D /* Images.xcassets in Resources */,
-				846E7C541C1E6B0B00CBAE9D /* CCRecomViewController.xib in Resources */,
 				84B299E11C19509300870099 /* findtab.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -912,6 +912,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A55244881C17DB4C0089CC04 /* UIButton+AFNetworking.m in Sources */,
+				846E7C691C1EB02A00CBAE9D /* CCRecomViewController.m in Sources */,
 				844CB6801C1717CC00710E8D /* UIViewController+MLTransition.m in Sources */,
 				844CB6871C1717CC00710E8D /* LeftViewController.m in Sources */,
 				84B29A021C19546300870099 /* JSONAPI.m in Sources */,
@@ -950,8 +951,8 @@
 				844CB67E1C1717CC00710E8D /* MLBlackTransition.m in Sources */,
 				844CB6811C1717CC00710E8D /* QHCommonUtil.m in Sources */,
 				84B299DB1C191A9600870099 /* CCPlayerViewController.m in Sources */,
+				846E7C6E1C1EB08000CBAE9D /* CCLiveTableViewController.m in Sources */,
 				844CB6891C1717CC00710E8D /* YYLetfItemCell.m in Sources */,
-				846E7C581C1EA1E300CBAE9D /* CCLiveTableViewController.m in Sources */,
 				84BA23341C18621F00251393 /* CCNavigationController.m in Sources */,
 				84BA23351C18621F00251393 /* CCTabBarController.m in Sources */,
 				84BA23451C1866CF00251393 /* CCDownloadViewController.m in Sources */,
@@ -973,7 +974,6 @@
 				A55244981C17DCB60089CC04 /* BaseHttpClient.m in Sources */,
 				A552448C1C17DB4C0089CC04 /* UIWebView+AFNetworking.m in Sources */,
 				844CB68C1C1717CC00710E8D /* UIView+KGViewExtend.m in Sources */,
-				846E7C531C1E6B0B00CBAE9D /* CCRecomViewController.m in Sources */,
 				A55244951C17DC4F0089CC04 /* ISNull.m in Sources */,
 				A57631521C1AC24C001EF8B8 /* CCAlertView.m in Sources */,
 				A55244861C17DB4C0089CC04 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
