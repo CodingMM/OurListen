@@ -19,9 +19,19 @@
     // Do any additional setup after loading the view.
     [self setUpAppDelegate];
     
-   
-    
 }
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self navigationItemSetting];
+}
+-(void)navigationItemSetting
+{
+    self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:222/255.0f green:88/255.0f blue:45/255.0f alpha:1];
+    self.navigationController.navigationBar.translucent = NO;
+}
+
 
 - (void)setUpAppDelegate{
 

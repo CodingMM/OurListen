@@ -8,7 +8,7 @@
 
 #import "CCBaseViewController.h"
 
-@interface CCDiscoverViewController : CCBaseViewController
+@interface CCDiscoverViewController : CCBaseViewController<UIScrollViewDelegate>
 
 
 
