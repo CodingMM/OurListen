@@ -10,5 +10,6 @@
 #import "AppDelegate.h"
 @interface CCBaseTableViewController : UITableViewController
 @property (nonatomic,weak) AppDelegate * appDelegate;
+@property (nonatomic,assign) NSInteger index;
 
 @end
