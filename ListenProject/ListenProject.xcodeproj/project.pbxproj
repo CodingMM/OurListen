@@ -684,13 +684,13 @@
 				84EE79F01C1AAEC20033BF5E /* CCTitleLabel.m */,
 				A57631501C1AC24C001EF8B8 /* CCAlertView.h */,
 				A57631511C1AC24C001EF8B8 /* CCAlertView.m */,
-<<<<<<< HEAD
+
 				A5E30E241C1F289200F630F8 /* CCLabel.h */,
 				A5E30E251C1F289200F630F8 /* CCLabel.m */,
-=======
+
 				846E7C7C1C1EE0D900CBAE9D /* CCTableHeaderView.h */,
 				846E7C7D1C1EE0D900CBAE9D /* CCTableHeaderView.m */,
->>>>>>> origin/master
+
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1086,12 +1086,12 @@
 				84DC23671C1E516E00452960 /* CCCategoryViewController.m in Sources */,
 				84BA233B1C18650000251393 /* CCBaseViewController.m in Sources */,
 				A55244771C17DB4C0089CC04 /* AFHTTPSessionManager.m in Sources */,
-<<<<<<< HEAD
+
 				A5E30E261C1F289200F630F8 /* CCLabel.m in Sources */,
-=======
+
 				846E7CA41C1EE1AF00CBAE9D /* SDWebImageCompat.m in Sources */,
 				84DC23711C1E566900452960 /* CCSearchViewController.m in Sources */,
->>>>>>> origin/master
+
 				84B29A061C19546300870099 /* JSONValueTransformer.m in Sources */,
 				84B299FF1C19546300870099 /* JSONModelClassProperty.m in Sources */,
 				846E7CB01C1EE1AF00CBAE9D /* UIView+WebCacheOperation.m in Sources */,
@@ -1131,11 +1131,11 @@
 				84BA23351C18621F00251393 /* CCTabBarController.m in Sources */,
 				84BA23451C1866CF00251393 /* CCDownloadViewController.m in Sources */,
 				844CB6821C1717CC00710E8D /* QHConfiguredObj.m in Sources */,
-<<<<<<< HEAD
+
 				A5E30E2A1C1F293C00F630F8 /* CCScannerViewController.m in Sources */,
-=======
+
 				846E7CA21C1EE1AF00CBAE9D /* NSData+ImageContentType.m in Sources */,
->>>>>>> origin/master
+
 				84B29A011C19546300870099 /* NSArray+JSONModel.m in Sources */,
 				844CB6861C1717CC00710E8D /* SliderViewController.m in Sources */,
 				A55244A01C182B920089CC04 /* DataAPI.m in Sources */,
@@ -1156,12 +1156,12 @@
 				A55244841C17DB4C0089CC04 /* UIButton+StrechableBgImage.m in Sources */,
 				846E7CA61C1EE1AF00CBAE9D /* SDWebImageDownloader.m in Sources */,
 				84EE79F11C1AAEC20033BF5E /* CCTitleLabel.m in Sources */,
-<<<<<<< HEAD
+
 				A5E30E191C1F27F900F630F8 /* NSString+category.m in Sources */,
-=======
+
 				846E7CAF1C1EE1AF00CBAE9D /* UIImageView+WebCache.m in Sources */,
 				846E7C7E1C1EE0D900CBAE9D /* CCTableHeaderView.m in Sources */,
->>>>>>> origin/master
+
 				A55244981C17DCB60089CC04 /* BaseHttpClient.m in Sources */,
 				A552448C1C17DB4C0089CC04 /* UIWebView+AFNetworking.m in Sources */,
 				844CB68C1C1717CC00710E8D /* UIView+KGViewExtend.m in Sources */,
