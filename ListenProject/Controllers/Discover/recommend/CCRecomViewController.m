@@ -9,6 +9,8 @@
 #import "CCRecomViewController.h"
 #import "ImagesScrollView.h"
 #import "CCGlobalHeader.h"
+#import "CCRecomCell.h"
+#import "CCRecomCell2.h"
 
 
 @interface CCRecomViewController ()

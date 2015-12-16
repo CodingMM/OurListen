@@ -72,6 +72,12 @@
 		84BA233B1C18650000251393 /* CCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BA233A1C18650000251393 /* CCBaseViewController.m */; };
 		84BA23451C1866CF00251393 /* CCDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BA23431C1866CF00251393 /* CCDownloadViewController.m */; };
 		84BA23461C1866CF00251393 /* CCDownloadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BA23441C1866CF00251393 /* CCDownloadViewController.xib */; };
+		84D7AC1A1C20F478009AE252 /* CCRecomCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D7AC181C20F478009AE252 /* CCRecomCell2.m */; };
+		84D7AC1B1C20F478009AE252 /* CCRecomCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84D7AC191C20F478009AE252 /* CCRecomCell2.xib */; };
+		84D7AC221C20F6EE009AE252 /* CCRecomCell3.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D7AC1D1C20F6EE009AE252 /* CCRecomCell3.m */; };
+		84D7AC231C20F6EE009AE252 /* CCRecomCell3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84D7AC1E1C20F6EE009AE252 /* CCRecomCell3.xib */; };
+		84D7AC241C20F6EE009AE252 /* CCRecomCell4.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D7AC201C20F6EE009AE252 /* CCRecomCell4.m */; };
+		84D7AC251C20F6EE009AE252 /* CCRecomCell4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84D7AC211C20F6EE009AE252 /* CCRecomCell4.xib */; };
 		84DC23671C1E516E00452960 /* CCCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DC23651C1E516E00452960 /* CCCategoryViewController.m */; };
 		84DC23681C1E516E00452960 /* CCCategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84DC23661C1E516E00452960 /* CCCategoryViewController.xib */; };
 		84DC23711C1E566900452960 /* CCSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DC236F1C1E566900452960 /* CCSearchViewController.m */; };
@@ -255,6 +261,15 @@
 		84BA23421C1866CF00251393 /* CCDownloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCDownloadViewController.h; sourceTree = "<group>"; };
 		84BA23431C1866CF00251393 /* CCDownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCDownloadViewController.m; sourceTree = "<group>"; };
 		84BA23441C1866CF00251393 /* CCDownloadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCDownloadViewController.xib; sourceTree = "<group>"; };
+		84D7AC171C20F478009AE252 /* CCRecomCell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCRecomCell2.h; sourceTree = "<group>"; };
+		84D7AC181C20F478009AE252 /* CCRecomCell2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCRecomCell2.m; sourceTree = "<group>"; };
+		84D7AC191C20F478009AE252 /* CCRecomCell2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCRecomCell2.xib; sourceTree = "<group>"; };
+		84D7AC1C1C20F6EE009AE252 /* CCRecomCell3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCRecomCell3.h; sourceTree = "<group>"; };
+		84D7AC1D1C20F6EE009AE252 /* CCRecomCell3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCRecomCell3.m; sourceTree = "<group>"; };
+		84D7AC1E1C20F6EE009AE252 /* CCRecomCell3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCRecomCell3.xib; sourceTree = "<group>"; };
+		84D7AC1F1C20F6EE009AE252 /* CCRecomCell4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCRecomCell4.h; sourceTree = "<group>"; };
+		84D7AC201C20F6EE009AE252 /* CCRecomCell4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCRecomCell4.m; sourceTree = "<group>"; };
+		84D7AC211C20F6EE009AE252 /* CCRecomCell4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCRecomCell4.xib; sourceTree = "<group>"; };
 		84DC23641C1E516E00452960 /* CCCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCCategoryViewController.h; sourceTree = "<group>"; };
 		84DC23651C1E516E00452960 /* CCCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCCategoryViewController.m; sourceTree = "<group>"; };
 		84DC23661C1E516E00452960 /* CCCategoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCCategoryViewController.xib; sourceTree = "<group>"; };
@@ -674,6 +689,15 @@
 		84B29A071C1960D800870099 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				84D7AC1F1C20F6EE009AE252 /* CCRecomCell4.h */,
+				84D7AC201C20F6EE009AE252 /* CCRecomCell4.m */,
+				84D7AC211C20F6EE009AE252 /* CCRecomCell4.xib */,
+				84D7AC1C1C20F6EE009AE252 /* CCRecomCell3.h */,
+				84D7AC1D1C20F6EE009AE252 /* CCRecomCell3.m */,
+				84D7AC1E1C20F6EE009AE252 /* CCRecomCell3.xib */,
+				84D7AC171C20F478009AE252 /* CCRecomCell2.h */,
+				84D7AC181C20F478009AE252 /* CCRecomCell2.m */,
+				84D7AC191C20F478009AE252 /* CCRecomCell2.xib */,
 				846E7CB91C1EE7A700CBAE9D /* CCRecomCell.h */,
 				846E7CBA1C1EE7A700CBAE9D /* CCRecomCell.m */,
 				846E7CBB1C1EE7A700CBAE9D /* CCRecomCell.xib */,
@@ -684,13 +708,10 @@
 				84EE79F01C1AAEC20033BF5E /* CCTitleLabel.m */,
 				A57631501C1AC24C001EF8B8 /* CCAlertView.h */,
 				A57631511C1AC24C001EF8B8 /* CCAlertView.m */,
-
 				A5E30E241C1F289200F630F8 /* CCLabel.h */,
 				A5E30E251C1F289200F630F8 /* CCLabel.m */,
-
 				846E7C7C1C1EE0D900CBAE9D /* CCTableHeaderView.h */,
 				846E7C7D1C1EE0D900CBAE9D /* CCTableHeaderView.m */,
-
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1035,11 +1056,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D7AC251C20F6EE009AE252 /* CCRecomCell4.xib in Resources */,
+				84D7AC1B1C20F478009AE252 /* CCRecomCell2.xib in Resources */,
 				84B299E21C19509300870099 /* province.plist in Resources */,
 				846E7C6A1C1EB02A00CBAE9D /* CCRecomViewController.xib in Resources */,
 				844CB6831C1717CC00710E8D /* home_Nav.png in Resources */,
 				846E7CBD1C1EE7A700CBAE9D /* CCRecomCell.xib in Resources */,
 				844CB6841C1717CC00710E8D /* home_Nav@2x.png in Resources */,
+				84D7AC231C20F6EE009AE252 /* CCRecomCell3.xib in Resources */,
 				84DC23721C1E566900452960 /* CCSearchViewController.xib in Resources */,
 				846E7C7B1C1EE06700CBAE9D /* ImagesScrollView.xib in Resources */,
 				84BA23461C1866CF00251393 /* CCDownloadViewController.xib in Resources */,
@@ -1086,12 +1110,9 @@
 				84DC23671C1E516E00452960 /* CCCategoryViewController.m in Sources */,
 				84BA233B1C18650000251393 /* CCBaseViewController.m in Sources */,
 				A55244771C17DB4C0089CC04 /* AFHTTPSessionManager.m in Sources */,
-
 				A5E30E261C1F289200F630F8 /* CCLabel.m in Sources */,
-
 				846E7CA41C1EE1AF00CBAE9D /* SDWebImageCompat.m in Sources */,
 				84DC23711C1E566900452960 /* CCSearchViewController.m in Sources */,
-
 				84B29A061C19546300870099 /* JSONValueTransformer.m in Sources */,
 				84B299FF1C19546300870099 /* JSONModelClassProperty.m in Sources */,
 				846E7CB01C1EE1AF00CBAE9D /* UIView+WebCacheOperation.m in Sources */,
@@ -1103,6 +1124,7 @@
 				A55244781C17DB4C0089CC04 /* AFNetworkReachabilityManager.m in Sources */,
 				A55244801C17DB4C0089CC04 /* MJRefreshBaseView.m in Sources */,
 				A55244751C17DB4C0089CC04 /* AFHTTPRequestOperation.m in Sources */,
+				84D7AC1A1C20F478009AE252 /* CCRecomCell2.m in Sources */,
 				846E7CA71C1EE1AF00CBAE9D /* SDWebImageDownloaderOperation.m in Sources */,
 				A57631471C1AB792001EF8B8 /* SVProgressHUD.m in Sources */,
 				A552447B1C17DB4C0089CC04 /* AFURLRequestSerialization.m in Sources */,
@@ -1114,6 +1136,7 @@
 				846E7CAD1C1EE1AF00CBAE9D /* UIImage+WebP.m in Sources */,
 				84B29A031C19546300870099 /* JSONHTTPClient.m in Sources */,
 				A55244851C17DB4C0089CC04 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				84D7AC221C20F6EE009AE252 /* CCRecomCell3.m in Sources */,
 				A552448D1C17DB4C0089CC04 /* UIView+IPhoneView.m in Sources */,
 				A55244831C17DB4C0089CC04 /* MJRefreshHeaderView.m in Sources */,
 				A552447D1C17DB4C0089CC04 /* AFURLSessionManager.m in Sources */,
@@ -1131,11 +1154,8 @@
 				84BA23351C18621F00251393 /* CCTabBarController.m in Sources */,
 				84BA23451C1866CF00251393 /* CCDownloadViewController.m in Sources */,
 				844CB6821C1717CC00710E8D /* QHConfiguredObj.m in Sources */,
-
 				A5E30E2A1C1F293C00F630F8 /* CCScannerViewController.m in Sources */,
-
 				846E7CA21C1EE1AF00CBAE9D /* NSData+ImageContentType.m in Sources */,
-
 				84B29A011C19546300870099 /* NSArray+JSONModel.m in Sources */,
 				844CB6861C1717CC00710E8D /* SliderViewController.m in Sources */,
 				A55244A01C182B920089CC04 /* DataAPI.m in Sources */,
@@ -1144,6 +1164,7 @@
 				844CB67F1C1717CC00710E8D /* MLTransitionAnimation.m in Sources */,
 				846E7CAB1C1EE1AF00CBAE9D /* UIImage+GIF.m in Sources */,
 				84B299FD1C19546300870099 /* JSONModel.m in Sources */,
+				84D7AC241C20F6EE009AE252 /* CCRecomCell4.m in Sources */,
 				A55244821C17DB4C0089CC04 /* MJRefreshFooterView.m in Sources */,
 				846E7CA11C1EE1AF00CBAE9D /* MKAnnotationView+WebCache.m in Sources */,
 				846E7CA31C1EE1AF00CBAE9D /* SDImageCache.m in Sources */,
@@ -1156,12 +1177,9 @@
 				A55244841C17DB4C0089CC04 /* UIButton+StrechableBgImage.m in Sources */,
 				846E7CA61C1EE1AF00CBAE9D /* SDWebImageDownloader.m in Sources */,
 				84EE79F11C1AAEC20033BF5E /* CCTitleLabel.m in Sources */,
-
 				A5E30E191C1F27F900F630F8 /* NSString+category.m in Sources */,
-
 				846E7CAF1C1EE1AF00CBAE9D /* UIImageView+WebCache.m in Sources */,
 				846E7C7E1C1EE0D900CBAE9D /* CCTableHeaderView.m in Sources */,
-
 				A55244981C17DCB60089CC04 /* BaseHttpClient.m in Sources */,
 				A552448C1C17DB4C0089CC04 /* UIWebView+AFNetworking.m in Sources */,
 				844CB68C1C1717CC00710E8D /* UIView+KGViewExtend.m in Sources */,
