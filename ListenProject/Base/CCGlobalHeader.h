@@ -8,8 +8,10 @@
 
 #ifndef ListenProject_CCGlobalHeader_h
 
+#import "AFHTTPSessionManager.h"
 #import "SVPullToRefresh.h"
 #import "SVProgressHUD.h"
+#import "UIImageView+WebCache.h"
 
 #define ListenProject_CCGlobalHeader_h
 //屏幕尺寸
@@ -17,6 +19,15 @@
 
 //专辑cell
 #define CCAlbumCellID @"CCAlbumCell"
+
+//听单列表
+#define CCLISTENCell1ID @"ListenListTableViewCell1"
+#define CCLISTENCell2ID @"ListenListTableViewCell2"
+#define CCLISTENCell3ID @"ListenListTableViewCell3"
+#define CCLISTENCell4ID @"ListenListTableViewCell4"
+
+
+
 
 #define CURRENT_SONGNUMBER @"currentSongNumber"
 

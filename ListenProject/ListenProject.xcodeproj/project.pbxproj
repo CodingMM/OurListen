@@ -61,6 +61,18 @@
 		84809B9A1C224F3C00CC7E4E /* CCMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 84809B991C224F3C00CC7E4E /* CCMethod.m */; };
 		84809BA11C22540000CC7E4E /* UIScrollView+SVInfiniteScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 84809B9E1C22540000CC7E4E /* UIScrollView+SVInfiniteScrolling.m */; };
 		84809BA21C22540000CC7E4E /* UIScrollView+SVPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 84809BA01C22540000CC7E4E /* UIScrollView+SVPullToRefresh.m */; };
+		84809BAA1C225C1D00CC7E4E /* CCListenListMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84809BA51C225C1D00CC7E4E /* CCListenListMoreViewController.m */; };
+		84809BAB1C225C1D00CC7E4E /* CCListenListMoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84809BA61C225C1D00CC7E4E /* CCListenListMoreViewController.xib */; };
+		84809BAC1C225C1D00CC7E4E /* CCListenListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84809BA81C225C1D00CC7E4E /* CCListenListViewController.m */; };
+		84809BAD1C225C1D00CC7E4E /* CCListenListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84809BA91C225C1D00CC7E4E /* CCListenListViewController.xib */; };
+		84809BBA1C229F1F00CC7E4E /* CCListenListCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = 84809BAF1C229F1F00CC7E4E /* CCListenListCell1.m */; };
+		84809BBB1C229F1F00CC7E4E /* CCListenListCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84809BB01C229F1F00CC7E4E /* CCListenListCell1.xib */; };
+		84809BBC1C229F1F00CC7E4E /* CCListenListCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = 84809BB21C229F1F00CC7E4E /* CCListenListCell2.m */; };
+		84809BBD1C229F1F00CC7E4E /* CCListenListCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84809BB31C229F1F00CC7E4E /* CCListenListCell2.xib */; };
+		84809BBE1C229F1F00CC7E4E /* CCListenListCell3.m in Sources */ = {isa = PBXBuildFile; fileRef = 84809BB51C229F1F00CC7E4E /* CCListenListCell3.m */; };
+		84809BBF1C229F1F00CC7E4E /* CCListenListCell3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84809BB61C229F1F00CC7E4E /* CCListenListCell3.xib */; };
+		84809BC01C229F1F00CC7E4E /* CCListenListCell4.m in Sources */ = {isa = PBXBuildFile; fileRef = 84809BB81C229F1F00CC7E4E /* CCListenListCell4.m */; };
+		84809BC11C229F1F00CC7E4E /* CCListenListCell4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84809BB91C229F1F00CC7E4E /* CCListenListCell4.xib */; };
 		84B299DB1C191A9600870099 /* CCPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B299D91C191A9600870099 /* CCPlayerViewController.m */; };
 		84B299DC1C191A9600870099 /* CCPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84B299DA1C191A9600870099 /* CCPlayerViewController.xib */; };
 		84B299E11C19509300870099 /* findtab.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84B299DF1C19509300870099 /* findtab.plist */; };
@@ -248,6 +260,24 @@
 		84809B9E1C22540000CC7E4E /* UIScrollView+SVInfiniteScrolling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVInfiniteScrolling.m"; sourceTree = "<group>"; };
 		84809B9F1C22540000CC7E4E /* UIScrollView+SVPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SVPullToRefresh.h"; sourceTree = "<group>"; };
 		84809BA01C22540000CC7E4E /* UIScrollView+SVPullToRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVPullToRefresh.m"; sourceTree = "<group>"; };
+		84809BA41C225C1D00CC7E4E /* CCListenListMoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCListenListMoreViewController.h; sourceTree = "<group>"; };
+		84809BA51C225C1D00CC7E4E /* CCListenListMoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCListenListMoreViewController.m; sourceTree = "<group>"; };
+		84809BA61C225C1D00CC7E4E /* CCListenListMoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCListenListMoreViewController.xib; sourceTree = "<group>"; };
+		84809BA71C225C1D00CC7E4E /* CCListenListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCListenListViewController.h; sourceTree = "<group>"; };
+		84809BA81C225C1D00CC7E4E /* CCListenListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCListenListViewController.m; sourceTree = "<group>"; };
+		84809BA91C225C1D00CC7E4E /* CCListenListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCListenListViewController.xib; sourceTree = "<group>"; };
+		84809BAE1C229F1F00CC7E4E /* CCListenListCell1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCListenListCell1.h; sourceTree = "<group>"; };
+		84809BAF1C229F1F00CC7E4E /* CCListenListCell1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCListenListCell1.m; sourceTree = "<group>"; };
+		84809BB01C229F1F00CC7E4E /* CCListenListCell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCListenListCell1.xib; sourceTree = "<group>"; };
+		84809BB11C229F1F00CC7E4E /* CCListenListCell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCListenListCell2.h; sourceTree = "<group>"; };
+		84809BB21C229F1F00CC7E4E /* CCListenListCell2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCListenListCell2.m; sourceTree = "<group>"; };
+		84809BB31C229F1F00CC7E4E /* CCListenListCell2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCListenListCell2.xib; sourceTree = "<group>"; };
+		84809BB41C229F1F00CC7E4E /* CCListenListCell3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCListenListCell3.h; sourceTree = "<group>"; };
+		84809BB51C229F1F00CC7E4E /* CCListenListCell3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCListenListCell3.m; sourceTree = "<group>"; };
+		84809BB61C229F1F00CC7E4E /* CCListenListCell3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCListenListCell3.xib; sourceTree = "<group>"; };
+		84809BB71C229F1F00CC7E4E /* CCListenListCell4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCListenListCell4.h; sourceTree = "<group>"; };
+		84809BB81C229F1F00CC7E4E /* CCListenListCell4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCListenListCell4.m; sourceTree = "<group>"; };
+		84809BB91C229F1F00CC7E4E /* CCListenListCell4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCListenListCell4.xib; sourceTree = "<group>"; };
 		84B299D81C191A9600870099 /* CCPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPlayerViewController.h; sourceTree = "<group>"; };
 		84B299D91C191A9600870099 /* CCPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPlayerViewController.m; sourceTree = "<group>"; };
 		84B299DA1C191A9600870099 /* CCPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCPlayerViewController.xib; sourceTree = "<group>"; };
@@ -578,6 +608,7 @@
 		846E7C5B1C1EA73C00CBAE9D /* recommend */ = {
 			isa = PBXGroup;
 			children = (
+				84809BA31C225BAB00CC7E4E /* ListenList */,
 				846E7C661C1EB02A00CBAE9D /* CCRecomViewController.h */,
 				846E7C671C1EB02A00CBAE9D /* CCRecomViewController.m */,
 				846E7C681C1EB02A00CBAE9D /* CCRecomViewController.xib */,
@@ -660,6 +691,19 @@
 			path = SVPullToRefresh;
 			sourceTree = "<group>";
 		};
+		84809BA31C225BAB00CC7E4E /* ListenList */ = {
+			isa = PBXGroup;
+			children = (
+				84809BA41C225C1D00CC7E4E /* CCListenListMoreViewController.h */,
+				84809BA51C225C1D00CC7E4E /* CCListenListMoreViewController.m */,
+				84809BA61C225C1D00CC7E4E /* CCListenListMoreViewController.xib */,
+				84809BA71C225C1D00CC7E4E /* CCListenListViewController.h */,
+				84809BA81C225C1D00CC7E4E /* CCListenListViewController.m */,
+				84809BA91C225C1D00CC7E4E /* CCListenListViewController.xib */,
+			);
+			path = ListenList;
+			sourceTree = "<group>";
+		};
 		84B299DD1C19508100870099 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -740,6 +784,18 @@
 		84B29A071C1960D800870099 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				84809BB71C229F1F00CC7E4E /* CCListenListCell4.h */,
+				84809BB81C229F1F00CC7E4E /* CCListenListCell4.m */,
+				84809BB91C229F1F00CC7E4E /* CCListenListCell4.xib */,
+				84809BB41C229F1F00CC7E4E /* CCListenListCell3.h */,
+				84809BB51C229F1F00CC7E4E /* CCListenListCell3.m */,
+				84809BB61C229F1F00CC7E4E /* CCListenListCell3.xib */,
+				84809BB11C229F1F00CC7E4E /* CCListenListCell2.h */,
+				84809BB21C229F1F00CC7E4E /* CCListenListCell2.m */,
+				84809BB31C229F1F00CC7E4E /* CCListenListCell2.xib */,
+				84809BAE1C229F1F00CC7E4E /* CCListenListCell1.h */,
+				84809BAF1C229F1F00CC7E4E /* CCListenListCell1.m */,
+				84809BB01C229F1F00CC7E4E /* CCListenListCell1.xib */,
 				84809B931C224E1D00CC7E4E /* CCAlbumCell.h */,
 				84809B941C224E1D00CC7E4E /* CCAlbumCell.m */,
 				84809B951C224E1D00CC7E4E /* CCAlbumCell.xib */,
@@ -1130,14 +1186,20 @@
 				846E7C6F1C1EB08000CBAE9D /* CCLiveTableViewController.xib in Resources */,
 				84B299DC1C191A9600870099 /* CCPlayerViewController.xib in Resources */,
 				84809B921C224CF300CC7E4E /* CCHeadViewController.xib in Resources */,
+				84809BAB1C225C1D00CC7E4E /* CCListenListMoreViewController.xib in Resources */,
 				84DC23681C1E516E00452960 /* CCCategoryViewController.xib in Resources */,
+				84809BBF1C229F1F00CC7E4E /* CCListenListCell3.xib in Resources */,
+				84809BBB1C229F1F00CC7E4E /* CCListenListCell1.xib in Resources */,
 				84809B971C224E1D00CC7E4E /* CCAlbumCell.xib in Resources */,
 				A57631461C1AB792001EF8B8 /* SVProgressHUD.bundle in Resources */,
 				844CB6851C1717CC00710E8D /* Tabar_background@2x.png in Resources */,
 				A5E30E231C1F281C00F630F8 /* CCScannerDetailController.xib in Resources */,
 				844CB6351C17179900710E8D /* LaunchScreen.xib in Resources */,
+				84809BBD1C229F1F00CC7E4E /* CCListenListCell2.xib in Resources */,
+				84809BAD1C225C1D00CC7E4E /* CCListenListViewController.xib in Resources */,
 				844CB6321C17179900710E8D /* Images.xcassets in Resources */,
 				84B299E11C19509300870099 /* findtab.plist in Resources */,
+				84809BC11C229F1F00CC7E4E /* CCListenListCell4.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1160,9 +1222,12 @@
 				846E7C691C1EB02A00CBAE9D /* CCRecomViewController.m in Sources */,
 				846E7CA91C1EE1AF00CBAE9D /* SDWebImagePrefetcher.m in Sources */,
 				844CB6801C1717CC00710E8D /* UIViewController+MLTransition.m in Sources */,
+				84809BBE1C229F1F00CC7E4E /* CCListenListCell3.m in Sources */,
+				84809BAA1C225C1D00CC7E4E /* CCListenListMoreViewController.m in Sources */,
 				846E7CBC1C1EE7A700CBAE9D /* CCRecomCell.m in Sources */,
 				844CB6871C1717CC00710E8D /* LeftViewController.m in Sources */,
 				84B29A021C19546300870099 /* JSONAPI.m in Sources */,
+				84809BBA1C229F1F00CC7E4E /* CCListenListCell1.m in Sources */,
 				846E7CAC1C1EE1AF00CBAE9D /* UIImage+MultiFormat.m in Sources */,
 				84EE7A0A1C1ABBA10033BF5E /* CCDiscoverViewController.m in Sources */,
 				A5E30E221C1F281C00F630F8 /* CCScannerDetailController.m in Sources */,
@@ -1173,6 +1238,7 @@
 				A5E30E261C1F289200F630F8 /* CCLabel.m in Sources */,
 				846E7CA41C1EE1AF00CBAE9D /* SDWebImageCompat.m in Sources */,
 				84DC23711C1E566900452960 /* CCSearchViewController.m in Sources */,
+				84809BBC1C229F1F00CC7E4E /* CCListenListCell2.m in Sources */,
 				84B29A061C19546300870099 /* JSONValueTransformer.m in Sources */,
 				84B299FF1C19546300870099 /* JSONModelClassProperty.m in Sources */,
 				84809B9A1C224F3C00CC7E4E /* CCMethod.m in Sources */,
@@ -1199,6 +1265,7 @@
 				84B29A031C19546300870099 /* JSONHTTPClient.m in Sources */,
 				A55244851C17DB4C0089CC04 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				84D7AC221C20F6EE009AE252 /* CCRecomCell3.m in Sources */,
+				84809BC01C229F1F00CC7E4E /* CCListenListCell4.m in Sources */,
 				A552448D1C17DB4C0089CC04 /* UIView+IPhoneView.m in Sources */,
 				A55244831C17DB4C0089CC04 /* MJRefreshHeaderView.m in Sources */,
 				A552447D1C17DB4C0089CC04 /* AFURLSessionManager.m in Sources */,
@@ -1250,6 +1317,7 @@
 				A552448C1C17DB4C0089CC04 /* UIWebView+AFNetworking.m in Sources */,
 				844CB68C1C1717CC00710E8D /* UIView+KGViewExtend.m in Sources */,
 				A55244951C17DC4F0089CC04 /* ISNull.m in Sources */,
+				84809BAC1C225C1D00CC7E4E /* CCListenListViewController.m in Sources */,
 				A57631521C1AC24C001EF8B8 /* CCAlertView.m in Sources */,
 				846E7C7A1C1EE06700CBAE9D /* ImagesScrollView.m in Sources */,
 				A55244861C17DB4C0089CC04 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
