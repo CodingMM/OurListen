@@ -34,6 +34,11 @@
 {
     
 }
+
+- (void)reloadData
+{
+    
+}
 -(void)reloaddataWithCommentNum:(NSInteger)num andTrackID:(NSInteger)trackid
 {
     

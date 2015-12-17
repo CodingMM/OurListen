@@ -52,6 +52,15 @@
 		846E7CB01C1EE1AF00CBAE9D /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 846E7CA01C1EE1AF00CBAE9D /* UIView+WebCacheOperation.m */; };
 		846E7CBC1C1EE7A700CBAE9D /* CCRecomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 846E7CBA1C1EE7A700CBAE9D /* CCRecomCell.m */; };
 		846E7CBD1C1EE7A700CBAE9D /* CCRecomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846E7CBB1C1EE7A700CBAE9D /* CCRecomCell.xib */; };
+		84809B8C1C2247D000CC7E4E /* CCAlbumDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84809B8A1C2247D000CC7E4E /* CCAlbumDetailViewController.m */; };
+		84809B8D1C2247D000CC7E4E /* CCAlbumDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84809B8B1C2247D000CC7E4E /* CCAlbumDetailViewController.xib */; };
+		84809B911C224CF300CC7E4E /* CCHeadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84809B8F1C224CF300CC7E4E /* CCHeadViewController.m */; };
+		84809B921C224CF300CC7E4E /* CCHeadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84809B901C224CF300CC7E4E /* CCHeadViewController.xib */; };
+		84809B961C224E1D00CC7E4E /* CCAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84809B941C224E1D00CC7E4E /* CCAlbumCell.m */; };
+		84809B971C224E1D00CC7E4E /* CCAlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84809B951C224E1D00CC7E4E /* CCAlbumCell.xib */; };
+		84809B9A1C224F3C00CC7E4E /* CCMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 84809B991C224F3C00CC7E4E /* CCMethod.m */; };
+		84809BA11C22540000CC7E4E /* UIScrollView+SVInfiniteScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 84809B9E1C22540000CC7E4E /* UIScrollView+SVInfiniteScrolling.m */; };
+		84809BA21C22540000CC7E4E /* UIScrollView+SVPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 84809BA01C22540000CC7E4E /* UIScrollView+SVPullToRefresh.m */; };
 		84B299DB1C191A9600870099 /* CCPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B299D91C191A9600870099 /* CCPlayerViewController.m */; };
 		84B299DC1C191A9600870099 /* CCPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84B299DA1C191A9600870099 /* CCPlayerViewController.xib */; };
 		84B299E11C19509300870099 /* findtab.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84B299DF1C19509300870099 /* findtab.plist */; };
@@ -223,6 +232,22 @@
 		846E7CB91C1EE7A700CBAE9D /* CCRecomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCRecomCell.h; sourceTree = "<group>"; };
 		846E7CBA1C1EE7A700CBAE9D /* CCRecomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCRecomCell.m; sourceTree = "<group>"; };
 		846E7CBB1C1EE7A700CBAE9D /* CCRecomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCRecomCell.xib; sourceTree = "<group>"; };
+		84809B891C2247D000CC7E4E /* CCAlbumDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAlbumDetailViewController.h; sourceTree = "<group>"; };
+		84809B8A1C2247D000CC7E4E /* CCAlbumDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAlbumDetailViewController.m; sourceTree = "<group>"; };
+		84809B8B1C2247D000CC7E4E /* CCAlbumDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCAlbumDetailViewController.xib; sourceTree = "<group>"; };
+		84809B8E1C224CF300CC7E4E /* CCHeadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHeadViewController.h; sourceTree = "<group>"; };
+		84809B8F1C224CF300CC7E4E /* CCHeadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHeadViewController.m; sourceTree = "<group>"; };
+		84809B901C224CF300CC7E4E /* CCHeadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCHeadViewController.xib; sourceTree = "<group>"; };
+		84809B931C224E1D00CC7E4E /* CCAlbumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAlbumCell.h; sourceTree = "<group>"; };
+		84809B941C224E1D00CC7E4E /* CCAlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAlbumCell.m; sourceTree = "<group>"; };
+		84809B951C224E1D00CC7E4E /* CCAlbumCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCAlbumCell.xib; sourceTree = "<group>"; };
+		84809B981C224F3C00CC7E4E /* CCMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMethod.h; sourceTree = "<group>"; };
+		84809B991C224F3C00CC7E4E /* CCMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMethod.m; sourceTree = "<group>"; };
+		84809B9C1C22540000CC7E4E /* SVPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVPullToRefresh.h; sourceTree = "<group>"; };
+		84809B9D1C22540000CC7E4E /* UIScrollView+SVInfiniteScrolling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SVInfiniteScrolling.h"; sourceTree = "<group>"; };
+		84809B9E1C22540000CC7E4E /* UIScrollView+SVInfiniteScrolling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVInfiniteScrolling.m"; sourceTree = "<group>"; };
+		84809B9F1C22540000CC7E4E /* UIScrollView+SVPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SVPullToRefresh.h"; sourceTree = "<group>"; };
+		84809BA01C22540000CC7E4E /* UIScrollView+SVPullToRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVPullToRefresh.m"; sourceTree = "<group>"; };
 		84B299D81C191A9600870099 /* CCPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPlayerViewController.h; sourceTree = "<group>"; };
 		84B299D91C191A9600870099 /* CCPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPlayerViewController.m; sourceTree = "<group>"; };
 		84B299DA1C191A9600870099 /* CCPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCPlayerViewController.xib; sourceTree = "<group>"; };
@@ -443,6 +468,7 @@
 		844CB64A1C1717CC00710E8D /* OtherSource */ = {
 			isa = PBXGroup;
 			children = (
+				84809B9B1C22540000CC7E4E /* SVPullToRefresh */,
 				846E7C7F1C1EE1AF00CBAE9D /* SDWebImage */,
 				A57631481C1AB88F001EF8B8 /* AJNotificationView */,
 				A576313E1C1AB792001EF8B8 /* Reachability */,
@@ -609,6 +635,31 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
+		84809B881C22468600CC7E4E /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				84809B891C2247D000CC7E4E /* CCAlbumDetailViewController.h */,
+				84809B8A1C2247D000CC7E4E /* CCAlbumDetailViewController.m */,
+				84809B8B1C2247D000CC7E4E /* CCAlbumDetailViewController.xib */,
+				84809B8E1C224CF300CC7E4E /* CCHeadViewController.h */,
+				84809B8F1C224CF300CC7E4E /* CCHeadViewController.m */,
+				84809B901C224CF300CC7E4E /* CCHeadViewController.xib */,
+			);
+			path = Album;
+			sourceTree = "<group>";
+		};
+		84809B9B1C22540000CC7E4E /* SVPullToRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				84809B9C1C22540000CC7E4E /* SVPullToRefresh.h */,
+				84809B9D1C22540000CC7E4E /* UIScrollView+SVInfiniteScrolling.h */,
+				84809B9E1C22540000CC7E4E /* UIScrollView+SVInfiniteScrolling.m */,
+				84809B9F1C22540000CC7E4E /* UIScrollView+SVPullToRefresh.h */,
+				84809BA01C22540000CC7E4E /* UIScrollView+SVPullToRefresh.m */,
+			);
+			path = SVPullToRefresh;
+			sourceTree = "<group>";
+		};
 		84B299DD1C19508100870099 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -689,6 +740,9 @@
 		84B29A071C1960D800870099 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				84809B931C224E1D00CC7E4E /* CCAlbumCell.h */,
+				84809B941C224E1D00CC7E4E /* CCAlbumCell.m */,
+				84809B951C224E1D00CC7E4E /* CCAlbumCell.xib */,
 				84D7AC1F1C20F6EE009AE252 /* CCRecomCell4.h */,
 				84D7AC201C20F6EE009AE252 /* CCRecomCell4.m */,
 				84D7AC211C20F6EE009AE252 /* CCRecomCell4.xib */,
@@ -719,8 +773,9 @@
 		84BA232B1C18621F00251393 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				84EE7A021C1ABBA10033BF5E /* Discover */,
+				84809B881C22468600CC7E4E /* Album */,
 				84BA232C1C18621F00251393 /* Common */,
+				84EE7A021C1ABBA10033BF5E /* Discover */,
 				84BA23321C18621F00251393 /* Download */,
 				84BA23331C18621F00251393 /* Player */,
 				A576314F1C1ABE9B001EF8B8 /* Scanner */,
@@ -766,10 +821,10 @@
 		84EE7A021C1ABBA10033BF5E /* Discover */ = {
 			isa = PBXGroup;
 			children = (
-				846E7C5A1C1EA73C00CBAE9D /* live */,
 				846E7C5B1C1EA73C00CBAE9D /* recommend */,
 				84EE7A031C1ABBA10033BF5E /* classification */,
 				84EE7A041C1ABBA10033BF5E /* home */,
+				846E7C5A1C1EA73C00CBAE9D /* live */,
 				84EE7A091C1ABBA10033BF5E /* sarch */,
 			);
 			path = Discover;
@@ -913,6 +968,8 @@
 				A55244941C17DC4F0089CC04 /* ISNull.m */,
 				A5E30E171C1F27F900F630F8 /* NSString+category.h */,
 				A5E30E181C1F27F900F630F8 /* NSString+category.m */,
+				84809B981C224F3C00CC7E4E /* CCMethod.h */,
+				84809B991C224F3C00CC7E4E /* CCMethod.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -1061,6 +1118,7 @@
 				84B299E21C19509300870099 /* province.plist in Resources */,
 				846E7C6A1C1EB02A00CBAE9D /* CCRecomViewController.xib in Resources */,
 				844CB6831C1717CC00710E8D /* home_Nav.png in Resources */,
+				84809B8D1C2247D000CC7E4E /* CCAlbumDetailViewController.xib in Resources */,
 				846E7CBD1C1EE7A700CBAE9D /* CCRecomCell.xib in Resources */,
 				844CB6841C1717CC00710E8D /* home_Nav@2x.png in Resources */,
 				84D7AC231C20F6EE009AE252 /* CCRecomCell3.xib in Resources */,
@@ -1071,7 +1129,9 @@
 				A552447F1C17DB4C0089CC04 /* MJRefresh.bundle in Resources */,
 				846E7C6F1C1EB08000CBAE9D /* CCLiveTableViewController.xib in Resources */,
 				84B299DC1C191A9600870099 /* CCPlayerViewController.xib in Resources */,
+				84809B921C224CF300CC7E4E /* CCHeadViewController.xib in Resources */,
 				84DC23681C1E516E00452960 /* CCCategoryViewController.xib in Resources */,
+				84809B971C224E1D00CC7E4E /* CCAlbumCell.xib in Resources */,
 				A57631461C1AB792001EF8B8 /* SVProgressHUD.bundle in Resources */,
 				844CB6851C1717CC00710E8D /* Tabar_background@2x.png in Resources */,
 				A5E30E231C1F281C00F630F8 /* CCScannerDetailController.xib in Resources */,
@@ -1115,8 +1175,10 @@
 				84DC23711C1E566900452960 /* CCSearchViewController.m in Sources */,
 				84B29A061C19546300870099 /* JSONValueTransformer.m in Sources */,
 				84B299FF1C19546300870099 /* JSONModelClassProperty.m in Sources */,
+				84809B9A1C224F3C00CC7E4E /* CCMethod.m in Sources */,
 				846E7CB01C1EE1AF00CBAE9D /* UIView+WebCacheOperation.m in Sources */,
 				846E7CA51C1EE1AF00CBAE9D /* SDWebImageDecoder.m in Sources */,
+				84809BA21C22540000CC7E4E /* UIScrollView+SVPullToRefresh.m in Sources */,
 				844CB62A1C17179900710E8D /* AppDelegate.m in Sources */,
 				84B29A001C19546300870099 /* JSONModelError.m in Sources */,
 				A552448B1C17DB4C0089CC04 /* UIRefreshControl+AFNetworking.m in Sources */,
@@ -1145,7 +1207,9 @@
 				84B299FE1C19546300870099 /* JSONModelArray.m in Sources */,
 				A55244871C17DB4C0089CC04 /* UIAlertView+AFNetworking.m in Sources */,
 				A576314B1C1AB88F001EF8B8 /* AJNotificationView.m in Sources */,
+				84809B911C224CF300CC7E4E /* CCHeadViewController.m in Sources */,
 				844CB67E1C1717CC00710E8D /* MLBlackTransition.m in Sources */,
+				84809B8C1C2247D000CC7E4E /* CCAlbumDetailViewController.m in Sources */,
 				844CB6811C1717CC00710E8D /* QHCommonUtil.m in Sources */,
 				84B299DB1C191A9600870099 /* CCPlayerViewController.m in Sources */,
 				846E7C6E1C1EB08000CBAE9D /* CCLiveTableViewController.m in Sources */,
@@ -1174,12 +1238,14 @@
 				A55244791C17DB4C0089CC04 /* AFSecurityPolicy.m in Sources */,
 				844CB68A1C1717CC00710E8D /* YYTabBaseViewController.m in Sources */,
 				A55244761C17DB4C0089CC04 /* AFHTTPRequestOperationManager.m in Sources */,
+				84809BA11C22540000CC7E4E /* UIScrollView+SVInfiniteScrolling.m in Sources */,
 				A55244841C17DB4C0089CC04 /* UIButton+StrechableBgImage.m in Sources */,
 				846E7CA61C1EE1AF00CBAE9D /* SDWebImageDownloader.m in Sources */,
 				84EE79F11C1AAEC20033BF5E /* CCTitleLabel.m in Sources */,
 				A5E30E191C1F27F900F630F8 /* NSString+category.m in Sources */,
 				846E7CAF1C1EE1AF00CBAE9D /* UIImageView+WebCache.m in Sources */,
 				846E7C7E1C1EE0D900CBAE9D /* CCTableHeaderView.m in Sources */,
+				84809B961C224E1D00CC7E4E /* CCAlbumCell.m in Sources */,
 				A55244981C17DCB60089CC04 /* BaseHttpClient.m in Sources */,
 				A552448C1C17DB4C0089CC04 /* UIWebView+AFNetworking.m in Sources */,
 				844CB68C1C1717CC00710E8D /* UIView+KGViewExtend.m in Sources */,

@@ -11,6 +11,12 @@
 #import "CCGlobalHeader.h"
 #import "CCRecomCell.h"
 #import "CCRecomCell2.h"
+#import "CCRecomCell3.h"
+#import "CCRecomCell4.h"
+//专辑详情
+#import "CCAlbumDetailViewController.h"
+
+
 
 
 @interface CCRecomViewController ()

@@ -8,11 +8,22 @@
 
 #ifndef ListenProject_CCGlobalHeader_h
 
-
+#import "SVPullToRefresh.h"
+#import "SVProgressHUD.h"
 
 #define ListenProject_CCGlobalHeader_h
-
+//屏幕尺寸
 #define SCREEN_SIZE [UIScreen mainScreen].bounds.size
+
+//专辑cell
+#define CCAlbumCellID @"CCAlbumCell"
+
+#define CURRENT_SONGNUMBER @"currentSongNumber"
+
+
+
+
+
 
 
 #endif

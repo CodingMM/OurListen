@@ -8,7 +8,17 @@
 
 #import "CCBaseViewController.h"
 
+
+@protocol CCPlayerViewControllerDelegate <NSObject>
+
+- (void)reloadDataWithPlayerAlbumId:(NSInteger)albumId;
+
+@end
+
+
 @interface CCPlayerViewController : CCBaseViewController
+
+@property(nonatomic, weak) id<CCPlayerViewControllerDelegate>delegate;
 /**
  *  播放次数
  */
@@ -26,12 +36,19 @@
  */
 @property (nonatomic, copy) NSString * name;
 
+/*
+ 
+ */
+@property (nonatomic, assign) NSInteger commentNum;
+
 
 +(CCPlayerViewController *)sharePlayerViewController;
 
 - (void)createPlayer;
 
 - (void)createAudioPlayer;
+
+- (void)reloadData;
 
 - (void)reloaddataWithCommentNum:(NSInteger)num andTrackID:(NSInteger)trackid;
 

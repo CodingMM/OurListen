@@ -61,8 +61,6 @@
     
     //设置字体大小
     [attriString addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"Courier-BoldOblique" size:20.0] range:NSMakeRange(0, self.textStr.length)];
-
-    
     return attriString;
 }
 
