@@ -9,7 +9,7 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol tableViewCell1Delegate <NSObject>
+@protocol CCRecomCellDelegate <NSObject>
 
 - (void)pushNextViewControllerWithUid:(NSInteger)index;
 
@@ -31,7 +31,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *label32;
 
 
-@property id <tableViewCell1Delegate> delegate;
+@property id <CCRecomCellDelegate> delegate;
 
 - (void)reloadDataWithData:(id)data;
 

@@ -19,6 +19,12 @@
 
 //专辑cell
 #define CCAlbumCellID @"CCAlbumCell"
+//推荐列表cell
+#define CCRECOMCellID1 @"CCRecomCell1"
+#define CCRECOMCellID2 @"CCRecomCell2"
+#define CCRECOMCellID3 @"CCRecomCell3"
+#define CCRECOMCellID4 @"CCRecomCell4"
+
 
 //听单列表
 #define CCLISTENCell1ID @"ListenListTableViewCell1"
