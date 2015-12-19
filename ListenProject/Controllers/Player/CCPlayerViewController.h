@@ -42,6 +42,16 @@
 @property (nonatomic, assign) NSInteger commentNum;
 
 
+//直播时用的
+@property (nonatomic, assign) NSInteger audioId;
+
+@property (nonatomic, assign) NSInteger type;
+
+@property (nonatomic, assign) NSInteger programId;
+
+@property (nonatomic, strong) NSDictionary * radioData;
+
+
 +(CCPlayerViewController *)sharePlayerViewController;
 
 - (void)createPlayer;

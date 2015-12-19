@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CCLiveMoreViewController">
+            <connections>
+                <outlet property="collectionView" destination="FpY-cy-3wx" id="3eI-dV-GiE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cJS-01-MyQ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJ2-dv-8MT">
+                            <rect key="frame" x="293" y="0.0" width="82" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="82" id="83h-zQ-ZgE"/>
+                                <constraint firstAttribute="height" constant="35" id="CeJ-se-Gil"/>
+                            </constraints>
+                            <state key="normal" image="seg_pullup_n">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="backBtnDidClicked:" destination="-1" eventType="touchUpInside" id="2gP-J8-6wg"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="切换省市台" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zdr-ZN-82A">
+                            <rect key="frame" x="8" y="10" width="60" height="15"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                            <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Zdr-ZN-82A" firstAttribute="top" secondItem="cJS-01-MyQ" secondAttribute="top" constant="10" id="HQY-U0-oMm"/>
+                        <constraint firstItem="VJ2-dv-8MT" firstAttribute="top" secondItem="cJS-01-MyQ" secondAttribute="top" id="Jyw-ub-UTR"/>
+                        <constraint firstAttribute="height" constant="35" id="ZDx-Z7-6qg"/>
+                        <constraint firstAttribute="trailing" secondItem="VJ2-dv-8MT" secondAttribute="trailing" id="fS7-PV-Nhf"/>
+                        <constraint firstItem="Zdr-ZN-82A" firstAttribute="leading" secondItem="cJS-01-MyQ" secondAttribute="leading" constant="8" id="q2q-a3-Hzn"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="FpY-cy-3wx">
+                    <rect key="frame" x="0.0" y="35" width="375" height="632"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="riQ-ss-Lys">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="cJS-01-MyQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ClR-yq-1MV"/>
+                <constraint firstAttribute="bottom" secondItem="FpY-cy-3wx" secondAttribute="bottom" id="ETL-4s-QZ0"/>
+                <constraint firstItem="FpY-cy-3wx" firstAttribute="top" secondItem="cJS-01-MyQ" secondAttribute="bottom" id="FFS-gN-60P"/>
+                <constraint firstItem="cJS-01-MyQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Hbz-Mf-buJ"/>
+                <constraint firstAttribute="trailing" secondItem="FpY-cy-3wx" secondAttribute="trailing" id="bRV-2y-Vz4"/>
+                <constraint firstAttribute="trailing" secondItem="cJS-01-MyQ" secondAttribute="trailing" id="wqO-OU-Vgw"/>
+                <constraint firstItem="FpY-cy-3wx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zh4-Rb-TH8"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="seg_pullup_n" width="64" height="40"/>
+    </resources>
+</document>

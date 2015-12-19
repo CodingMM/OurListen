@@ -280,6 +280,15 @@ static char UIScrollViewPullToRefreshView;
         NSString *subtitle = [self.subtitles objectAtIndex:self.state];
         self.subtitleLabel.text = subtitle.length > 0 ? subtitle : nil;
         
+
+#if __IPHONE_OS_VERSION_MAX_ALLOWED > __IPHONE_8_0
+    
+        CGRect rect = [self.titleLabel.text boundingRectWithSize:CGSizeMake(labelMaxWidth, self.titleLabel.font.lineHeight) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:self.titleLabel.font} context:nil];
+        CGSize titleSize = rect.size;
+        
+        CGRect subRect = [self.subtitleLabel.text boundingRectWithSize:CGSizeMake(labelMaxWidth, self.subtitleLabel.font.lineHeight) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:self.subtitleLabel.font} context:nil];
+        CGSize subtitleSize = subRect.size;
+#else
         
         CGSize titleSize = [self.titleLabel.text sizeWithFont:self.titleLabel.font
                                             constrainedToSize:CGSizeMake(labelMaxWidth,self.titleLabel.font.lineHeight)
@@ -290,8 +299,11 @@ static char UIScrollViewPullToRefreshView;
                                                   constrainedToSize:CGSizeMake(labelMaxWidth,self.subtitleLabel.font.lineHeight)
                                                       lineBreakMode:self.subtitleLabel.lineBreakMode];
         
-        CGFloat maxLabelWidth = MAX(titleSize.width,subtitleSize.width);
+#endif
         
+
+        
+        CGFloat maxLabelWidth = MAX(titleSize.width,subtitleSize.width);
         CGFloat totalMaxWidth;
         if (maxLabelWidth) {
         	totalMaxWidth = leftViewWidth + margin + maxLabelWidth;

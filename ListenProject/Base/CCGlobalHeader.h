@@ -39,6 +39,11 @@
 #define CCCLASSCOLLECTIONCellID @"CCClassCollectionViewCell"
 
 
+//直播列表
+#define CCLIVECell1ID @"CCLiveCell1"
+#define CCLIVECell2ID @"CCLiveCell2"
+
+
 #define CURRENT_SONGNUMBER @"currentSongNumber"
 
 
