@@ -32,7 +32,11 @@
 #define CCLISTENCell3ID @"ListenListTableViewCell3"
 #define CCLISTENCell4ID @"ListenListTableViewCell4"
 
+//分类列表
 
+#define CCCLASSRECOMCellID @"CCClassRecomCell"
+#define CCCLASSMOREMSGCellID @"CCClassMoreMsgCell"
+#define CCCLASSCOLLECTIONCellID @"CCClassCollectionViewCell"
 
 
 #define CURRENT_SONGNUMBER @"currentSongNumber"

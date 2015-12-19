@@ -1,5 +1,5 @@
 //
-//  CCCategoryViewController.h
+//  CCClassViewController.h
 //  ListenProject
 //
 //  Created by 夏婷 on 15/12/14.
@@ -8,7 +8,7 @@
 
 #import "CCBaseViewController.h"
 
-@interface CCCategoryViewController : CCBaseViewController
+@interface CCClassViewController : CCBaseViewController
 
 @property (nonatomic,assign) NSInteger index;
 

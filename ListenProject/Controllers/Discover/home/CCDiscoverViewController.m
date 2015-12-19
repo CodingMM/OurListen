@@ -10,7 +10,7 @@
 #import "CCGlobalHeader.h"
 #import "CCTitleLabel.h"
 #import "CCRecomViewController.h"
-#import "CCCategoryViewController.h"
+#import "CCClassViewController.h"
 #import "CCLiveTableViewController.h"
 #import "CCSearchViewController.h"
 
@@ -111,7 +111,7 @@
     reVC.index = 0;
     [self addChildViewController:reVC];
     
-    CCCategoryViewController * categoryVC = [[CCCategoryViewController alloc] initWithNibName:@"CCCategoryViewController" bundle:nil];
+    CCClassViewController * categoryVC = [[CCClassViewController alloc] initWithNibName:@"CCClassViewController" bundle:nil];
     categoryVC.index = 1;
     [self addChildViewController:categoryVC];
     
