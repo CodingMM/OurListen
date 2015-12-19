@@ -44,6 +44,10 @@
 #define CCLIVECell2ID @"CCLiveCell2"
 
 
+//播放历史
+
+#define CCHISTORYCellID @"CCHistoryCell"
+
 #define CURRENT_SONGNUMBER @"currentSongNumber"
 
 

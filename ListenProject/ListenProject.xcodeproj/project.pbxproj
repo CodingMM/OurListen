@@ -78,6 +78,17 @@
 		84BA233B1C18650000251393 /* CCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BA233A1C18650000251393 /* CCBaseViewController.m */; };
 		84BA23451C1866CF00251393 /* CCDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BA23431C1866CF00251393 /* CCDownloadViewController.m */; };
 		84BA23461C1866CF00251393 /* CCDownloadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BA23441C1866CF00251393 /* CCDownloadViewController.xib */; };
+		84C62B851C259F9C0089C314 /* CCPlayerHeadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C62B831C259F9C0089C314 /* CCPlayerHeadViewController.m */; };
+		84C62B861C259F9C0089C314 /* CCPlayerHeadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C62B841C259F9C0089C314 /* CCPlayerHeadViewController.xib */; };
+		84C62B8A1C25A49B0089C314 /* CCSongListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C62B881C25A49B0089C314 /* CCSongListViewController.m */; };
+		84C62B8B1C25A49B0089C314 /* CCSongListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C62B891C25A49B0089C314 /* CCSongListViewController.xib */; };
+		84C62B8F1C25A5F10089C314 /* CCHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C62B8D1C25A5F10089C314 /* CCHistoryViewController.m */; };
+		84C62B901C25A5F10089C314 /* CCHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C62B8E1C25A5F10089C314 /* CCHistoryViewController.xib */; };
+		84C62B951C25A6EA0089C314 /* CCHistoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C62B931C25A6EA0089C314 /* CCHistoryCell.m */; };
+		84C62B961C25A6EA0089C314 /* CCHistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C62B941C25A6EA0089C314 /* CCHistoryCell.xib */; };
+		84C62B9A1C25A8960089C314 /* UIImageAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C62B991C25A8960089C314 /* UIImageAnimation.m */; };
+		84C62B9E1C25AC9C0089C314 /* CCPlayerCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C62B9C1C25AC9C0089C314 /* CCPlayerCommentCell.m */; };
+		84C62B9F1C25AC9C0089C314 /* CCPlayerCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C62B9D1C25AC9C0089C314 /* CCPlayerCommentCell.xib */; };
 		84D2382F1C25239D004F205C /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D237FC1C25239D004F205C /* AFHTTPRequestOperation.m */; };
 		84D238301C25239D004F205C /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D237FE1C25239D004F205C /* AFHTTPRequestOperationManager.m */; };
 		84D238311C25239D004F205C /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D238001C25239D004F205C /* AFHTTPSessionManager.m */; };
@@ -298,6 +309,23 @@
 		84BA23421C1866CF00251393 /* CCDownloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCDownloadViewController.h; sourceTree = "<group>"; };
 		84BA23431C1866CF00251393 /* CCDownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCDownloadViewController.m; sourceTree = "<group>"; };
 		84BA23441C1866CF00251393 /* CCDownloadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCDownloadViewController.xib; sourceTree = "<group>"; };
+		84C62B821C259F9C0089C314 /* CCPlayerHeadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPlayerHeadViewController.h; sourceTree = "<group>"; };
+		84C62B831C259F9C0089C314 /* CCPlayerHeadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPlayerHeadViewController.m; sourceTree = "<group>"; };
+		84C62B841C259F9C0089C314 /* CCPlayerHeadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCPlayerHeadViewController.xib; sourceTree = "<group>"; };
+		84C62B871C25A49B0089C314 /* CCSongListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSongListViewController.h; sourceTree = "<group>"; };
+		84C62B881C25A49B0089C314 /* CCSongListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCSongListViewController.m; sourceTree = "<group>"; };
+		84C62B891C25A49B0089C314 /* CCSongListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCSongListViewController.xib; sourceTree = "<group>"; };
+		84C62B8C1C25A5F10089C314 /* CCHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHistoryViewController.h; sourceTree = "<group>"; };
+		84C62B8D1C25A5F10089C314 /* CCHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHistoryViewController.m; sourceTree = "<group>"; };
+		84C62B8E1C25A5F10089C314 /* CCHistoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCHistoryViewController.xib; sourceTree = "<group>"; };
+		84C62B921C25A6EA0089C314 /* CCHistoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHistoryCell.h; sourceTree = "<group>"; };
+		84C62B931C25A6EA0089C314 /* CCHistoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHistoryCell.m; sourceTree = "<group>"; };
+		84C62B941C25A6EA0089C314 /* CCHistoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCHistoryCell.xib; sourceTree = "<group>"; };
+		84C62B981C25A8960089C314 /* UIImageAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageAnimation.h; sourceTree = "<group>"; };
+		84C62B991C25A8960089C314 /* UIImageAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageAnimation.m; sourceTree = "<group>"; };
+		84C62B9B1C25AC9C0089C314 /* CCPlayerCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPlayerCommentCell.h; sourceTree = "<group>"; };
+		84C62B9C1C25AC9C0089C314 /* CCPlayerCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPlayerCommentCell.m; sourceTree = "<group>"; };
+		84C62B9D1C25AC9C0089C314 /* CCPlayerCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCPlayerCommentCell.xib; sourceTree = "<group>"; };
 		84D237FB1C25239D004F205C /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		84D237FC1C25239D004F205C /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		84D237FD1C25239D004F205C /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -524,6 +552,7 @@
 		844CB64A1C1717CC00710E8D /* OtherSource */ = {
 			isa = PBXGroup;
 			children = (
+				84C62B971C25A8960089C314 /* UIImageAnimation */,
 				84D237F91C25239D004F205C /* AFNetworking */,
 				84809B9B1C22540000CC7E4E /* SVPullToRefresh */,
 				846E7C7F1C1EE1AF00CBAE9D /* SDWebImage */,
@@ -752,6 +781,7 @@
 		84B29A071C1960D800870099 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				84C62B911C25A6EA0089C314 /* Player */,
 				84A0E0651C256FA3001A9CC7 /* Live */,
 				84D238761C252982004F205C /* Classification */,
 				84D238481C2528B5004F205C /* Recom */,
@@ -804,8 +834,39 @@
 				84B299D81C191A9600870099 /* CCPlayerViewController.h */,
 				84B299D91C191A9600870099 /* CCPlayerViewController.m */,
 				84B299DA1C191A9600870099 /* CCPlayerViewController.xib */,
+				84C62B821C259F9C0089C314 /* CCPlayerHeadViewController.h */,
+				84C62B831C259F9C0089C314 /* CCPlayerHeadViewController.m */,
+				84C62B841C259F9C0089C314 /* CCPlayerHeadViewController.xib */,
+				84C62B871C25A49B0089C314 /* CCSongListViewController.h */,
+				84C62B881C25A49B0089C314 /* CCSongListViewController.m */,
+				84C62B891C25A49B0089C314 /* CCSongListViewController.xib */,
+				84C62B8C1C25A5F10089C314 /* CCHistoryViewController.h */,
+				84C62B8D1C25A5F10089C314 /* CCHistoryViewController.m */,
+				84C62B8E1C25A5F10089C314 /* CCHistoryViewController.xib */,
 			);
 			path = Player;
+			sourceTree = "<group>";
+		};
+		84C62B911C25A6EA0089C314 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				84C62B921C25A6EA0089C314 /* CCHistoryCell.h */,
+				84C62B931C25A6EA0089C314 /* CCHistoryCell.m */,
+				84C62B941C25A6EA0089C314 /* CCHistoryCell.xib */,
+				84C62B9B1C25AC9C0089C314 /* CCPlayerCommentCell.h */,
+				84C62B9C1C25AC9C0089C314 /* CCPlayerCommentCell.m */,
+				84C62B9D1C25AC9C0089C314 /* CCPlayerCommentCell.xib */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		84C62B971C25A8960089C314 /* UIImageAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				84C62B981C25A8960089C314 /* UIImageAnimation.h */,
+				84C62B991C25A8960089C314 /* UIImageAnimation.m */,
+			);
+			path = UIImageAnimation;
 			sourceTree = "<group>";
 		};
 		84D237F91C25239D004F205C /* AFNetworking */ = {
@@ -1186,9 +1247,11 @@
 				84D238381C25239D004F205C /* MJRefresh.bundle in Resources */,
 				84A0E06F1C2573A9001A9CC7 /* CCLiveCell2.xib in Resources */,
 				84A0E07F1C257728001A9CC7 /* CCLiveDetailViewController.xib in Resources */,
+				84C62B901C25A5F10089C314 /* CCHistoryViewController.xib in Resources */,
 				84A0E0841C257D9F001A9CC7 /* CCLiveDetailViewController2.xib in Resources */,
 				84D2387B1C252A20004F205C /* CCClassCollectionViewCell.xib in Resources */,
 				84B299E21C19509300870099 /* province.plist in Resources */,
+				84C62B861C259F9C0089C314 /* CCPlayerHeadViewController.xib in Resources */,
 				846E7C6A1C1EB02A00CBAE9D /* CCRecomViewController.xib in Resources */,
 				84D238651C2528B5004F205C /* CCAlbumCell.xib in Resources */,
 				84D238901C252B8C004F205C /* CCClassDetailViewController.xib in Resources */,
@@ -1210,6 +1273,8 @@
 				84809BAB1C225C1D00CC7E4E /* CCListenListMoreViewController.xib in Resources */,
 				84D238711C2528B5004F205C /* CCRecomCell2.xib in Resources */,
 				84D238751C2528B5004F205C /* CCRecomCell4.xib in Resources */,
+				84C62B8B1C25A49B0089C314 /* CCSongListViewController.xib in Resources */,
+				84C62B9F1C25AC9C0089C314 /* CCPlayerCommentCell.xib in Resources */,
 				84D238691C2528B5004F205C /* CCListenListCell2.xib in Resources */,
 				84A0E0931C2582CD001A9CC7 /* CCLiveMoreCollectionCell.xib in Resources */,
 				A57631461C1AB792001EF8B8 /* SVProgressHUD.bundle in Resources */,
@@ -1217,6 +1282,7 @@
 				84D238A91C25353D004F205C /* CCClassMoreMsgCell.xib in Resources */,
 				84D238B01C2539FC004F205C /* CCClassViewController.xib in Resources */,
 				84D238951C252D4A004F205C /* CCClassDetailTableViewController.xib in Resources */,
+				84C62B961C25A6EA0089C314 /* CCHistoryCell.xib in Resources */,
 				844CB6351C17179900710E8D /* LaunchScreen.xib in Resources */,
 				84D238671C2528B5004F205C /* CCListenListCell1.xib in Resources */,
 				84A0E08E1C2581F5001A9CC7 /* CCLiveMoreViewController.xib in Resources */,
@@ -1252,9 +1318,12 @@
 				84D2383E1C25239D004F205C /* AFNetworkActivityIndicatorManager.m in Sources */,
 				84A0E06E1C2573A9001A9CC7 /* CCLiveCell2.m in Sources */,
 				A5E30E221C1F281C00F630F8 /* CCScannerDetailController.m in Sources */,
+				84C62B8F1C25A5F10089C314 /* CCHistoryViewController.m in Sources */,
 				84D2383B1C25239D004F205C /* MJRefreshFooterView.m in Sources */,
+				84C62B9E1C25AC9C0089C314 /* CCPlayerCommentCell.m in Sources */,
 				84D238351C25239D004F205C /* AFURLRequestSerialization.m in Sources */,
 				84DC23671C1E516E00452960 /* CCClassViewController.m in Sources */,
+				84C62B951C25A6EA0089C314 /* CCHistoryCell.m in Sources */,
 				84BA233B1C18650000251393 /* CCBaseViewController.m in Sources */,
 				846E7CA41C1EE1AF00CBAE9D /* SDWebImageCompat.m in Sources */,
 				84D238681C2528B5004F205C /* CCListenListCell2.m in Sources */,
@@ -1285,10 +1354,12 @@
 				84D2387A1C252A20004F205C /* CCClassCollectionViewCell.m in Sources */,
 				84D2388B1C252B2D004F205C /* CCTitleLabel.m in Sources */,
 				84B29A041C19546300870099 /* JSONModel+networking.m in Sources */,
+				84C62B851C259F9C0089C314 /* CCPlayerHeadViewController.m in Sources */,
 				A57631451C1AB792001EF8B8 /* Reachability.m in Sources */,
 				84B29A051C19546300870099 /* JSONKeyMapper.m in Sources */,
 				846E7CAD1C1EE1AF00CBAE9D /* UIImage+WebP.m in Sources */,
 				84B29A031C19546300870099 /* JSONHTTPClient.m in Sources */,
+				84C62B8A1C25A49B0089C314 /* CCSongListViewController.m in Sources */,
 				A57631551C1AC26F001EF8B8 /* CCBaseTableViewController.m in Sources */,
 				84A0E07E1C257728001A9CC7 /* CCLiveDetailViewController.m in Sources */,
 				84D2386E1C2528B5004F205C /* CCRecomCell.m in Sources */,
@@ -1347,6 +1418,7 @@
 				84D238871C252B2D004F205C /* CCAlertView.m in Sources */,
 				84D238441C25239D004F205C /* UIRefreshControl+AFNetworking.m in Sources */,
 				846E7C7A1C1EE06700CBAE9D /* ImagesScrollView.m in Sources */,
+				84C62B9A1C25A8960089C314 /* UIImageAnimation.m in Sources */,
 				84D2388F1C252B8C004F205C /* CCClassDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

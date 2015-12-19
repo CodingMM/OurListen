@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CCHistoryViewController">
+            <connections>
+                <outlet property="tableView" destination="BbT-zD-Qlz" id="zXY-T1-21g"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="BbT-zD-Qlz">
+                    <rect key="frame" x="0.0" y="70" width="375" height="597"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TUj-nm-OEN">
+                    <rect key="frame" x="0.0" y="40" width="375" height="30"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GL0-3E-VoO">
+                            <rect key="frame" x="163" y="0.0" width="48" height="27"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="清空历史">
+                                <color key="titleColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="deleteHistoryBtnDidClicked:" destination="-1" eventType="touchUpInside" id="Ccj-5Z-v7X"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="GL0-3E-VoO" firstAttribute="top" secondItem="TUj-nm-OEN" secondAttribute="top" id="1SU-lb-eko"/>
+                        <constraint firstAttribute="height" constant="30" id="uzg-87-eF7"/>
+                        <constraint firstAttribute="centerX" secondItem="GL0-3E-VoO" secondAttribute="centerX" constant="0.5" id="zRr-NH-EsX"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SJQ-HP-5Mf">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="播放历史" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNn-vt-sqG">
+                            <rect key="frame" x="153" y="9" width="68" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="D1E-Bj-mz6"/>
+                        <constraint firstAttribute="centerX" secondItem="GNn-vt-sqG" secondAttribute="centerX" constant="0.5" id="hE2-bd-HBF"/>
+                        <constraint firstItem="GNn-vt-sqG" firstAttribute="top" secondItem="SJQ-HP-5Mf" secondAttribute="top" constant="9" id="zmS-nx-NmO"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="BbT-zD-Qlz" secondAttribute="trailing" id="0d8-5P-NQ5"/>
+                <constraint firstAttribute="bottom" secondItem="BbT-zD-Qlz" secondAttribute="bottom" id="1U2-pS-Msp"/>
+                <constraint firstItem="BbT-zD-Qlz" firstAttribute="top" secondItem="TUj-nm-OEN" secondAttribute="bottom" id="7Xo-q0-PPa"/>
+                <constraint firstAttribute="trailing" secondItem="SJQ-HP-5Mf" secondAttribute="trailing" id="Fif-EW-Ctp"/>
+                <constraint firstAttribute="trailing" secondItem="TUj-nm-OEN" secondAttribute="trailing" id="JxK-Yl-Vq8"/>
+                <constraint firstItem="SJQ-HP-5Mf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Rzw-Ug-SyX"/>
+                <constraint firstItem="TUj-nm-OEN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TGn-yV-m4m"/>
+                <constraint firstItem="TUj-nm-OEN" firstAttribute="top" secondItem="SJQ-HP-5Mf" secondAttribute="bottom" id="TNn-YA-7cw"/>
+                <constraint firstItem="SJQ-HP-5Mf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fDs-Jc-abJ"/>
+                <constraint firstItem="BbT-zD-Qlz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="y7C-6k-O8s"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+</document>

@@ -2,12 +2,19 @@
 //  CCPlayerViewController.m
 //  ListenProject
 //
-//  Created by 夏婷 on 15/12/10.
+//  Created by xiating on 15/12/10.
 //  Copyright (c) 2015年 夏婷. All rights reserved.
 //
 
 #import "CCPlayerViewController.h"
+#import "CCPlayerHeadViewController.h"
 #import "CCPlayerBtn.h"
+#import "CCGlobalHeader.h"
+#import "CCPlayerCommentCell.h"
+#import "CCAlbumDetailViewController.h"
+
+
+
 @interface CCPlayerViewController ()
 
 @end
