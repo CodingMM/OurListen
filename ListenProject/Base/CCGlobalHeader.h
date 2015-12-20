@@ -59,6 +59,8 @@
 
 #define CCSORTCellID @"CCSortCell"
 
+#define CCDOWNLOADALBUMCELLID @"CCDownloadAlbumCell"
+
 
 
 

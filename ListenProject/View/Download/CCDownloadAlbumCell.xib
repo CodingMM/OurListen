@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CCDownloadAlbumCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x1w-Q5-D1T">
+                        <rect key="frame" x="10" y="10" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="8w5-Rf-7Ml"/>
+                            <constraint firstAttribute="height" constant="80" id="gfW-hB-9bf"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9iO-Aa-Bdw">
+                        <rect key="frame" x="98" y="43" width="231" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.70196080207824707" green="0.70196080207824707" blue="0.70196080207824707" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="find_hotUser_sounds" translatesAutoresizingMaskIntoConstraints="NO" id="muI-u3-DMM">
+                        <rect key="frame" x="98" y="75" width="10" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="QjW-RB-iSg"/>
+                            <constraint firstAttribute="width" constant="10" id="Wu4-nO-nDU"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pg-UW-s36">
+                        <rect key="frame" x="116" y="74" width="26" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="sound_sizes" translatesAutoresizingMaskIntoConstraints="NO" id="2Cf-qV-st6">
+                        <rect key="frame" x="150" y="75" width="10" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="HG5-ri-zp6"/>
+                            <constraint firstAttribute="width" constant="10" id="Uz8-hO-GJw"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVb-w8-LL4">
+                        <rect key="frame" x="168" y="74" width="26" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="raK-b6-3qb">
+                        <rect key="frame" x="98" y="14" width="251" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JX4-Ee-WZr">
+                        <rect key="frame" x="347" y="40" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="T7V-ZA-Me3"/>
+                            <constraint firstAttribute="width" constant="20" id="a6y-eg-o1j"/>
+                        </constraints>
+                        <state key="normal" image="btn_downloadalbum_delete_n">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="deleteBtnDidClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="zJZ-2O-cZi"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2Cf-qV-st6" firstAttribute="leading" secondItem="2pg-UW-s36" secondAttribute="trailing" constant="8" id="31C-C9-Os6"/>
+                    <constraint firstItem="yVb-w8-LL4" firstAttribute="leading" secondItem="2Cf-qV-st6" secondAttribute="trailing" constant="8" id="3jV-1Q-mNb"/>
+                    <constraint firstAttribute="trailing" secondItem="raK-b6-3qb" secondAttribute="trailing" constant="26" id="88s-NJ-xgb"/>
+                    <constraint firstItem="x1w-Q5-D1T" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ArG-cM-l0e"/>
+                    <constraint firstItem="muI-u3-DMM" firstAttribute="leading" secondItem="x1w-Q5-D1T" secondAttribute="trailing" constant="8" id="BKy-Lu-xsw"/>
+                    <constraint firstItem="9iO-Aa-Bdw" firstAttribute="leading" secondItem="x1w-Q5-D1T" secondAttribute="trailing" constant="8" id="Gjl-os-fpI"/>
+                    <constraint firstItem="muI-u3-DMM" firstAttribute="top" secondItem="9iO-Aa-Bdw" secondAttribute="bottom" constant="17" id="Hzi-gl-ALN"/>
+                    <constraint firstItem="raK-b6-3qb" firstAttribute="leading" secondItem="x1w-Q5-D1T" secondAttribute="trailing" constant="8" id="IDJ-3y-kaQ"/>
+                    <constraint firstItem="yVb-w8-LL4" firstAttribute="top" secondItem="9iO-Aa-Bdw" secondAttribute="bottom" constant="16" id="IzD-15-oaN"/>
+                    <constraint firstItem="2pg-UW-s36" firstAttribute="leading" secondItem="muI-u3-DMM" secondAttribute="trailing" constant="8" id="Nsr-Ee-0Bm"/>
+                    <constraint firstAttribute="trailing" secondItem="JX4-Ee-WZr" secondAttribute="trailing" constant="8" id="QAR-OF-kPZ"/>
+                    <constraint firstItem="JX4-Ee-WZr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="40" id="VLD-Ll-ab1"/>
+                    <constraint firstItem="x1w-Q5-D1T" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="bgG-x1-rzQ"/>
+                    <constraint firstItem="2pg-UW-s36" firstAttribute="top" secondItem="9iO-Aa-Bdw" secondAttribute="bottom" constant="16" id="dD7-Tk-mcY"/>
+                    <constraint firstItem="raK-b6-3qb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="h2T-2w-wty"/>
+                    <constraint firstItem="2Cf-qV-st6" firstAttribute="top" secondItem="9iO-Aa-Bdw" secondAttribute="bottom" constant="17" id="jrX-rZ-OnV"/>
+                    <constraint firstItem="9iO-Aa-Bdw" firstAttribute="top" secondItem="raK-b6-3qb" secondAttribute="bottom" constant="8" id="owj-hR-EJM"/>
+                    <constraint firstItem="JX4-Ee-WZr" firstAttribute="leading" secondItem="9iO-Aa-Bdw" secondAttribute="trailing" constant="18" id="r71-Nn-1L6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="albumImageView" destination="x1w-Q5-D1T" id="Iex-Yn-t4n"/>
+                <outlet property="autherLabel" destination="9iO-Aa-Bdw" id="LU1-Eb-lMw"/>
+                <outlet property="deleteBtn" destination="JX4-Ee-WZr" id="6ll-ux-1Na"/>
+                <outlet property="sizeLabel" destination="yVb-w8-LL4" id="lmC-6n-KXh"/>
+                <outlet property="soundsNumLabel" destination="2pg-UW-s36" id="YC4-6z-DyQ"/>
+                <outlet property="titelLabel" destination="raK-b6-3qb" id="Wct-eO-OIu"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="btn_downloadalbum_delete_n" width="10" height="14"/>
+        <image name="find_hotUser_sounds" width="8" height="8"/>
+        <image name="sound_sizes" width="10" height="10"/>
+    </resources>
+</document>

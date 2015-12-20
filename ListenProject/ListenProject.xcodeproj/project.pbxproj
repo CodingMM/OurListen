@@ -177,6 +177,13 @@
 		84DFADAE1C26C424000444F5 /* CCSortViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84DFADAC1C26C424000444F5 /* CCSortViewController.xib */; };
 		84DFADB21C26C52A000444F5 /* CCSortCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DFADB01C26C52A000444F5 /* CCSortCell.m */; };
 		84DFADB31C26C52A000444F5 /* CCSortCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84DFADB11C26C52A000444F5 /* CCSortCell.xib */; };
+		84DFADB71C26CFB4000444F5 /* CCAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DFADB51C26CFB4000444F5 /* CCAlbumViewController.m */; };
+		84DFADB81C26CFB4000444F5 /* CCAlbumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84DFADB61C26CFB4000444F5 /* CCAlbumViewController.xib */; };
+		84DFADBC1C26D082000444F5 /* CCDownloadAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DFADBA1C26D082000444F5 /* CCDownloadAlbumCell.m */; };
+		84DFADBD1C26D082000444F5 /* CCDownloadAlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84DFADBB1C26D082000444F5 /* CCDownloadAlbumCell.xib */; };
+		84DFADC11C26D17E000444F5 /* CCAlbumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DFADC01C26D17E000444F5 /* CCAlbumModel.m */; };
+		84DFADC51C26D249000444F5 /* CCAlbumSetDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DFADC31C26D249000444F5 /* CCAlbumSetDetailViewController.m */; };
+		84DFADC61C26D249000444F5 /* CCAlbumSetDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84DFADC41C26D249000444F5 /* CCAlbumSetDetailViewController.xib */; };
 		84EE7A0A1C1ABBA10033BF5E /* CCDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EE7A061C1ABBA10033BF5E /* CCDiscoverViewController.m */; };
 		A55244951C17DC4F0089CC04 /* ISNull.m in Sources */ = {isa = PBXBuildFile; fileRef = A55244941C17DC4F0089CC04 /* ISNull.m */; };
 		A55244981C17DCB60089CC04 /* BaseHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A55244971C17DCB60089CC04 /* BaseHttpClient.m */; };
@@ -499,6 +506,17 @@
 		84DFADAF1C26C52A000444F5 /* CCSortCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSortCell.h; sourceTree = "<group>"; };
 		84DFADB01C26C52A000444F5 /* CCSortCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCSortCell.m; sourceTree = "<group>"; };
 		84DFADB11C26C52A000444F5 /* CCSortCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCSortCell.xib; sourceTree = "<group>"; };
+		84DFADB41C26CFB4000444F5 /* CCAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAlbumViewController.h; sourceTree = "<group>"; };
+		84DFADB51C26CFB4000444F5 /* CCAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAlbumViewController.m; sourceTree = "<group>"; };
+		84DFADB61C26CFB4000444F5 /* CCAlbumViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCAlbumViewController.xib; sourceTree = "<group>"; };
+		84DFADB91C26D082000444F5 /* CCDownloadAlbumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCDownloadAlbumCell.h; sourceTree = "<group>"; };
+		84DFADBA1C26D082000444F5 /* CCDownloadAlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCDownloadAlbumCell.m; sourceTree = "<group>"; };
+		84DFADBB1C26D082000444F5 /* CCDownloadAlbumCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCDownloadAlbumCell.xib; sourceTree = "<group>"; };
+		84DFADBF1C26D17E000444F5 /* CCAlbumModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAlbumModel.h; sourceTree = "<group>"; };
+		84DFADC01C26D17E000444F5 /* CCAlbumModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAlbumModel.m; sourceTree = "<group>"; };
+		84DFADC21C26D249000444F5 /* CCAlbumSetDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAlbumSetDetailViewController.h; sourceTree = "<group>"; };
+		84DFADC31C26D249000444F5 /* CCAlbumSetDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAlbumSetDetailViewController.m; sourceTree = "<group>"; };
+		84DFADC41C26D249000444F5 /* CCAlbumSetDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCAlbumSetDetailViewController.xib; sourceTree = "<group>"; };
 		84EE7A051C1ABBA10033BF5E /* CCDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCDiscoverViewController.h; sourceTree = "<group>"; };
 		84EE7A061C1ABBA10033BF5E /* CCDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCDiscoverViewController.m; sourceTree = "<group>"; };
 		A55244931C17DC4F0089CC04 /* ISNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISNull.h; sourceTree = "<group>"; };
@@ -763,6 +781,7 @@
 		84B299DD1C19508100870099 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				84DFADBE1C26D17E000444F5 /* Download */,
 				84B299DE1C19509300870099 /* ourFiles */,
 			);
 			path = Model;
@@ -895,6 +914,12 @@
 				84DFADAA1C26C424000444F5 /* CCSortViewController.h */,
 				84DFADAB1C26C424000444F5 /* CCSortViewController.m */,
 				84DFADAC1C26C424000444F5 /* CCSortViewController.xib */,
+				84DFADB41C26CFB4000444F5 /* CCAlbumViewController.h */,
+				84DFADB51C26CFB4000444F5 /* CCAlbumViewController.m */,
+				84DFADB61C26CFB4000444F5 /* CCAlbumViewController.xib */,
+				84DFADC21C26D249000444F5 /* CCAlbumSetDetailViewController.h */,
+				84DFADC31C26D249000444F5 /* CCAlbumSetDetailViewController.m */,
+				84DFADC41C26D249000444F5 /* CCAlbumSetDetailViewController.xib */,
 			);
 			path = Download;
 			sourceTree = "<group>";
@@ -1120,6 +1145,18 @@
 				84DFADAF1C26C52A000444F5 /* CCSortCell.h */,
 				84DFADB01C26C52A000444F5 /* CCSortCell.m */,
 				84DFADB11C26C52A000444F5 /* CCSortCell.xib */,
+				84DFADB91C26D082000444F5 /* CCDownloadAlbumCell.h */,
+				84DFADBA1C26D082000444F5 /* CCDownloadAlbumCell.m */,
+				84DFADBB1C26D082000444F5 /* CCDownloadAlbumCell.xib */,
+			);
+			path = Download;
+			sourceTree = "<group>";
+		};
+		84DFADBE1C26D17E000444F5 /* Download */ = {
+			isa = PBXGroup;
+			children = (
+				84DFADBF1C26D17E000444F5 /* CCAlbumModel.h */,
+				84DFADC01C26D17E000444F5 /* CCAlbumModel.m */,
 			);
 			path = Download;
 			sourceTree = "<group>";
@@ -1346,6 +1383,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84DFADC61C26D249000444F5 /* CCAlbumSetDetailViewController.xib in Resources */,
 				84A0E06A1C2572E0001A9CC7 /* CCLiveCell1.xib in Resources */,
 				84DFAD9A1C2697FE000444F5 /* CCDownloadCell.xib in Resources */,
 				84D238381C25239D004F205C /* MJRefresh.bundle in Resources */,
@@ -1376,6 +1414,7 @@
 				84DFAD9F1C26C028000444F5 /* CCDownloadViewController.xib in Resources */,
 				84D2386D1C2528B5004F205C /* CCListenListCell4.xib in Resources */,
 				84DFAD831C266626000444F5 /* CCPlayerCommonCell.xib in Resources */,
+				84DFADBD1C26D082000444F5 /* CCDownloadAlbumCell.xib in Resources */,
 				84DFADB31C26C52A000444F5 /* CCSortCell.xib in Resources */,
 				84809B921C224CF300CC7E4E /* CCHeadViewController.xib in Resources */,
 				84DFAD941C269336000444F5 /* CCDownloadTaskViewController.xib in Resources */,
@@ -1398,6 +1437,7 @@
 				844CB6351C17179900710E8D /* LaunchScreen.xib in Resources */,
 				84D238671C2528B5004F205C /* CCListenListCell1.xib in Resources */,
 				84A0E08E1C2581F5001A9CC7 /* CCLiveMoreViewController.xib in Resources */,
+				84DFADB81C26CFB4000444F5 /* CCAlbumViewController.xib in Resources */,
 				84809BAD1C225C1D00CC7E4E /* CCListenListViewController.xib in Resources */,
 				844CB6321C17179900710E8D /* Images.xcassets in Resources */,
 				84B299E11C19509300870099 /* findtab.plist in Resources */,
@@ -1487,9 +1527,12 @@
 				A576314B1C1AB88F001EF8B8 /* AJNotificationView.m in Sources */,
 				84D238331C25239D004F205C /* AFSecurityPolicy.m in Sources */,
 				84D238431C25239D004F205C /* UIProgressView+AFNetworking.m in Sources */,
+				84DFADBC1C26D082000444F5 /* CCDownloadAlbumCell.m in Sources */,
 				84809B911C224CF300CC7E4E /* CCHeadViewController.m in Sources */,
+				84DFADB71C26CFB4000444F5 /* CCAlbumViewController.m in Sources */,
 				84D238391C25239D004F205C /* MJRefreshBaseView.m in Sources */,
 				84D2386A1C2528B5004F205C /* CCListenListCell3.m in Sources */,
+				84DFADC51C26D249000444F5 /* CCAlbumSetDetailViewController.m in Sources */,
 				84D238991C252F51004F205C /* CCClassRecomCell.m in Sources */,
 				84A0E0881C257E6A001A9CC7 /* CCLiveDetailViewController3.m in Sources */,
 				84809B8C1C2247D000CC7E4E /* CCAlbumDetailViewController.m in Sources */,
@@ -1529,6 +1572,7 @@
 				84D238401C25239D004F205C /* UIAlertView+AFNetworking.m in Sources */,
 				846E7CA61C1EE1AF00CBAE9D /* SDWebImageDownloader.m in Sources */,
 				84DFAD861C2668A3000444F5 /* CCDownloadManager.m in Sources */,
+				84DFADC11C26D17E000444F5 /* CCAlbumModel.m in Sources */,
 				A5E30E191C1F27F900F630F8 /* NSString+category.m in Sources */,
 				846E7CAF1C1EE1AF00CBAE9D /* UIImageView+WebCache.m in Sources */,
 				84D238321C25239D004F205C /* AFNetworkReachabilityManager.m in Sources */,

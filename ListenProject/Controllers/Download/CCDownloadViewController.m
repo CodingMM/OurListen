@@ -12,7 +12,7 @@
 #import "CCPlayerBtn.h"
 #import "CCTitleLabel.h"
 #import "CCRecomViewController.h"
-#import "CCAlbumDetailViewController.h"
+#import "CCAlbumViewController.h"
 #import "CCSoundViewController.h"
 #import "CCDownloadTaskViewController.h"
 #include <sys/param.h>
@@ -140,7 +140,7 @@
 
 - (void)addController {
     
-    CCAlbumDetailViewController * myVC =[[CCAlbumDetailViewController alloc] initWithNibName:@"CCAlbumDetailViewController" bundle:nil];
+    CCAlbumViewController * myVC =[[CCAlbumViewController alloc] initWithNibName:@"CCAlbumViewController" bundle:nil];
     myVC.index = 0;
     [self addChildViewController:myVC];
     
