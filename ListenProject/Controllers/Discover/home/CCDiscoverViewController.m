@@ -46,8 +46,13 @@
     UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithCustomView:btn];
 
     self.navigationItem.rightBarButtonItem = item;
-//    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:222/255.0f green:88/255.0f blue:45/255.0f alpha:1];
     self.navigationController.navigationBar.translucent = NO;
+}
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = NO;
+    
 }
 /**
  *  创建分栏标题

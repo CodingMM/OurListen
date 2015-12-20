@@ -6,14 +6,85 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CCPlayerViewController">
             <connections>
+                <outlet property="downloadBtn" destination="Z9X-7A-9lq" id="u2R-NT-85d"/>
+                <outlet property="shareBtn" destination="j2r-RK-MsL" id="biz-0z-bvK"/>
+                <outlet property="topScrollView" destination="ReV-Nl-mSC" id="CPP-gL-KsA"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ref-Qt-AnR">
+                    <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Sh-X0-X6Z">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="pvJ-L5-bT9"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z9X-7A-9lq">
+                            <rect key="frame" x="0.0" y="1" width="188" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="bVs-Rm-HtL"/>
+                            </constraints>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2r-RK-MsL">
+                            <rect key="frame" x="188" y="1" width="187" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="swq-Nq-Z6m"/>
+                            </constraints>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="j2r-RK-MsL" firstAttribute="leading" secondItem="Z9X-7A-9lq" secondAttribute="trailing" id="4Ce-iU-MMs"/>
+                        <constraint firstItem="Z9X-7A-9lq" firstAttribute="top" secondItem="2Sh-X0-X6Z" secondAttribute="bottom" id="Oww-je-ngA"/>
+                        <constraint firstItem="2Sh-X0-X6Z" firstAttribute="top" secondItem="ref-Qt-AnR" secondAttribute="top" id="Pa7-Qg-v1f"/>
+                        <constraint firstItem="Z9X-7A-9lq" firstAttribute="leading" secondItem="ref-Qt-AnR" secondAttribute="leading" id="YnH-su-4ST"/>
+                        <constraint firstItem="2Sh-X0-X6Z" firstAttribute="leading" secondItem="ref-Qt-AnR" secondAttribute="leading" id="Z7J-vy-r97"/>
+                        <constraint firstItem="j2r-RK-MsL" firstAttribute="width" secondItem="Z9X-7A-9lq" secondAttribute="width" id="bQW-UK-WgM"/>
+                        <constraint firstAttribute="trailing" secondItem="2Sh-X0-X6Z" secondAttribute="trailing" id="cdv-iI-XYT"/>
+                        <constraint firstItem="j2r-RK-MsL" firstAttribute="top" secondItem="2Sh-X0-X6Z" secondAttribute="bottom" id="kkj-Co-mlH"/>
+                        <constraint firstAttribute="height" constant="49" id="uBU-56-KEg"/>
+                        <constraint firstAttribute="trailing" secondItem="j2r-RK-MsL" secondAttribute="trailing" id="whI-Pf-cCy"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Apn-an-jcs">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="h0b-Dj-1Ik"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ReV-Nl-mSC">
+                    <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ReV-Nl-mSC" firstAttribute="top" secondItem="Apn-an-jcs" secondAttribute="bottom" id="1Jp-Yh-LDU"/>
+                <constraint firstItem="Apn-an-jcs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4vV-QQ-xWL"/>
+                <constraint firstAttribute="trailing" secondItem="ref-Qt-AnR" secondAttribute="trailing" id="Apx-1W-IRT"/>
+                <constraint firstAttribute="bottom" secondItem="ref-Qt-AnR" secondAttribute="bottom" id="JT1-Js-XAO"/>
+                <constraint firstItem="ref-Qt-AnR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="PeH-nf-TAv"/>
+                <constraint firstItem="Apn-an-jcs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="XOt-Xg-ThC"/>
+                <constraint firstItem="ReV-Nl-mSC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="afp-of-m6V"/>
+                <constraint firstItem="ref-Qt-AnR" firstAttribute="top" secondItem="ReV-Nl-mSC" secondAttribute="bottom" id="bO3-HW-7ti"/>
+                <constraint firstAttribute="trailing" secondItem="Apn-an-jcs" secondAttribute="trailing" id="bub-PT-k6w"/>
+                <constraint firstAttribute="trailing" secondItem="ReV-Nl-mSC" secondAttribute="trailing" id="uog-8v-Dye"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
         </view>
     </objects>
 </document>

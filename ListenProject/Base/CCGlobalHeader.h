@@ -48,8 +48,12 @@
 
 #define CCHISTORYCellID @"CCHistoryCell"
 
-#define CURRENT_SONGNUMBER @"currentSongNumber"
+#define CCPLAYERCOMMONCellID @"CCPlayerCommonCell"
+#define CCPLAYERRECOMCellID  @"CCPlayerRecomCell"
 
+
+
+#define CURRENT_SONGNUMBER @"currentSongNumber"
 
 
 

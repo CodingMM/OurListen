@@ -51,6 +51,7 @@
 
 @property (nonatomic, strong) NSDictionary * radioData;
 
+@property (weak, nonatomic) IBOutlet UIScrollView *topScrollView;
 
 +(CCPlayerViewController *)sharePlayerViewController;
 
