@@ -193,6 +193,8 @@
 		A57631551C1AC26F001EF8B8 /* CCBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A57631541C1AC26F001EF8B8 /* CCBaseTableViewController.m */; };
 		A5D979151C26F5FE005D259D /* CCSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D979131C26F5FE005D259D /* CCSearchViewController.m */; };
 		A5D979161C26F5FE005D259D /* CCSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5D979141C26F5FE005D259D /* CCSearchViewController.xib */; };
+		A5D9791D1C26F6CA005D259D /* CCSearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D9791B1C26F6CA005D259D /* CCSearchCell.m */; };
+		A5D9791E1C26F6CA005D259D /* CCSearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5D9791C1C26F6CA005D259D /* CCSearchCell.xib */; };
 		A5E30E191C1F27F900F630F8 /* NSString+category.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E30E181C1F27F900F630F8 /* NSString+category.m */; };
 		A5E30E221C1F281C00F630F8 /* CCScannerDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E30E1F1C1F281C00F630F8 /* CCScannerDetailController.m */; };
 		A5E30E231C1F281C00F630F8 /* CCScannerDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5E30E201C1F281C00F630F8 /* CCScannerDetailController.xib */; };
@@ -535,6 +537,9 @@
 		A5D979121C26F5FE005D259D /* CCSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSearchViewController.h; sourceTree = "<group>"; };
 		A5D979131C26F5FE005D259D /* CCSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCSearchViewController.m; sourceTree = "<group>"; };
 		A5D979141C26F5FE005D259D /* CCSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCSearchViewController.xib; sourceTree = "<group>"; };
+		A5D9791A1C26F6CA005D259D /* CCSearchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSearchCell.h; sourceTree = "<group>"; };
+		A5D9791B1C26F6CA005D259D /* CCSearchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCSearchCell.m; sourceTree = "<group>"; };
+		A5D9791C1C26F6CA005D259D /* CCSearchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCSearchCell.xib; sourceTree = "<group>"; };
 		A5E30E171C1F27F900F630F8 /* NSString+category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+category.h"; sourceTree = "<group>"; };
 		A5E30E181C1F27F900F630F8 /* NSString+category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+category.m"; sourceTree = "<group>"; };
 		A5E30E1E1C1F281C00F630F8 /* CCScannerDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCScannerDetailController.h; sourceTree = "<group>"; };
@@ -1287,6 +1292,9 @@
 		A5D9790B1C26F5A3005D259D /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				A5D9791A1C26F6CA005D259D /* CCSearchCell.h */,
+				A5D9791B1C26F6CA005D259D /* CCSearchCell.m */,
+				A5D9791C1C26F6CA005D259D /* CCSearchCell.xib */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -1420,6 +1428,7 @@
 				84D2386F1C2528B5004F205C /* CCRecomCell.xib in Resources */,
 				84DFAD901C2683E6000444F5 /* CCPlayerRecomCell.xib in Resources */,
 				84DFAD9F1C26C028000444F5 /* CCDownloadViewController.xib in Resources */,
+				A5D9791E1C26F6CA005D259D /* CCSearchCell.xib in Resources */,
 				84D2386D1C2528B5004F205C /* CCListenListCell4.xib in Resources */,
 				84DFAD831C266626000444F5 /* CCPlayerCommonCell.xib in Resources */,
 				84DFADBD1C26D082000444F5 /* CCDownloadAlbumCell.xib in Resources */,
@@ -1568,6 +1577,7 @@
 				84D2388A1C252B2D004F205C /* CCTableHeaderView.m in Sources */,
 				A5D979151C26F5FE005D259D /* CCSearchViewController.m in Sources */,
 				846E7CAB1C1EE1AF00CBAE9D /* UIImage+GIF.m in Sources */,
+				A5D9791D1C26F6CA005D259D /* CCSearchCell.m in Sources */,
 				84B299FD1C19546300870099 /* JSONModel.m in Sources */,
 				84D238421C25239D004F205C /* UIImageView+AFNetworking.m in Sources */,
 				84DFAD8A1C267EF0000444F5 /* CCPlayerRecomTableViewController.m in Sources */,

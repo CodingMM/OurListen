@@ -94,18 +94,18 @@ typedef NS_ENUM(NSInteger, RMoveDirection) {
 
 - (id)init{
     if (self = [super init]){
-        _LeftSContentOffset= 160;
-        _RightSContentOffset= 160;
-        _LeftSContentScale= 0.85;
-        _RightSContentScale= 0.85;
-        _LeftSJudgeOffset= 100;
-        _RightSJudgeOffset= 100;
-        _LeftSOpenDuration= 0.4;
-        _RightSOpenDuration= 0.4;
-        _LeftSCloseDuration= 0.3;
-        _RightSCloseDuration= 0.3;
-        _canShowLeft= YES;
-        _canShowRight= YES;
+        _LeftSContentOffset = 160;
+        _RightSContentOffset = 160;
+        _LeftSContentScale = 0.85;
+        _RightSContentScale = 0.85;
+        _LeftSJudgeOffset = 100;
+        _RightSJudgeOffset = 100;
+        _LeftSOpenDuration = 0.4;
+        _RightSOpenDuration = 0.4;
+        _LeftSCloseDuration = 0.3;
+        _RightSCloseDuration = 0.3;
+        _canShowLeft = YES;
+        _canShowRight = YES;
     }
         
     return self;
@@ -122,13 +122,13 @@ typedef NS_ENUM(NSInteger, RMoveDirection) {
 
     [self initChildControllers:_LeftVC rightVC:_RightVC];
     
-    [self showContentControllerWithModel:_MainVC!=nil?NSStringFromClass([_MainVC class]):@"MainViewController"];
+    [self showContentControllerWithModel:_MainVC != nil ? NSStringFromClass([_MainVC class]):@"MainViewController"];
     
-    if((self.wantsFullScreenLayout=_MainVC.wantsFullScreenLayout)){
+    if((self.wantsFullScreenLayout = _MainVC.wantsFullScreenLayout)){
         
-        _rightSideView.frame=[UIScreen mainScreen].bounds;
-        _leftSideView.frame=[UIScreen mainScreen].bounds;
-        _mainContentView.frame=[UIScreen mainScreen].bounds;
+        _rightSideView.frame = [UIScreen mainScreen].bounds;
+        _leftSideView.frame = [UIScreen mainScreen].bounds;
+        _mainContentView.frame = [UIScreen mainScreen].bounds;
     }
 
     _tapGestureRec = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(closeSideBar)];
