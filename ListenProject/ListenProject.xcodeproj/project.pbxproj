@@ -150,8 +150,6 @@
 		84D238AE1C25368A004F205C /* CCMoreMsgCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84D238AC1C25368A004F205C /* CCMoreMsgCollectionCell.xib */; };
 		84D238B01C2539FC004F205C /* CCClassViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84D238AF1C2539FC004F205C /* CCClassViewController.xib */; };
 		84DC23671C1E516E00452960 /* CCClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DC23651C1E516E00452960 /* CCClassViewController.m */; };
-		84DC23711C1E566900452960 /* CCSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DC236F1C1E566900452960 /* CCSearchViewController.m */; };
-		84DC23721C1E566900452960 /* CCSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84DC23701C1E566900452960 /* CCSearchViewController.xib */; };
 		84DFAD711C266179000444F5 /* CCSegmentedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DFAD701C266179000444F5 /* CCSegmentedView.m */; };
 		84DFAD751C266383000444F5 /* CCPlayerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DFAD731C266383000444F5 /* CCPlayerDetailViewController.m */; };
 		84DFAD761C266383000444F5 /* CCPlayerDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84DFAD741C266383000444F5 /* CCPlayerDetailViewController.xib */; };
@@ -193,6 +191,8 @@
 		A57631471C1AB792001EF8B8 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A57631441C1AB792001EF8B8 /* SVProgressHUD.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A576314B1C1AB88F001EF8B8 /* AJNotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = A576314A1C1AB88F001EF8B8 /* AJNotificationView.m */; };
 		A57631551C1AC26F001EF8B8 /* CCBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A57631541C1AC26F001EF8B8 /* CCBaseTableViewController.m */; };
+		A5D979151C26F5FE005D259D /* CCSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D979131C26F5FE005D259D /* CCSearchViewController.m */; };
+		A5D979161C26F5FE005D259D /* CCSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5D979141C26F5FE005D259D /* CCSearchViewController.xib */; };
 		A5E30E191C1F27F900F630F8 /* NSString+category.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E30E181C1F27F900F630F8 /* NSString+category.m */; };
 		A5E30E221C1F281C00F630F8 /* CCScannerDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E30E1F1C1F281C00F630F8 /* CCScannerDetailController.m */; };
 		A5E30E231C1F281C00F630F8 /* CCScannerDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5E30E201C1F281C00F630F8 /* CCScannerDetailController.xib */; };
@@ -465,9 +465,6 @@
 		84D238AF1C2539FC004F205C /* CCClassViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCClassViewController.xib; sourceTree = "<group>"; };
 		84DC23641C1E516E00452960 /* CCClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCClassViewController.h; sourceTree = "<group>"; };
 		84DC23651C1E516E00452960 /* CCClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCClassViewController.m; sourceTree = "<group>"; };
-		84DC236E1C1E566900452960 /* CCSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSearchViewController.h; sourceTree = "<group>"; };
-		84DC236F1C1E566900452960 /* CCSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCSearchViewController.m; sourceTree = "<group>"; };
-		84DC23701C1E566900452960 /* CCSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCSearchViewController.xib; sourceTree = "<group>"; };
 		84DFAD6F1C266179000444F5 /* CCSegmentedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSegmentedView.h; sourceTree = "<group>"; };
 		84DFAD701C266179000444F5 /* CCSegmentedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCSegmentedView.m; sourceTree = "<group>"; };
 		84DFAD721C266383000444F5 /* CCPlayerDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPlayerDetailViewController.h; sourceTree = "<group>"; };
@@ -535,6 +532,9 @@
 		A576314A1C1AB88F001EF8B8 /* AJNotificationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJNotificationView.m; sourceTree = "<group>"; };
 		A57631531C1AC26F001EF8B8 /* CCBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBaseTableViewController.h; sourceTree = "<group>"; };
 		A57631541C1AC26F001EF8B8 /* CCBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBaseTableViewController.m; sourceTree = "<group>"; };
+		A5D979121C26F5FE005D259D /* CCSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSearchViewController.h; sourceTree = "<group>"; };
+		A5D979131C26F5FE005D259D /* CCSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCSearchViewController.m; sourceTree = "<group>"; };
+		A5D979141C26F5FE005D259D /* CCSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCSearchViewController.xib; sourceTree = "<group>"; };
 		A5E30E171C1F27F900F630F8 /* NSString+category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+category.h"; sourceTree = "<group>"; };
 		A5E30E181C1F27F900F630F8 /* NSString+category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+category.m"; sourceTree = "<group>"; };
 		A5E30E1E1C1F281C00F630F8 /* CCScannerDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCScannerDetailController.h; sourceTree = "<group>"; };
@@ -659,6 +659,7 @@
 				84A0E08A1C2581F5001A9CC7 /* CCLiveMoreViewController.h */,
 				84A0E08B1C2581F5001A9CC7 /* CCLiveMoreViewController.m */,
 				84A0E08C1C2581F5001A9CC7 /* CCLiveMoreViewController.xib */,
+				A5D979111C26F5FE005D259D /* search */,
 			);
 			path = live;
 			sourceTree = "<group>";
@@ -862,6 +863,7 @@
 				84DFAD951C2697FE000444F5 /* Download */,
 				84C62B911C25A6EA0089C314 /* Player */,
 				84A0E0651C256FA3001A9CC7 /* Live */,
+				A5D9790B1C26F5A3005D259D /* Search */,
 				84D238761C252982004F205C /* Classification */,
 				84D238481C2528B5004F205C /* Recom */,
 				846E7C761C1EE06700CBAE9D /* imageScrollView */,
@@ -1168,7 +1170,6 @@
 				84EE7A031C1ABBA10033BF5E /* classification */,
 				84EE7A041C1ABBA10033BF5E /* home */,
 				846E7C5A1C1EA73C00CBAE9D /* live */,
-				84EE7A091C1ABBA10033BF5E /* sarch */,
 			);
 			path = Discover;
 			sourceTree = "<group>";
@@ -1199,16 +1200,6 @@
 				84EE7A061C1ABBA10033BF5E /* CCDiscoverViewController.m */,
 			);
 			path = home;
-			sourceTree = "<group>";
-		};
-		84EE7A091C1ABBA10033BF5E /* sarch */ = {
-			isa = PBXGroup;
-			children = (
-				84DC236E1C1E566900452960 /* CCSearchViewController.h */,
-				84DC236F1C1E566900452960 /* CCSearchViewController.m */,
-				84DC23701C1E566900452960 /* CCSearchViewController.xib */,
-			);
-			path = sarch;
 			sourceTree = "<group>";
 		};
 		A552443C1C17DAE40089CC04 /* Base */ = {
@@ -1291,6 +1282,23 @@
 			);
 			name = Scanner;
 			path = Player/Scanner;
+			sourceTree = "<group>";
+		};
+		A5D9790B1C26F5A3005D259D /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		A5D979111C26F5FE005D259D /* search */ = {
+			isa = PBXGroup;
+			children = (
+				A5D979121C26F5FE005D259D /* CCSearchViewController.h */,
+				A5D979131C26F5FE005D259D /* CCSearchViewController.m */,
+				A5D979141C26F5FE005D259D /* CCSearchViewController.xib */,
+			);
+			path = search;
 			sourceTree = "<group>";
 		};
 		A5E30E1A1C1F281C00F630F8 /* Detail */ = {
@@ -1401,7 +1409,7 @@
 				84DFAD921C26897C000444F5 /* CCPlayerViewController.xib in Resources */,
 				84D238AE1C25368A004F205C /* CCMoreMsgCollectionCell.xib in Resources */,
 				84DFAD761C266383000444F5 /* CCPlayerDetailViewController.xib in Resources */,
-				84DC23721C1E566900452960 /* CCSearchViewController.xib in Resources */,
+				A5D979161C26F5FE005D259D /* CCSearchViewController.xib in Resources */,
 				84D2389A1C252F51004F205C /* CCClassRecomCell.xib in Resources */,
 				84D2389F1C2532F6004F205C /* CCClassMoreMsgViewController.xib in Resources */,
 				846E7C7B1C1EE06700CBAE9D /* ImagesScrollView.xib in Resources */,
@@ -1485,7 +1493,6 @@
 				84D238681C2528B5004F205C /* CCListenListCell2.m in Sources */,
 				84D238891C252B2D004F205C /* CCPlayerBtn.m in Sources */,
 				84D238721C2528B5004F205C /* CCRecomCell3.m in Sources */,
-				84DC23711C1E566900452960 /* CCSearchViewController.m in Sources */,
 				84D2383A1C25239D004F205C /* MJRefreshConst.m in Sources */,
 				84DFADB21C26C52A000444F5 /* CCSortCell.m in Sources */,
 				84B29A061C19546300870099 /* JSONValueTransformer.m in Sources */,
@@ -1559,6 +1566,7 @@
 				84D238371C25239D004F205C /* AFURLSessionManager.m in Sources */,
 				846E7CAA1C1EE1AF00CBAE9D /* UIButton+WebCache.m in Sources */,
 				84D2388A1C252B2D004F205C /* CCTableHeaderView.m in Sources */,
+				A5D979151C26F5FE005D259D /* CCSearchViewController.m in Sources */,
 				846E7CAB1C1EE1AF00CBAE9D /* UIImage+GIF.m in Sources */,
 				84B299FD1C19546300870099 /* JSONModel.m in Sources */,
 				84D238421C25239D004F205C /* UIImageView+AFNetworking.m in Sources */,
