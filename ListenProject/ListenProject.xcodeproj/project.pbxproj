@@ -191,6 +191,7 @@
 		A57631471C1AB792001EF8B8 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A57631441C1AB792001EF8B8 /* SVProgressHUD.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A576314B1C1AB88F001EF8B8 /* AJNotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = A576314A1C1AB88F001EF8B8 /* AJNotificationView.m */; };
 		A57631551C1AC26F001EF8B8 /* CCBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A57631541C1AC26F001EF8B8 /* CCBaseTableViewController.m */; };
+		A58A62381C26F8440007F6C3 /* CCSegeView.m in Sources */ = {isa = PBXBuildFile; fileRef = A58A62371C26F8440007F6C3 /* CCSegeView.m */; };
 		A5D979151C26F5FE005D259D /* CCSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D979131C26F5FE005D259D /* CCSearchViewController.m */; };
 		A5D979161C26F5FE005D259D /* CCSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5D979141C26F5FE005D259D /* CCSearchViewController.xib */; };
 		A5D9791D1C26F6CA005D259D /* CCSearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D9791B1C26F6CA005D259D /* CCSearchCell.m */; };
@@ -534,6 +535,8 @@
 		A576314A1C1AB88F001EF8B8 /* AJNotificationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJNotificationView.m; sourceTree = "<group>"; };
 		A57631531C1AC26F001EF8B8 /* CCBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBaseTableViewController.h; sourceTree = "<group>"; };
 		A57631541C1AC26F001EF8B8 /* CCBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBaseTableViewController.m; sourceTree = "<group>"; };
+		A58A62361C26F8440007F6C3 /* CCSegeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSegeView.h; sourceTree = "<group>"; };
+		A58A62371C26F8440007F6C3 /* CCSegeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCSegeView.m; sourceTree = "<group>"; };
 		A5D979121C26F5FE005D259D /* CCSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSearchViewController.h; sourceTree = "<group>"; };
 		A5D979131C26F5FE005D259D /* CCSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCSearchViewController.m; sourceTree = "<group>"; };
 		A5D979141C26F5FE005D259D /* CCSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCSearchViewController.xib; sourceTree = "<group>"; };
@@ -1295,6 +1298,8 @@
 				A5D9791A1C26F6CA005D259D /* CCSearchCell.h */,
 				A5D9791B1C26F6CA005D259D /* CCSearchCell.m */,
 				A5D9791C1C26F6CA005D259D /* CCSearchCell.xib */,
+				A58A62361C26F8440007F6C3 /* CCSegeView.h */,
+				A58A62371C26F8440007F6C3 /* CCSegeView.m */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -1549,6 +1554,7 @@
 				84D238391C25239D004F205C /* MJRefreshBaseView.m in Sources */,
 				84D2386A1C2528B5004F205C /* CCListenListCell3.m in Sources */,
 				84DFADC51C26D249000444F5 /* CCAlbumSetDetailViewController.m in Sources */,
+				A58A62381C26F8440007F6C3 /* CCSegeView.m in Sources */,
 				84D238991C252F51004F205C /* CCClassRecomCell.m in Sources */,
 				84A0E0881C257E6A001A9CC7 /* CCLiveDetailViewController3.m in Sources */,
 				84809B8C1C2247D000CC7E4E /* CCAlbumDetailViewController.m in Sources */,
