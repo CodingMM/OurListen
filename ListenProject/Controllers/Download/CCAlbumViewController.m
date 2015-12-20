@@ -228,13 +228,7 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 #pragma mark - 懒加载
-
 - (NSMutableArray * )dataSource
 {
     if (_dataSource == nil) {
@@ -242,5 +236,11 @@
     }
     return _dataSource;
 }
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
 
 @end
