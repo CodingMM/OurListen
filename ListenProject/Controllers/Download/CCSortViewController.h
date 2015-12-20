@@ -1,5 +1,5 @@
 //
-//  CCDownloadViewController.h
+//  CCSortViewController.h
 //  ListenProject
 //
 //  Created by xiating on 15/12/20.
@@ -7,6 +7,8 @@
 //
 
 #import "CCBaseViewController.h"
-@interface CCDownloadViewController : CCBaseViewController
+@interface CCSortViewController : CCBaseViewController
+
+@property (nonatomic, strong) NSMutableArray * dataSource;
 
 @end

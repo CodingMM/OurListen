@@ -51,6 +51,15 @@
 #define CCPLAYERCOMMONCellID @"CCPlayerCommonCell"
 #define CCPLAYERRECOMCellID  @"CCPlayerRecomCell"
 
+//下载
+
+#define CCDOWNLOADCellID @"CCDownloadCell"
+
+#define CCSOUNDCellID @"CCSoundCell"
+
+#define CCSORTCellID @"CCSortCell"
+
+
 
 
 #define CURRENT_SONGNUMBER @"currentSongNumber"
