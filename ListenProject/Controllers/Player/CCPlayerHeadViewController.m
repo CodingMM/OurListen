@@ -160,14 +160,14 @@ NSInteger type = 0;
 {
     CCPlayerBtn *playerBtn = [CCPlayerBtn sharePlayerBtn];
     playerBtn.animation9 = [UIImageAnimation rotation:1 degree:30 direction:-1 repeatCount:1000000];
-    [playerBtn.layer addAnimation:playerBtn.animation9 forKey:nil];
+    [playerBtn.rotationView.layer addAnimation:playerBtn.animation9 forKey:nil];
 }
 
 - (void)stop
 {
     CCPlayerBtn *playerBtn = [CCPlayerBtn sharePlayerBtn];
     playerBtn.animation9 = [UIImageAnimation rotation:1 degree:0 direction:-1 repeatCount:0];
-    [playerBtn.layer addAnimation:playerBtn.animation9 forKey:nil];
+    [playerBtn.rotationView.layer addAnimation:playerBtn.animation9 forKey:nil];
 }
 
 

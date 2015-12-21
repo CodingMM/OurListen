@@ -47,6 +47,14 @@
 
     self.navigationItem.rightBarButtonItem = item;
     self.navigationController.navigationBar.translucent = NO;
+    
+    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(showLeftVC)];
+    
+    self.navigationItem.leftBarButtonItem = leftItem;
+}
+-(void)showLeftVC
+{
+    
 }
 -(void)viewWillAppear:(BOOL)animated
 {

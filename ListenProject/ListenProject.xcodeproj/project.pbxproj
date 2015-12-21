@@ -87,6 +87,8 @@
 		84C62B9A1C25A8960089C314 /* UIImageAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C62B991C25A8960089C314 /* UIImageAnimation.m */; };
 		84C62B9E1C25AC9C0089C314 /* CCPlayerCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C62B9C1C25AC9C0089C314 /* CCPlayerCommentCell.m */; };
 		84C62B9F1C25AC9C0089C314 /* CCPlayerCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C62B9D1C25AC9C0089C314 /* CCPlayerCommentCell.xib */; };
+		84CD04601C28277B009C1B46 /* MLTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD045D1C28277B009C1B46 /* MLTransitionAnimation.m */; };
+		84CD04611C28277B009C1B46 /* UIViewController+MLTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD045F1C28277B009C1B46 /* UIViewController+MLTransition.m */; };
 		84D2382F1C25239D004F205C /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D237FC1C25239D004F205C /* AFHTTPRequestOperation.m */; };
 		84D238301C25239D004F205C /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D237FE1C25239D004F205C /* AFHTTPRequestOperationManager.m */; };
 		84D238311C25239D004F205C /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D238001C25239D004F205C /* AFHTTPSessionManager.m */; };
@@ -357,6 +359,10 @@
 		84C62B9B1C25AC9C0089C314 /* CCPlayerCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPlayerCommentCell.h; sourceTree = "<group>"; };
 		84C62B9C1C25AC9C0089C314 /* CCPlayerCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPlayerCommentCell.m; sourceTree = "<group>"; };
 		84C62B9D1C25AC9C0089C314 /* CCPlayerCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCPlayerCommentCell.xib; sourceTree = "<group>"; };
+		84CD045C1C28277B009C1B46 /* MLTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLTransitionAnimation.h; sourceTree = "<group>"; };
+		84CD045D1C28277B009C1B46 /* MLTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLTransitionAnimation.m; sourceTree = "<group>"; };
+		84CD045E1C28277B009C1B46 /* UIViewController+MLTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MLTransition.h"; sourceTree = "<group>"; };
+		84CD045F1C28277B009C1B46 /* UIViewController+MLTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MLTransition.m"; sourceTree = "<group>"; };
 		84D237FB1C25239D004F205C /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		84D237FC1C25239D004F205C /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		84D237FD1C25239D004F205C /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -637,6 +643,7 @@
 		844CB64A1C1717CC00710E8D /* OtherSource */ = {
 			isa = PBXGroup;
 			children = (
+				84CD045B1C28277B009C1B46 /* MLTransition */,
 				84C62B971C25A8960089C314 /* UIImageAnimation */,
 				84D237F91C25239D004F205C /* AFNetworking */,
 				84809B9B1C22540000CC7E4E /* SVPullToRefresh */,
@@ -989,6 +996,17 @@
 				84C62B991C25A8960089C314 /* UIImageAnimation.m */,
 			);
 			path = UIImageAnimation;
+			sourceTree = "<group>";
+		};
+		84CD045B1C28277B009C1B46 /* MLTransition */ = {
+			isa = PBXGroup;
+			children = (
+				84CD045C1C28277B009C1B46 /* MLTransitionAnimation.h */,
+				84CD045D1C28277B009C1B46 /* MLTransitionAnimation.m */,
+				84CD045E1C28277B009C1B46 /* UIViewController+MLTransition.h */,
+				84CD045F1C28277B009C1B46 /* UIViewController+MLTransition.m */,
+			);
+			path = MLTransition;
 			sourceTree = "<group>";
 		};
 		84D237F91C25239D004F205C /* AFNetworking */ = {
@@ -1516,6 +1534,7 @@
 				846E7CB01C1EE1AF00CBAE9D /* UIView+WebCacheOperation.m in Sources */,
 				846E7CA51C1EE1AF00CBAE9D /* SDWebImageDecoder.m in Sources */,
 				84809BA21C22540000CC7E4E /* UIScrollView+SVPullToRefresh.m in Sources */,
+				84CD04611C28277B009C1B46 /* UIViewController+MLTransition.m in Sources */,
 				844CB62A1C17179900710E8D /* AppDelegate.m in Sources */,
 				84D2383F1C25239D004F205C /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				84D238341C25239D004F205C /* AFURLConnectionOperation.m in Sources */,
@@ -1545,6 +1564,7 @@
 				84D2386E1C2528B5004F205C /* CCRecomCell.m in Sources */,
 				844CB6271C17179900710E8D /* main.m in Sources */,
 				84B299FE1C19546300870099 /* JSONModelArray.m in Sources */,
+				84CD04601C28277B009C1B46 /* MLTransitionAnimation.m in Sources */,
 				A576314B1C1AB88F001EF8B8 /* AJNotificationView.m in Sources */,
 				84D238331C25239D004F205C /* AFSecurityPolicy.m in Sources */,
 				84D238431C25239D004F205C /* UIProgressView+AFNetworking.m in Sources */,

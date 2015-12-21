@@ -11,6 +11,6 @@
 @interface CCTabBarController : UITabBarController
 
 
-
++(CCTabBarController *)shareTabBarController;
 
 @end

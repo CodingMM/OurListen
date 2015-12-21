@@ -21,12 +21,24 @@
 
 
 @implementation CCTabBarController
-
++(CCTabBarController *)shareTabBarController
+{
+    static CCTabBarController * tabController = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        
+        if(!tabController)
+        {
+            tabController = [[CCTabBarController alloc]init];
+        }
+    });
+    return tabController;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    self.view.backgroundColor = [UIColor whiteColor];
     [self tabBarSetting];
     
 }
@@ -66,7 +78,6 @@
     self.viewControllers = vcs;
  
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

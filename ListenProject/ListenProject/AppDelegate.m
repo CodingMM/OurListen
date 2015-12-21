@@ -14,7 +14,9 @@
 #import "CCTabBarController.h"
 #import "CCPlayerViewController.h"
 #import "CCPlayerBtn.h"
-//#import "SliderViewController.h"
+
+#import "UIViewController+MLTransition.h"
+#import "CCGlobalHeader.h"
 
 
 @interface AppDelegate ()
@@ -29,21 +31,32 @@
     _window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     _window.backgroundColor = [UIColor whiteColor];
     [_window makeKeyAndVisible];
-    CCTabBarController *tab = [[CCTabBarController alloc]init];
-    _window.rootViewController = tab;
-
+    [self createTabBarController];
+    return YES;
+}
+#pragma mark -  创建滑动视图作为根视图
+-(void)createTabBarController
+{
+    CCTabBarController *tab = [CCTabBarController shareTabBarController];
+    
+    /*******拖拽返回*******/
+    [UIViewController validatePanPackWithMLTransitionGestureRecognizerType:MLTransitionGestureRecognizerTypePan];
+    
+    self.window.rootViewController = tab;
     /*创建播放按钮*/
     [self createPlayerBtn];
+
     
-    return YES;
 }
 
 #pragma mark - 创建播放按钮
 - (void)createPlayerBtn
 {
+    
     CCPlayerBtn *playerBtn = [CCPlayerBtn sharePlayerBtn];
     [playerBtn addTarget:self action:@selector(playerBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
     [self.window addSubview:playerBtn];
+
 }
 /**
  *  播放按钮点击事件
