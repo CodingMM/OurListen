@@ -13,6 +13,7 @@
 #import "CCClassViewController.h"
 #import "CCLiveTableViewController.h"
 #import "CCSearchViewController.h"
+#import "CCScannerViewController.h"
 
 @interface CCDiscoverViewController ()<CCRecomViewControllerDelegate>
 @property (nonatomic, retain) UIView *topView;//分栏标题的底视图
@@ -54,6 +55,13 @@
 }
 -(void)showLeftVC
 {
+    
+    
+    CCScannerViewController *scannerView = [[CCScannerViewController alloc]init];
+    
+     scannerView.hidesBottomBarWhenPushed = YES;
+    
+    [self.navigationController pushViewController:scannerView animated:YES];
     
 }
 -(void)viewWillAppear:(BOOL)animated

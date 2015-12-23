@@ -43,6 +43,7 @@
     
     //Start
     [self.session startRunning];
+   
     
 }
 - (void)viewDidDisappear:(BOOL)animated{
@@ -312,7 +313,7 @@
     
     [self.session stopRunning];
     
-    [self dismissViewControllerAnimated:NO completion:nil];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 #pragma mark -- 开启/关闭 手电筒
