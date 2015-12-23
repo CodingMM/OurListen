@@ -203,6 +203,7 @@
 		A5E30E231C1F281C00F630F8 /* CCScannerDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5E30E201C1F281C00F630F8 /* CCScannerDetailController.xib */; };
 		A5E30E2A1C1F293C00F630F8 /* CCScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E30E281C1F293C00F630F8 /* CCScannerViewController.m */; };
 		A5E30E2B1C1F293C00F630F8 /* CCScannerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5E30E291C1F293C00F630F8 /* CCScannerViewController.xib */; };
+		A5F6F9541C2B005500CF421F /* CCHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F6F9531C2B005500CF421F /* CCHeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -557,6 +558,8 @@
 		A5E30E271C1F293C00F630F8 /* CCScannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCScannerViewController.h; sourceTree = "<group>"; };
 		A5E30E281C1F293C00F630F8 /* CCScannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCScannerViewController.m; sourceTree = "<group>"; };
 		A5E30E291C1F293C00F630F8 /* CCScannerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCScannerViewController.xib; sourceTree = "<group>"; };
+		A5F6F9521C2B005500CF421F /* CCHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHeaderView.h; sourceTree = "<group>"; };
+		A5F6F9531C2B005500CF421F /* CCHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHeaderView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1318,6 +1321,8 @@
 				A5D9791C1C26F6CA005D259D /* CCSearchCell.xib */,
 				A58A62361C26F8440007F6C3 /* CCSegeView.h */,
 				A58A62371C26F8440007F6C3 /* CCSegeView.m */,
+				A5F6F9521C2B005500CF421F /* CCHeaderView.h */,
+				A5F6F9531C2B005500CF421F /* CCHeaderView.m */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -1510,6 +1515,7 @@
 				846E7CAC1C1EE1AF00CBAE9D /* UIImage+MultiFormat.m in Sources */,
 				84EE7A0A1C1ABBA10033BF5E /* CCDiscoverViewController.m in Sources */,
 				84D2383E1C25239D004F205C /* AFNetworkActivityIndicatorManager.m in Sources */,
+				A5F6F9541C2B005500CF421F /* CCHeaderView.m in Sources */,
 				84A0E06E1C2573A9001A9CC7 /* CCLiveCell2.m in Sources */,
 				A5E30E221C1F281C00F630F8 /* CCScannerDetailController.m in Sources */,
 				84C62B8F1C25A5F10089C314 /* CCHistoryViewController.m in Sources */,
