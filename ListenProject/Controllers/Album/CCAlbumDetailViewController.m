@@ -273,6 +273,7 @@ BOOL isSelected = NO;
     [defaults setObject:array forKey:@"songlist"];
     [defaults setObject:@(trackId) forKey:@"trackid"];
     [defaults setObject:@(comment) forKey:@"comment"];
+    [defaults setObject:dict[@"title"] forKey:@"title"];
     [defaults synchronize];
     
     player.name = dict[@"title"];

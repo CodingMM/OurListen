@@ -20,7 +20,7 @@
 
 @property(nonatomic, weak) id<CCPlayerViewControllerDelegate>delegate;
 /**
- *  播放次数
+ *  是否第一次播放
  */
 @property (nonatomic, assign) NSInteger isFirstPlay;
 /**

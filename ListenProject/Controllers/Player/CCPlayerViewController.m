@@ -19,6 +19,10 @@
 #import "CCHistoryViewController.h"
 #import "CCPlayerRecomTableViewController.h"
 
+
+
+
+
 BOOL isHistoryShowed = NO;
 
 @interface CCPlayerViewController ()<UIScrollViewDelegate,CCSegmentedViewDelegate,PlayerRecomendDelegate,CCPlayerHeadViewControllerDelegate>
@@ -47,11 +51,12 @@ BOOL isHistoryShowed = NO;
 
 
 @implementation CCPlayerViewController
+//销毁
 - (void)dealloc {
     //移除观察者
     [[NSNotificationCenter defaultCenter] removeObserver:self name:@"histroy" object:nil];
 }
-
+//单例获取播放视图控制器
 +(CCPlayerViewController *)sharePlayerViewController
 {
     static CCPlayerViewController * vc = nil;
@@ -64,9 +69,9 @@ BOOL isHistoryShowed = NO;
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    [super viewWillAppear:animated];
     self.topScrollView.contentOffset = CGPointMake(0, 0);
 }
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
