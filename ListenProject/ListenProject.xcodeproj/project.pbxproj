@@ -12,6 +12,16 @@
 		844CB6321C17179900710E8D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844CB6311C17179900710E8D /* Images.xcassets */; };
 		844CB6351C17179900710E8D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844CB6331C17179900710E8D /* LaunchScreen.xib */; };
 		844CB6411C17179900710E8D /* ListenProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 844CB6401C17179900710E8D /* ListenProjectTests.m */; };
+		8461EE551C2CEA6E00E9C99B /* libPushSDK-1.8.5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8461EE541C2CEA6E00E9C99B /* libPushSDK-1.8.5.a */; settings = {ASSET_TAGS = (); }; };
+		8461EE571C2CEB7600E9C99B /* PushConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8461EE561C2CEB7600E9C99B /* PushConfig.plist */; settings = {ASSET_TAGS = (); }; };
+		8461EE591C2CF1A000E9C99B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8461EE581C2CF19F00E9C99B /* CFNetwork.framework */; };
+		8461EE5B1C2CF1A900E9C99B /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8461EE5A1C2CF1A900E9C99B /* CoreFoundation.framework */; };
+		8461EE5D1C2CF1B700E9C99B /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8461EE5C1C2CF1B700E9C99B /* CoreTelephony.framework */; };
+		8461EE5F1C2CF1C000E9C99B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8461EE5E1C2CF1C000E9C99B /* SystemConfiguration.framework */; };
+		8461EE611C2CF1CE00E9C99B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8461EE601C2CF1CE00E9C99B /* CoreGraphics.framework */; };
+		8461EE631C2CF1D800E9C99B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8461EE621C2CF1D800E9C99B /* Foundation.framework */; };
+		8461EE651C2CF1E400E9C99B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8461EE641C2CF1E400E9C99B /* libz.tbd */; };
+		8461EE671C2CF1F100E9C99B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8461EE661C2CF1F000E9C99B /* Security.framework */; };
 		846E7C691C1EB02A00CBAE9D /* CCRecomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846E7C671C1EB02A00CBAE9D /* CCRecomViewController.m */; };
 		846E7C6A1C1EB02A00CBAE9D /* CCRecomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846E7C681C1EB02A00CBAE9D /* CCRecomViewController.xib */; };
 		846E7C6E1C1EB08000CBAE9D /* CCLiveTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846E7C6C1C1EB08000CBAE9D /* CCLiveTableViewController.m */; };
@@ -227,6 +237,17 @@
 		844CB63A1C17179900710E8D /* ListenProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListenProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		844CB63F1C17179900710E8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		844CB6401C17179900710E8D /* ListenProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListenProjectTests.m; sourceTree = "<group>"; };
+		8461EE531C2CEA6E00E9C99B /* APService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APService.h; sourceTree = "<group>"; };
+		8461EE541C2CEA6E00E9C99B /* libPushSDK-1.8.5.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libPushSDK-1.8.5.a"; sourceTree = "<group>"; };
+		8461EE561C2CEB7600E9C99B /* PushConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PushConfig.plist; path = ../../PushConfig.plist; sourceTree = "<group>"; };
+		8461EE581C2CF19F00E9C99B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		8461EE5A1C2CF1A900E9C99B /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		8461EE5C1C2CF1B700E9C99B /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		8461EE5E1C2CF1C000E9C99B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8461EE601C2CF1CE00E9C99B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8461EE621C2CF1D800E9C99B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8461EE641C2CF1E400E9C99B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		8461EE661C2CF1F000E9C99B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		846E7C661C1EB02A00CBAE9D /* CCRecomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCRecomViewController.h; sourceTree = "<group>"; };
 		846E7C671C1EB02A00CBAE9D /* CCRecomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCRecomViewController.m; sourceTree = "<group>"; };
 		846E7C681C1EB02A00CBAE9D /* CCRecomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCRecomViewController.xib; sourceTree = "<group>"; };
@@ -567,6 +588,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8461EE671C2CF1F100E9C99B /* Security.framework in Frameworks */,
+				8461EE651C2CF1E400E9C99B /* libz.tbd in Frameworks */,
+				8461EE631C2CF1D800E9C99B /* Foundation.framework in Frameworks */,
+				8461EE611C2CF1CE00E9C99B /* CoreGraphics.framework in Frameworks */,
+				8461EE5F1C2CF1C000E9C99B /* SystemConfiguration.framework in Frameworks */,
+				8461EE5D1C2CF1B700E9C99B /* CoreTelephony.framework in Frameworks */,
+				8461EE5B1C2CF1A900E9C99B /* CoreFoundation.framework in Frameworks */,
+				8461EE591C2CF1A000E9C99B /* CFNetwork.framework in Frameworks */,
+				8461EE551C2CEA6E00E9C99B /* libPushSDK-1.8.5.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +613,7 @@
 		844CB6181C17179900710E8D = {
 			isa = PBXGroup;
 			children = (
+				8461EE681C2CF21700E9C99B /* library */,
 				A55244921C17DC1D0089CC04 /* Tool */,
 				844CB64A1C1717CC00710E8D /* OtherSource */,
 				A552443C1C17DAE40089CC04 /* Base */,
@@ -646,6 +677,7 @@
 		844CB64A1C1717CC00710E8D /* OtherSource */ = {
 			isa = PBXGroup;
 			children = (
+				8461EE521C2CEA6E00E9C99B /* lib */,
 				84CD045B1C28277B009C1B46 /* MLTransition */,
 				84C62B971C25A8960089C314 /* UIImageAnimation */,
 				84D237F91C25239D004F205C /* AFNetworking */,
@@ -657,6 +689,31 @@
 				84B299E31C19546300870099 /* JSONModel */,
 			);
 			path = OtherSource;
+			sourceTree = "<group>";
+		};
+		8461EE521C2CEA6E00E9C99B /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				8461EE561C2CEB7600E9C99B /* PushConfig.plist */,
+				8461EE531C2CEA6E00E9C99B /* APService.h */,
+				8461EE541C2CEA6E00E9C99B /* libPushSDK-1.8.5.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		8461EE681C2CF21700E9C99B /* library */ = {
+			isa = PBXGroup;
+			children = (
+				8461EE661C2CF1F000E9C99B /* Security.framework */,
+				8461EE641C2CF1E400E9C99B /* libz.tbd */,
+				8461EE621C2CF1D800E9C99B /* Foundation.framework */,
+				8461EE601C2CF1CE00E9C99B /* CoreGraphics.framework */,
+				8461EE5E1C2CF1C000E9C99B /* SystemConfiguration.framework */,
+				8461EE5C1C2CF1B700E9C99B /* CoreTelephony.framework */,
+				8461EE5A1C2CF1A900E9C99B /* CoreFoundation.framework */,
+				8461EE581C2CF19F00E9C99B /* CFNetwork.framework */,
+			);
+			name = library;
 			sourceTree = "<group>";
 		};
 		846E7C5A1C1EA73C00CBAE9D /* live */ = {
@@ -1437,6 +1494,7 @@
 				84A0E0841C257D9F001A9CC7 /* CCLiveDetailViewController2.xib in Resources */,
 				84D2387B1C252A20004F205C /* CCClassCollectionViewCell.xib in Resources */,
 				84B299E21C19509300870099 /* province.plist in Resources */,
+				8461EE571C2CEB7600E9C99B /* PushConfig.plist in Resources */,
 				84C62B861C259F9C0089C314 /* CCPlayerHeadViewController.xib in Resources */,
 				846E7C6A1C1EB02A00CBAE9D /* CCRecomViewController.xib in Resources */,
 				84D238651C2528B5004F205C /* CCAlbumCell.xib in Resources */,
@@ -1755,6 +1813,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ListenProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OtherSource/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1765,6 +1827,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ListenProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OtherSource/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

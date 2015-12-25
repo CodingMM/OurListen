@@ -17,6 +17,7 @@
 
 #import "UIViewController+MLTransition.h"
 #import "CCGlobalHeader.h"
+#import "APService.h"
 
 
 @interface AppDelegate ()
@@ -32,6 +33,7 @@
     _window.backgroundColor = [UIColor whiteColor];
     [_window makeKeyAndVisible];
     [self createTabBarController];
+    [self addJpushService:launchOptions];
     return YES;
 }
 #pragma mark -  创建滑动视图作为根视图
@@ -88,10 +90,51 @@
 }
 
 
+#pragma mark - 消息推送
+
+-(void)addJpushService:(NSDictionary *)launchOptions
+{
+   
+#if __IPHONE_OS_VERSION_MAX_ALLOWED > __IPHONE_8_0
+    if ([[UIDevice currentDevice].systemVersion floatValue] >= 8.0) {
+        //categories
+        [APService
+         registerForRemoteNotificationTypes:(UIUserNotificationTypeBadge |UIUserNotificationTypeSound |UIUserNotificationTypeAlert)categories:nil];
+    }
+#else
+        
+    [APService
+     registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge |UIRemoteNotificationTypeSound |UIRemoteNotificationTypeAlert)  categories:nil];
+#endif
+        
+     [APService handleRemoteNotification:launchOptions];
+    
+}
+
+- (void)application:(UIApplication *)application
+didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    // 将deviceToken发送给极光
+    [APService registerDeviceToken:deviceToken];
+}
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    // 处理接收的消息,回调极光
+    [APService handleRemoteNotification:userInfo];
+}
+
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult result))completionHandler
+{
+    //支持iOS 7必须实现
+    [APService handleRemoteNotification:userInfo];
+}
+
+#pragma mark - -----------------
+
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
 }
+
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
@@ -104,6 +147,8 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
+
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
