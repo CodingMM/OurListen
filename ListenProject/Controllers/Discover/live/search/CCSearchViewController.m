@@ -17,6 +17,7 @@
 #import "CCListenListCell3.h"
 #import "CCMethod.h"
 #import "DataAPI.h"
+#import "CCPlayerBtn.h"
 @interface CCSearchViewController ()<UICollectionViewDelegateFlowLayout,UICollectionViewDelegate,UICollectionViewDataSource,UITableViewDataSource,UITableViewDelegate,CCSegeViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *searchTF;
@@ -58,9 +59,8 @@
 {
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES];
-#warning appdelegate.btn.hide = yes????
-//    self.appDelegate
-   
+    CCPlayerBtn *payerBtn = [CCPlayerBtn sharePlayerBtn];
+    payerBtn.hidden = YES;
 }
 - (void)createDataSource
 {
@@ -178,18 +178,13 @@
     
     [self.view addSubview:self.tableView];
     
-    CGRect rect = [[UIScreen mainScreen] bounds];
-    rect.origin.y -= 64;
 
-#warning 刷新
- /*
-    [self.progressHUD showInRect:rect inView:self.view animated:YES];
+    [SVProgressHUD showWithStatus:@"加载数据..." maskType:SVProgressHUDMaskTypeBlack networkIndicator:YES];
     __weak CCSearchViewController * weakSelf = self;
     [self.tableView addInfiniteScrollingWithActionHandler:^{
         // NSLog(@"加载更多");
         [weakSelf loadmoreData];
     }];
-*/
 }
 - (void)loadmoreData {
     
@@ -267,10 +262,7 @@
         self.soundNum = [dict[@"track"][@"numFound"] integerValue];
         NSArray * array2 = dict[@"track"][@"docs"];
         [self.dataSource2 addObject:array2];
-#warning 刷新结束
-  /*
-        [self.progressHUD dismissAnimated:YES];
- */
+        [SVProgressHUD dismiss];
         [self.tableView reloadData];
         [self.view endEditing:YES];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
@@ -297,10 +289,7 @@
         for (NSDictionary * dic in array1) {
             [self.dataSource2 addObject:dic];
         }
-#warning 刷新
-        /*
-        [self.progressHUD dismissAnimated:YES];
-         */
+        [SVProgressHUD dismiss];
         [self.tableView reloadData];
         [self.view endEditing:YES];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
@@ -326,10 +315,8 @@
         for (NSDictionary * dic in array1) {
             [self.dataSource2 addObject:dic];
         }
-#warning 刷新
- /*
-        [self.progressHUD dismissAnimated:YES];
-  */
+
+        [SVProgressHUD dismiss];
         [self.tableView reloadData];
         [self.view endEditing:YES];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
@@ -546,9 +533,9 @@
             player.commentNum = comment;
             
             [self presentViewController:player animated:YES completion:^{
-#warning ??
-//                AppDelegate *appDe = [UIApplication sharedApplication].delegate;
-//                appDe.button.hidden = YES;
+                
+                CCPlayerBtn *playerBtn = [CCPlayerBtn sharePlayerBtn];
+                playerBtn.hidden = YES;
                 [player createPlayer];
                 [player reloadData];
             }];
@@ -574,9 +561,8 @@
         player.commentNum = comment;
         
         [self presentViewController:player animated:YES completion:^{
-#warning ????
-//            AppDelegate *appDe = [UIApplication sharedApplication].delegate;
-//            appDe.button.hidden = YES;
+            CCPlayerBtn *playerBtn = [CCPlayerBtn sharePlayerBtn];
+            playerBtn.hidden = YES;
             [player createPlayer];
             [player reloadData];
         }];
@@ -616,25 +602,19 @@
 {
     if (index == 0) {
         self.index = 0;
-        CGRect rect = [[UIScreen mainScreen] bounds];
-        rect.origin.y -= 64;
-#warning 刷新
-//        [self.progressHUD showInRect:rect inView:self.view animated:YES];
+ 
+
+        [SVProgressHUD showWithStatus:@"加载中..." maskType:SVProgressHUDMaskTypeBlack networkIndicator:YES];
         [self downloadData];
     }else if (index == 1) {
         self.index = 1;
-        CGRect rect = [[UIScreen mainScreen] bounds];
-        rect.origin.y -= 64;
-        
-#warning 刷新
-//        [self.progressHUD showInRect:rect inView:self.view animated:YES];
+
+        [SVProgressHUD showWithStatus:@"加载中..." maskType:SVProgressHUDMaskTypeBlack networkIndicator:YES];
         [self downloadData2];
     }else if (index == 2) {
         self.index = 2;
-        CGRect rect = [[UIScreen mainScreen] bounds];
-        rect.origin.y -= 64;
-#warning 刷新
-//        [self.progressHUD showInRect:rect inView:self.view animated:YES];
+
+        [SVProgressHUD showWithStatus:@"加载中..." maskType:SVProgressHUDMaskTypeBlack networkIndicator:YES];
         [self downloadData3];
     }
 }

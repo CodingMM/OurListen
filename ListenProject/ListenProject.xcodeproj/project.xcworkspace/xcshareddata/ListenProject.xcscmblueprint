@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "DD2029AA0D5EF06FCFAE0D2A3EAF93629FB133E4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "104af93d-25d7-6d4f-957c-7c430014b3a1++4939" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "DD2029AA0D5EF06FCFAE0D2A3EAF93629FB133E4" : 0,
+    "104af93d-25d7-6d4f-957c-7c430014b3a1++4939" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "50A3CFC4-D8CF-4ED7-BA31-F597D4047C88",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "DD2029AA0D5EF06FCFAE0D2A3EAF93629FB133E4" : "OurListen1",
+    "104af93d-25d7-6d4f-957c-7c430014b3a1++4939" : "OurListen1\/ListenProject\/OtherSource\/MLTransition\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ListenProject",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ListenProject\/ListenProject.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/172.20.2.16\/svn\/wecaiwu",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "104af93d-25d7-6d4f-957c-7c430014b3a1++4939"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/CodingMM\/OurListen.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DD2029AA0D5EF06FCFAE0D2A3EAF93629FB133E4"
+    }
+  ]
+}

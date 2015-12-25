@@ -67,7 +67,7 @@ NSInteger type = 0;
     float totalSeconds = totalTime.value * 1.0f/ totalTime.timescale;
     float currentSeconds = totalSeconds * self.slider.value;
     CMTime currentTime = CMTimeMake(currentSeconds * totalTime.timescale, totalTime.timescale);
-    [self.audioPlayer seekToTime:currentTime completionHandler:nil];
+    [self.audioPlayer seekToTime:currentTime];
     
     
 }
