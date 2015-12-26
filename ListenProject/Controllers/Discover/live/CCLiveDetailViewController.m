@@ -62,7 +62,7 @@
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
 }
 - (void)viewDidDisappear:(BOOL)animated{
-
+    
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
     [super viewDidDisappear:animated];
 }
@@ -72,10 +72,10 @@
     
     
     [self.appDelegate showLoading:@"正在加载数据..."];
-   
-
-    if (self.radioType == 1) {
     
+    
+    if (self.radioType == 1) {
+        
         [DataAPI getCountryRadionWithPageNum:self.currentPageNum andSuccessBlock:^(NSURL *url, id data) {
             NSDictionary *dict  = (NSDictionary *)data;
             
@@ -91,31 +91,31 @@
             
         } andFailBlock:^(NSURL *url, NSError *error) {
             
-             [self.appDelegate hideLoadingWithErr:error.localizedDescription WithInterval:1.0];
+            [self.appDelegate hideLoadingWithErr:error.localizedDescription WithInterval:1.0];
             
         }];
         
     }else if (self.radioType == 2) {
         
-    [DataAPI getProvinceRadionWithPageNum:self.currentPageNum andSuccessBlock:^(NSURL *url, id data) {
-        NSDictionary *dict  = (NSDictionary *)data;
-    
-        NSArray * array = dict[@"result"];
-    
-        self.dataSource = (NSMutableArray *)array;
-    
-        [self.tableView.pullToRefreshView stopAnimating];
-    
-        [self.appDelegate hideLoading];
-    
-        [self.tableView reloadData];
-        
-    } andFailBlock:^(NSURL *url, NSError *error) {
-        
-        [self.appDelegate hideLoadingWithErr:error.localizedDescription WithInterval:1.0];
-        
-        
-    }];
+        [DataAPI getProvinceRadionWithPageNum:self.currentPageNum  andCode:@"110000" andSuccessBlock:^(NSURL *url, id data) {
+            NSDictionary *dict  = (NSDictionary *)data;
+            
+            NSArray * array = dict[@"result"];
+            
+            self.dataSource = (NSMutableArray *)array;
+            
+            [self.tableView.pullToRefreshView stopAnimating];
+            
+            [self.appDelegate hideLoading];
+            
+            [self.tableView reloadData];
+            
+        } andFailBlock:^(NSURL *url, NSError *error) {
+            
+            [self.appDelegate hideLoadingWithErr:error.localizedDescription WithInterval:1.0];
+            
+            
+        }];
         
         
     }else if (self.radioType == 3) {
@@ -136,15 +136,15 @@
             
         } andFailBlock:^(NSURL *url, NSError *error) {
             
-             [self.appDelegate hideLoadingWithErr:error.localizedDescription WithInterval:1.0];
+            [self.appDelegate hideLoadingWithErr:error.localizedDescription WithInterval:1.0];
         }];
     }
     
-    }
+}
 
 - (void)loadmoreData
 {
-   
+    
     
     if (self.radioType == 1) {
         
@@ -169,7 +169,7 @@
         
         
     }else if (self.radioType == 2) {
-        [DataAPI getProvinceRadionWithPageNum:self.currentPageNum+1 andSuccessBlock:^(NSURL *url, id data) {
+        [DataAPI getProvinceRadionWithPageNum:self.currentPageNum+1  andCode:@"110000" andSuccessBlock:^(NSURL *url, id data) {
             NSDictionary *dict  = (NSDictionary *)data;
             
             NSArray * array = dict[@"result"];
@@ -182,6 +182,8 @@
             
             [self.tableView reloadData];
             
+            self.currentPageNum++;
+            
         } andFailBlock:^(NSURL *url, NSError *error) {
             
             NSLog(@"%@",error.localizedDescription);
@@ -189,7 +191,7 @@
             
         }];
         
-
+        
     }else if (self.radioType == 3) {
         [DataAPI getWedRadionWithPageNum:self.currentPageNum+1 andSuccessBlock:^(NSURL *url, id data) {
             NSDictionary *dict  = (NSDictionary *)data;
@@ -204,14 +206,16 @@
             
             [self.tableView reloadData];
             
+            self.currentPageNum+1;
+            
         } andFailBlock:^(NSURL *url, NSError *error) {
             
             [self.appDelegate hideLoadingWithErr:error.localizedDescription WithInterval:1.0];
         }];
-  
+        
     }
     
-    }
+}
 
 
 
@@ -237,7 +241,7 @@
     }else {
         cell.numberLabel.text = [NSString stringWithFormat:@"%ld", i];
     }
-
+    
     return cell;
 }
 
@@ -263,7 +267,7 @@
         [player createAudioPlayer];
     }];
     
-
+    
 }
 
 

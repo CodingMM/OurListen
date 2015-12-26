@@ -57,7 +57,7 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-
+    
     if (self.flag == indexPath.item) {
         CCLiveMoreCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ItemCell2" forIndexPath:indexPath];
         cell.itemLabel.backgroundColor = [UIColor orangeColor];
@@ -77,7 +77,7 @@
         cell.itemLabel.clipsToBounds = YES;
         return cell;
     }
-
+    
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
@@ -87,7 +87,7 @@
     if ([self.delegate respondsToSelector:@selector(reloadDataWithProvinceId:)]) {
         [self.delegate reloadDataWithProvinceId:indexPath.item];
     }
-
+    
     if ([self.delegate respondsToSelector:@selector(hiddenMsgView)]) {
         [self.delegate hiddenMsgView];
     }
@@ -127,7 +127,7 @@
     if ([self.delegate respondsToSelector:@selector(hiddenMsgView)]) {
         [self.delegate hiddenMsgView];
     }
-
+    
 }
 
 - (void)didReceiveMemoryWarning {
