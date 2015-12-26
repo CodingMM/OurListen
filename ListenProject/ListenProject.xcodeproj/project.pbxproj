@@ -51,7 +51,7 @@
 		8461EEEA1C2D368500E9C99B /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8461EEE91C2D368400E9C99B /* Accounts.framework */; };
 		8461EEEC1C2D369900E9C99B /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8461EEEB1C2D369900E9C99B /* libstdc++.tbd */; };
 		8461EEEE1C2D36AA00E9C99B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8461EEED1C2D36AA00E9C99B /* libsqlite3.tbd */; };
-		8461EEF11C2EEEE100E9C99B /* APPVersionCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 8461EEF01C2EEEE100E9C99B /* APPVersionCheck.m */; settings = {ASSET_TAGS = (); }; };
+		8461EEF11C2EEEE100E9C99B /* APPVersionCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 8461EEF01C2EEEE100E9C99B /* APPVersionCheck.m */; };
 		846E7C691C1EB02A00CBAE9D /* CCRecomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846E7C671C1EB02A00CBAE9D /* CCRecomViewController.m */; };
 		846E7C6A1C1EB02A00CBAE9D /* CCRecomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846E7C681C1EB02A00CBAE9D /* CCRecomViewController.xib */; };
 		846E7C6E1C1EB08000CBAE9D /* CCLiveTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846E7C6C1C1EB08000CBAE9D /* CCLiveTableViewController.m */; };
@@ -91,10 +91,6 @@
 		84A0E06F1C2573A9001A9CC7 /* CCLiveCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A0E06D1C2573A9001A9CC7 /* CCLiveCell2.xib */; };
 		84A0E07E1C257728001A9CC7 /* CCLiveDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A0E07C1C257728001A9CC7 /* CCLiveDetailViewController.m */; };
 		84A0E07F1C257728001A9CC7 /* CCLiveDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A0E07D1C257728001A9CC7 /* CCLiveDetailViewController.xib */; };
-		84A0E0831C257D9F001A9CC7 /* CCLiveDetailViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A0E0811C257D9F001A9CC7 /* CCLiveDetailViewController2.m */; };
-		84A0E0841C257D9F001A9CC7 /* CCLiveDetailViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A0E0821C257D9F001A9CC7 /* CCLiveDetailViewController2.xib */; };
-		84A0E0881C257E6A001A9CC7 /* CCLiveDetailViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A0E0861C257E6A001A9CC7 /* CCLiveDetailViewController3.m */; };
-		84A0E0891C257E6A001A9CC7 /* CCLiveDetailViewController3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A0E0871C257E6A001A9CC7 /* CCLiveDetailViewController3.xib */; };
 		84A0E08D1C2581F5001A9CC7 /* CCLiveMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A0E08B1C2581F5001A9CC7 /* CCLiveMoreViewController.m */; };
 		84A0E08E1C2581F5001A9CC7 /* CCLiveMoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A0E08C1C2581F5001A9CC7 /* CCLiveMoreViewController.xib */; };
 		84A0E0921C2582CD001A9CC7 /* CCLiveMoreCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A0E0901C2582CD001A9CC7 /* CCLiveMoreCollectionCell.m */; };
@@ -233,6 +229,10 @@
 		A57631471C1AB792001EF8B8 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A57631441C1AB792001EF8B8 /* SVProgressHUD.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A576314B1C1AB88F001EF8B8 /* AJNotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = A576314A1C1AB88F001EF8B8 /* AJNotificationView.m */; };
 		A57631551C1AC26F001EF8B8 /* CCBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A57631541C1AC26F001EF8B8 /* CCBaseTableViewController.m */; };
+		A57C31BE1C2F024000B367EF /* CCLiveDetailViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = A57C31B91C2F024000B367EF /* CCLiveDetailViewController2.m */; };
+		A57C31BF1C2F024000B367EF /* CCLiveDetailViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = A57C31BA1C2F024000B367EF /* CCLiveDetailViewController2.xib */; };
+		A57C31C01C2F024000B367EF /* CCLiveDetailViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = A57C31BC1C2F024000B367EF /* CCLiveDetailViewController3.m */; };
+		A57C31C11C2F024000B367EF /* CCLiveDetailViewController3.xib in Resources */ = {isa = PBXBuildFile; fileRef = A57C31BD1C2F024000B367EF /* CCLiveDetailViewController3.xib */; };
 		A58A62381C26F8440007F6C3 /* CCSegeView.m in Sources */ = {isa = PBXBuildFile; fileRef = A58A62371C26F8440007F6C3 /* CCSegeView.m */; };
 		A5D979151C26F5FE005D259D /* CCSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D979131C26F5FE005D259D /* CCSearchViewController.m */; };
 		A5D979161C26F5FE005D259D /* CCSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5D979141C26F5FE005D259D /* CCSearchViewController.xib */; };
@@ -387,12 +387,6 @@
 		84A0E07B1C257728001A9CC7 /* CCLiveDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLiveDetailViewController.h; sourceTree = "<group>"; };
 		84A0E07C1C257728001A9CC7 /* CCLiveDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCLiveDetailViewController.m; sourceTree = "<group>"; };
 		84A0E07D1C257728001A9CC7 /* CCLiveDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCLiveDetailViewController.xib; sourceTree = "<group>"; };
-		84A0E0801C257D9F001A9CC7 /* CCLiveDetailViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLiveDetailViewController2.h; sourceTree = "<group>"; };
-		84A0E0811C257D9F001A9CC7 /* CCLiveDetailViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCLiveDetailViewController2.m; sourceTree = "<group>"; };
-		84A0E0821C257D9F001A9CC7 /* CCLiveDetailViewController2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCLiveDetailViewController2.xib; sourceTree = "<group>"; };
-		84A0E0851C257E6A001A9CC7 /* CCLiveDetailViewController3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLiveDetailViewController3.h; sourceTree = "<group>"; };
-		84A0E0861C257E6A001A9CC7 /* CCLiveDetailViewController3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCLiveDetailViewController3.m; sourceTree = "<group>"; };
-		84A0E0871C257E6A001A9CC7 /* CCLiveDetailViewController3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCLiveDetailViewController3.xib; sourceTree = "<group>"; };
 		84A0E08A1C2581F5001A9CC7 /* CCLiveMoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLiveMoreViewController.h; sourceTree = "<group>"; };
 		84A0E08B1C2581F5001A9CC7 /* CCLiveMoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCLiveMoreViewController.m; sourceTree = "<group>"; };
 		84A0E08C1C2581F5001A9CC7 /* CCLiveMoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCLiveMoreViewController.xib; sourceTree = "<group>"; };
@@ -632,6 +626,12 @@
 		A576314A1C1AB88F001EF8B8 /* AJNotificationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJNotificationView.m; sourceTree = "<group>"; };
 		A57631531C1AC26F001EF8B8 /* CCBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBaseTableViewController.h; sourceTree = "<group>"; };
 		A57631541C1AC26F001EF8B8 /* CCBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBaseTableViewController.m; sourceTree = "<group>"; };
+		A57C31B81C2F024000B367EF /* CCLiveDetailViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLiveDetailViewController2.h; sourceTree = "<group>"; };
+		A57C31B91C2F024000B367EF /* CCLiveDetailViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCLiveDetailViewController2.m; sourceTree = "<group>"; };
+		A57C31BA1C2F024000B367EF /* CCLiveDetailViewController2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCLiveDetailViewController2.xib; sourceTree = "<group>"; };
+		A57C31BB1C2F024000B367EF /* CCLiveDetailViewController3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLiveDetailViewController3.h; sourceTree = "<group>"; };
+		A57C31BC1C2F024000B367EF /* CCLiveDetailViewController3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCLiveDetailViewController3.m; sourceTree = "<group>"; };
+		A57C31BD1C2F024000B367EF /* CCLiveDetailViewController3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCLiveDetailViewController3.xib; sourceTree = "<group>"; };
 		A58A62361C26F8440007F6C3 /* CCSegeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSegeView.h; sourceTree = "<group>"; };
 		A58A62371C26F8440007F6C3 /* CCSegeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCSegeView.m; sourceTree = "<group>"; };
 		A5D979121C26F5FE005D259D /* CCSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSearchViewController.h; sourceTree = "<group>"; };
@@ -927,12 +927,12 @@
 				84A0E07B1C257728001A9CC7 /* CCLiveDetailViewController.h */,
 				84A0E07C1C257728001A9CC7 /* CCLiveDetailViewController.m */,
 				84A0E07D1C257728001A9CC7 /* CCLiveDetailViewController.xib */,
-				84A0E0801C257D9F001A9CC7 /* CCLiveDetailViewController2.h */,
-				84A0E0811C257D9F001A9CC7 /* CCLiveDetailViewController2.m */,
-				84A0E0821C257D9F001A9CC7 /* CCLiveDetailViewController2.xib */,
-				84A0E0851C257E6A001A9CC7 /* CCLiveDetailViewController3.h */,
-				84A0E0861C257E6A001A9CC7 /* CCLiveDetailViewController3.m */,
-				84A0E0871C257E6A001A9CC7 /* CCLiveDetailViewController3.xib */,
+				A57C31B81C2F024000B367EF /* CCLiveDetailViewController2.h */,
+				A57C31B91C2F024000B367EF /* CCLiveDetailViewController2.m */,
+				A57C31BA1C2F024000B367EF /* CCLiveDetailViewController2.xib */,
+				A57C31BB1C2F024000B367EF /* CCLiveDetailViewController3.h */,
+				A57C31BC1C2F024000B367EF /* CCLiveDetailViewController3.m */,
+				A57C31BD1C2F024000B367EF /* CCLiveDetailViewController3.xib */,
 				84A0E08A1C2581F5001A9CC7 /* CCLiveMoreViewController.h */,
 				84A0E08B1C2581F5001A9CC7 /* CCLiveMoreViewController.m */,
 				84A0E08C1C2581F5001A9CC7 /* CCLiveMoreViewController.xib */,
@@ -1709,7 +1709,6 @@
 				8461EED41C2D359800E9C99B /* ShareSDKLocalizable.strings in Resources */,
 				84C62B901C25A5F10089C314 /* CCHistoryViewController.xib in Resources */,
 				8461EED81C2D359800E9C99B /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
-				84A0E0841C257D9F001A9CC7 /* CCLiveDetailViewController2.xib in Resources */,
 				84D2387B1C252A20004F205C /* CCClassCollectionViewCell.xib in Resources */,
 				84B299E21C19509300870099 /* province.plist in Resources */,
 				8461EE571C2CEB7600E9C99B /* PushConfig.plist in Resources */,
@@ -1724,11 +1723,11 @@
 				A5D979161C26F5FE005D259D /* CCSearchViewController.xib in Resources */,
 				84D2389A1C252F51004F205C /* CCClassRecomCell.xib in Resources */,
 				84D2389F1C2532F6004F205C /* CCClassMoreMsgViewController.xib in Resources */,
+				A57C31C11C2F024000B367EF /* CCLiveDetailViewController3.xib in Resources */,
 				846E7C7B1C1EE06700CBAE9D /* ImagesScrollView.xib in Resources */,
 				A5FC4A3B1C2EB29B000840D1 /* CCAddMoreViewController.xib in Resources */,
 				84D238731C2528B5004F205C /* CCRecomCell3.xib in Resources */,
 				A5E30E2B1C1F293C00F630F8 /* CCScannerViewController.xib in Resources */,
-				84A0E0891C257E6A001A9CC7 /* CCLiveDetailViewController3.xib in Resources */,
 				846E7C6F1C1EB08000CBAE9D /* CCLiveTableViewController.xib in Resources */,
 				84D2386F1C2528B5004F205C /* CCRecomCell.xib in Resources */,
 				84DFAD901C2683E6000444F5 /* CCPlayerRecomCell.xib in Resources */,
@@ -1762,6 +1761,7 @@
 				84D238671C2528B5004F205C /* CCListenListCell1.xib in Resources */,
 				84A0E08E1C2581F5001A9CC7 /* CCLiveMoreViewController.xib in Resources */,
 				84DFADB81C26CFB4000444F5 /* CCAlbumViewController.xib in Resources */,
+				A57C31BF1C2F024000B367EF /* CCLiveDetailViewController2.xib in Resources */,
 				84809BAD1C225C1D00CC7E4E /* CCListenListViewController.xib in Resources */,
 				844CB6321C17179900710E8D /* Images.xcassets in Resources */,
 				84B299E11C19509300870099 /* findtab.plist in Resources */,
@@ -1795,6 +1795,7 @@
 				846E7CAC1C1EE1AF00CBAE9D /* UIImage+MultiFormat.m in Sources */,
 				84EE7A0A1C1ABBA10033BF5E /* CCDiscoverViewController.m in Sources */,
 				84D2383E1C25239D004F205C /* AFNetworkActivityIndicatorManager.m in Sources */,
+				A57C31BE1C2F024000B367EF /* CCLiveDetailViewController2.m in Sources */,
 				A5F6F9541C2B005500CF421F /* CCHeaderView.m in Sources */,
 				84A0E06E1C2573A9001A9CC7 /* CCLiveCell2.m in Sources */,
 				A5E30E221C1F281C00F630F8 /* CCScannerDetailController.m in Sources */,
@@ -1864,7 +1865,6 @@
 				A58A62381C26F8440007F6C3 /* CCSegeView.m in Sources */,
 				84D238991C252F51004F205C /* CCClassRecomCell.m in Sources */,
 				A5FC4A3A1C2EB29B000840D1 /* CCAddMoreViewController.m in Sources */,
-				84A0E0881C257E6A001A9CC7 /* CCLiveDetailViewController3.m in Sources */,
 				84809B8C1C2247D000CC7E4E /* CCAlbumDetailViewController.m in Sources */,
 				84DFADA31C26C1CE000444F5 /* CCSoundViewController.m in Sources */,
 				84D238361C25239D004F205C /* AFURLResponseSerialization.m in Sources */,
@@ -1881,6 +1881,7 @@
 				84A0E0921C2582CD001A9CC7 /* CCLiveMoreCollectionCell.m in Sources */,
 				846E7CA21C1EE1AF00CBAE9D /* NSData+ImageContentType.m in Sources */,
 				84D238661C2528B5004F205C /* CCListenListCell1.m in Sources */,
+				A57C31C01C2F024000B367EF /* CCLiveDetailViewController3.m in Sources */,
 				84B29A011C19546300870099 /* NSArray+JSONModel.m in Sources */,
 				A55244A01C182B920089CC04 /* DataAPI.m in Sources */,
 				84D238461C25239D004F205C /* UIView+IPhoneView.m in Sources */,
@@ -1914,7 +1915,6 @@
 				84DFAD711C266179000444F5 /* CCSegmentedView.m in Sources */,
 				84D238701C2528B5004F205C /* CCRecomCell2.m in Sources */,
 				A55244951C17DC4F0089CC04 /* ISNull.m in Sources */,
-				84A0E0831C257D9F001A9CC7 /* CCLiveDetailViewController2.m in Sources */,
 				84809BAC1C225C1D00CC7E4E /* CCListenListViewController.m in Sources */,
 				84D238871C252B2D004F205C /* CCAlertView.m in Sources */,
 				84DFAD991C2697FE000444F5 /* CCDownloadCell.m in Sources */,

@@ -50,7 +50,7 @@
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
 }
 - (void)viewDidDisappear:(BOOL)animated{
-    
+
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
     [super viewDidDisappear:animated];
 }
@@ -89,7 +89,7 @@
 }
 
 - (void)createBottomScrollView {
-    
+
     CGFloat contentX = self.titleArray.count * SCREEN_SIZE.width;
     
     self.bottonScrollView.contentSize = CGSizeMake(contentX, SCREEN_SIZE.height - 97);
@@ -102,7 +102,7 @@
     
     
     self.vc = [[CCLiveDetailViewController3 alloc] initWithNibName:@"CCLiveDetailViewController3" bundle:nil];
-    
+
     self.vc.provinceId = self.titleArray[0][@"provinceId"];
     self.vc.view.frame = CGRectMake(0, 0, self.bottonScrollView.frame.size.width, SCREEN_SIZE.height - 97);
     
@@ -154,7 +154,7 @@
     self.vc.provinceId = self.titleArray[index][@"provinceId"];
     self.vc.view.frame = CGRectMake(index * SCREEN_SIZE.width, 0, SCREEN_SIZE.width, SCREEN_SIZE.height - 97);
     
-    
+     
     [self.vc.dataSource removeAllObjects];
     [self.vc downloadData];
 }
@@ -176,7 +176,7 @@
 {
     //让滑动条的位置随着title的点击而改变
     CCTitleLabel *titlelable = (CCTitleLabel *)recognizer.view;
-    
+
     [UIView animateWithDuration:0.25 animations:^{
         self.redView.frame = CGRectMake(titlelable.indext * SCREEN_SIZE.width/5, 23, SCREEN_SIZE.width/5, 2);
     }];
@@ -224,14 +224,14 @@
 {
     // 添加控制器
     self.vc.provinceId = self.titleArray[provinceId][@"provinceId"];
-    
+
     [self.vc.dataSource removeAllObjects];
     self.vc.view.frame = CGRectMake(provinceId * SCREEN_SIZE.width, 0, SCREEN_SIZE.width, self.bottonScrollView.frame.size.height);
     
     
-    
+
     [self.vc downloadData];
-    
+
     CGFloat offsetX = provinceId * SCREEN_SIZE.width;
     CGPoint offset = CGPointMake(offsetX, 0);
     [self.bottonScrollView setContentOffset:offset animated:YES];
