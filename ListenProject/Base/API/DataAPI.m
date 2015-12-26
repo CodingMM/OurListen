@@ -94,10 +94,10 @@
 }
 
 #pragma mark -- 获取省电台
-+ (NSURL *)getProvinceRadionWithPageNum:(NSInteger)pageNumber andSuccessBlock:(httpSuccessBlock)sucHandler andFailBlock:(httpFailBlock)errorHandler{
++ (NSURL *)getProvinceRadionWithPageNum:(NSInteger)pageNumber andCode:(NSString *)code andSuccessBlock:(httpSuccessBlock)sucHandler andFailBlock:(httpFailBlock)errorHandler{
 
     NSMutableDictionary * param = [NSMutableDictionary dictionary];
-    NSString *url = [NSString stringWithFormat:PROVINCE_RADIO_URL, pageNumber];
+    NSString *url = [NSString stringWithFormat:PROVINCE_RADIO_URL, code, pageNumber];
     
     return [BaseHttpClient httpType:GET andUrl:url andParam:param andSuccessBlock:sucHandler andFailBlock:errorHandler];
 }

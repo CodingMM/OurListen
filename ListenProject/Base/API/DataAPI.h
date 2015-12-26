@@ -40,7 +40,7 @@
 + (NSURL *)getCountryRadionWithPageNum:(NSInteger)pageNumber andSuccessBlock:(httpSuccessBlock)sucHandler andFailBlock:(httpFailBlock)errorHandler;
 
 //获取省电台
-+ (NSURL *)getProvinceRadionWithPageNum:(NSInteger)pageNumber andSuccessBlock:(httpSuccessBlock)sucHandler andFailBlock:(httpFailBlock)errorHandler;
++ (NSURL *)getProvinceRadionWithPageNum:(NSInteger)pageNumber andCode:(NSString *)code andSuccessBlock:(httpSuccessBlock)sucHandler andFailBlock:(httpFailBlock)errorHandler;
 
 //获取网络电台
 + (NSURL *)getWedRadionWithPageNum:(NSInteger)pageNumber andSuccessBlock:(httpSuccessBlock)sucHandler andFailBlock:(httpFailBlock)errorHandler;

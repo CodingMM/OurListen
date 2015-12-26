@@ -40,7 +40,7 @@
 #define COUNTRY_RADIO_URL @"http://live.ximalaya.com/live-web/v1/getRadiosListByType?pageSize=15&pageNum=%ld&device=android&radioType=1"
 
 //省电台
-#define PROVINCE_RADIO_URL @"http://live.ximalaya.com/live-web/v1/getRadiosListByType?provinceCode=110000&pageSize=15&pageNum=%ld&device=android&radioType=2"
+#define PROVINCE_RADIO_URL @"http://live.ximalaya.com/live-web/v1/getRadiosListByType?provinceCode=%@&pageSize=15&pageNum=%ld&device=android&radioType=2"
 
 //网络电台
 #define WEB_RADIO_URL @"http://live.ximalaya.com/live-web/v1/getRadiosListByType?pageSize=15&pageNum=%ld&device=android&radioType=3"

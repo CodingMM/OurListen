@@ -96,7 +96,7 @@
 }
 
 - (void)downloadData {
-
+    
     [DataAPI getLiveWithSuccessBlock:^(NSURL *url, id data) {
         
         [self.appDelegate hideLoading];
@@ -111,14 +111,14 @@
             NSArray * array2 = dict2[@"topRadioList"];
             [self.dataSource addObject:array2];
             
-           
+            
             
             [self.tableView reloadData];
             
         }
     } andFailBlock:^(NSURL *url, NSError *error) {
-       
-        [self.appDelegate showErrMsg:error.localizedDescription WithInterval:1.0];
+        
+        [self.appDelegate hideLoadingWithErr:error.localizedDescription WithInterval:1.0];
         
     }];
 }
