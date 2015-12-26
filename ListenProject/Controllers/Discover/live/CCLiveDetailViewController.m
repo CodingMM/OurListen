@@ -58,8 +58,13 @@
     self.titleLabel.text = self.topTitle;
     CCPlayerBtn *playerBtn = [CCPlayerBtn sharePlayerBtn];
     playerBtn.hidden = NO;
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
 }
+- (void)viewDidDisappear:(BOOL)animated{
 
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
+    [super viewDidDisappear:animated];
+}
 
 - (void)downloadData {
     self.currentPageNum = 1;

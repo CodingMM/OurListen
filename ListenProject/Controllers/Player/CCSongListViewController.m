@@ -25,6 +25,12 @@
 {
     [super viewWillAppear:animated];
     [self downloadData];
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+}
+- (void)viewDidDisappear:(BOOL)animated{
+
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
+    [super viewDidDisappear:animated];
 }
 
 - (void)viewDidLoad {

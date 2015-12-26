@@ -32,6 +32,17 @@
     [self createTabelView];
     
 }
+- (void)viewWillAppear:(BOOL)animated{
+
+    [super viewWillAppear:animated];
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+}
+- (void)viewDidDisappear:(BOOL)animated{
+
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
+    [super viewDidDisappear:animated];
+    
+}
 - (void)downloadData {
     self.pageNum = 1;
     

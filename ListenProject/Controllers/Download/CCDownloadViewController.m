@@ -37,8 +37,13 @@
     [self.navigationController setNavigationBarHidden:YES];
     CCPlayerBtn *palyerBtn = [CCPlayerBtn sharePlayerBtn];
     palyerBtn.hidden = NO;
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
 }
+- (void)viewDidDisappear:(BOOL)animated{
 
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
+    [super viewDidDisappear:animated];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

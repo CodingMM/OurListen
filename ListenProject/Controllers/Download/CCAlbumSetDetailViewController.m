@@ -32,6 +32,13 @@
     [super viewWillAppear:animated];
     [self.navigationController.navigationBar setHidden:YES];
     self.titleLabel.text = self.titleL;
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+}
+- (void)viewDidDisappear:(BOOL)animated{
+
+    [super viewDidDisappear:animated];
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
+    [super viewDidDisappear:animated];
 }
 
 - (void)viewDidLoad {

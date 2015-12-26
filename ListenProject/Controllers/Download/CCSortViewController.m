@@ -33,6 +33,16 @@
     UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPressGestureRecognized:)];
     [self.tableView addGestureRecognizer:longPress];
 }
+- (void)viewWillAppear:(BOOL)animated{
+
+    [super viewWillAppear:animated];
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+}
+- (void)viewDidDisappear:(BOOL)animated{
+
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
+    [super viewDidDisappear:animated];
+}
 
 - (IBAction)backBtnDidClicked:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
