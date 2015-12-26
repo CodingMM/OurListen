@@ -67,7 +67,13 @@
     
     [DataAPI getHotSearchDataWithSuccessBlock:^(NSURL *url, id data) {
         
-        NSDictionary * dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+        if ([ISNull isNilOfSender:data]) {
+            
+            [self.appDelegate showErrMsg:@"网络数据为空" WithInterval:1.0];
+            return ;
+        }
+        
+        NSDictionary *dict = (NSDictionary *)data;
         
         NSArray * array = dict[@"list"];
         self.dataSource = (NSMutableArray *)array;
