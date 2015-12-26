@@ -20,12 +20,12 @@
 }
 
 #pragma mark -- 请求评论详情
-+ (NSURL *)getCommentDetailWithTrackId:(NSString *)trackId andSuccessBlock:(httpSuccessBlock)sucHandler andFailBlock:(httpFailBlock)errorHandler{
++ (NSURL *)getCommentDetailWithTrackId:(NSInteger)trackId andPageId:(NSInteger)pageId andSuccessBlock:(httpSuccessBlock)sucHandler andFailBlock:(httpFailBlock)errorHandler{
 
     NSMutableDictionary * param = [NSMutableDictionary dictionary];
-    [param setObject:trackId forKey:@"trackId"];
+    NSString *url = [NSString stringWithFormat:COMMENT_DETAIL_URL, trackId, pageId];
     
-    return [BaseHttpClient httpType:GET andUrl:COMMENT_DETAIL_URL andParam:param andSuccessBlock:sucHandler andFailBlock:errorHandler];
+    return [BaseHttpClient httpType:GET andUrl:url andParam:param andSuccessBlock:sucHandler andFailBlock:errorHandler];
 }
 
 #pragma mark -- 请求专辑
@@ -39,11 +39,12 @@
 }
 
 #pragma mark -- 请求专辑歌曲列表
-+ (NSURL *)getAlbumSongsWithSuccessBlock:(httpSuccessBlock)sucHandler andFailBlock:(httpFailBlock)errorHandler{
++ (NSURL *)getAlbumSongsWithAlbumId:(NSInteger)albumId andPageNum:(NSInteger)pageNum andSuccessBlock:(httpSuccessBlock)sucHandler andFailBlock:(httpFailBlock)errorHandler{
 
     NSMutableDictionary * param = [NSMutableDictionary dictionary];
+    NSString *url = [NSString stringWithFormat:ALBUM_SONGS_URL, albumId, pageNum, albumId];
     
-    return [BaseHttpClient httpType:GET andUrl:ALBUM_SONGS_URL andParam:param andSuccessBlock:sucHandler andFailBlock:errorHandler];
+    return [BaseHttpClient httpType:GET andUrl:url andParam:param andSuccessBlock:sucHandler andFailBlock:errorHandler];
     
 }
 

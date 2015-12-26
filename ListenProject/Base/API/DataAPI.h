@@ -16,13 +16,13 @@
 + (NSURL *)getVoiceDetailWithTrackId:(NSString *)trackId andSuccessBlock:(httpSuccessBlock)sucHandler andFailBlock:(httpFailBlock)errorHandler;
 
 //请求评论详情
-+ (NSURL *)getCommentDetailWithTrackId:(NSString *)trackId andSuccessBlock:(httpSuccessBlock)sucHandler andFailBlock:(httpFailBlock)errorHandler;
++ (NSURL *)getCommentDetailWithTrackId:(NSInteger)trackId andPageId:(NSInteger)pageId andSuccessBlock:(httpSuccessBlock)sucHandler andFailBlock:(httpFailBlock)errorHandler;
 
 //请求专辑
 + (NSURL *)getAlbumWithTrackId:(NSInteger)trackId andSuccessBlock:(httpSuccessBlock)sucHandler andFailBlock:(httpFailBlock)errorHandler;
 
 //请求专辑歌曲列表
-+ (NSURL *)getAlbumSongsWithSuccessBlock:(httpSuccessBlock)sucHandler andFailBlock:(httpFailBlock)errorHandler;
++ (NSURL *)getAlbumSongsWithAlbumId:(NSInteger)albumId andPageNum:(NSInteger)pageNum andSuccessBlock:(httpSuccessBlock)sucHandler andFailBlock:(httpFailBlock)errorHandler;
 
 //请求分类详情
 + (NSURL *)getCategoryDetailWithTagName:(NSString *)tagName andSuccessBlock:(httpSuccessBlock)sucHandler andFailBlock:(httpFailBlock)errorHandler;

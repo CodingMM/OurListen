@@ -14,6 +14,7 @@
 #import "CCMethod.h"
 #import "AFHTTPSessionManager.h"
 #import "CCPlayerBtn.h"
+#import "DataAPI.h"
 
 BOOL isSelected = NO;
 @interface CCAlbumDetailViewController ()<CCBackBtnDelegate,CCPlayerViewControllerDelegate>
@@ -24,7 +25,7 @@ BOOL isSelected = NO;
 @property (nonatomic, assign) NSInteger  playNum;
 
 @property (nonatomic, strong) AFHTTPSessionManager * manager;
-
+@property (nonatomic, strong)UIView *statusView;
 @property (nonatomic, assign) NSInteger currentPage;
 
 @property (nonatomic, strong) UIView * view2;
@@ -36,12 +37,15 @@ BOOL isSelected = NO;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
     [self createTableView];
     
-    self.manager = [AFHTTPSessionManager manager];
-    self.manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    _statusView = [[UIView alloc]initWithFrame:CGRectMake(0, -20, SCREEN_SIZE.width, 20)];
+    _statusView.backgroundColor = STATUS_COLOR;
+    [self.view addSubview:_statusView];
     
-    /*
+       /*
     CGRect rect = [[UIScreen mainScreen] bounds];
     rect.origin.y -= 64;
     
@@ -49,7 +53,7 @@ BOOL isSelected = NO;
      
      */
     
-    [SVProgressHUD showWithStatus:@"加载数据" maskType:SVProgressHUDMaskTypeBlack networkIndicator:YES];
+  
     
     [self downloadDataWithAlbumId:self.index];
     
@@ -76,24 +80,28 @@ BOOL isSelected = NO;
     [self.tableView addInfiniteScrollingWithActionHandler:^{
         [weekSelf loadmoreData];
     }];
+   
+    
+    
     
 }
 
 - (void)downloadDataWithAlbumId:(NSInteger)albumId {
     
+    [self.appDelegate showLoading:@"正在加载数据..."];
+    
     self.currentPage = 1;
-    
-    NSString * str = [NSString stringWithFormat:@"http://mobile.ximalaya.com/mobile/others/ca/album/track/%ld/true/%ld/20?albumId=%ld&pageSize=20&isAsc=true&position=2", albumId, self.currentPage, albumId];
-    
-    [self.manager GET:str parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
-        NSDictionary *json = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
+    [DataAPI getAlbumSongsWithAlbumId:albumId andPageNum:self.currentPage andSuccessBlock:^(NSURL *url, id data) {
         [self.dataSource removeAllObjects];
+        
+        NSDictionary *json = (NSDictionary *)data;
         
         NSDictionary * dict = json[@"album"];
         self.headVC = [[CCHeadViewController alloc] init];
         self.tableView.tableHeaderView = self.headVC.view;
         self.headVC.delegate = self;
         [self.headVC reloadDataWithDictory:dict];
+        [self.view bringSubviewToFront:_statusView];
         
         
         
@@ -104,22 +112,25 @@ BOOL isSelected = NO;
             [self.dataSource addObject:dict];
         }
         
-        [SVProgressHUD dismiss];
+        [self.appDelegate hideLoading];
         [self.tableView reloadData];
-    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        
+    } andFailBlock:^(NSURL *url, NSError *error) {
+        [self.appDelegate hideLoading];
         
     }];
+    
     
 }
 
 // 加载更多的数据
 - (void)loadmoreData
 {
-    NSString * str = [NSString stringWithFormat:@"http://mobile.ximalaya.com/mobile/others/ca/album/track/%ld/true/%ld/20?albumId=%ld&pageSize=20&isAsc=true&position=2", self.index, self.currentPage + 1, self.index];
     
-    [self.manager GET:str parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+    [DataAPI getAlbumSongsWithAlbumId:self.index andPageNum:self.currentPage andSuccessBlock:^(NSURL *url, id data) {
+        [self.dataSource removeAllObjects];
         
-        NSDictionary *json = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
+        NSDictionary *json = (NSDictionary *)data;
         
         NSArray * array = json[@"tracks"][@"list"];
         for (NSDictionary * dict in array) {
@@ -133,10 +144,12 @@ BOOL isSelected = NO;
         // 数据加载完成之后，让当前页加1
         self.currentPage++;
         
-    } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        NSLog(@"%@", error);
+    } andFailBlock:^(NSURL *url, NSError *error) {
+        NSLog(@"%@",error.localizedDescription);
+        
     }];
-}
+
+    }
 
 
 
@@ -145,6 +158,10 @@ BOOL isSelected = NO;
     // Dispose of any resources that can be recreated.
 }
 
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
+
+    [self.view bringSubviewToFront:_statusView];
+}
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

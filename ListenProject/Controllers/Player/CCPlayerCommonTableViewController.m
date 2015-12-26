@@ -10,6 +10,7 @@
 #import "CCGlobalHeader.h"
 #import "CCPlayerCommonCell.h"
 #import "CCMethod.h"
+#import "DataAPI.h"
 
 @interface CCPlayerCommonTableViewController ()
 
@@ -51,17 +52,12 @@
     self.trackid = trackId;
     self.currentPage = 1;
     
-    AFHTTPSessionManager * manager = [AFHTTPSessionManager manager];
-    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     
-    NSString * str = [NSString stringWithFormat:@"http://mobile.ximalaya.com/mobile/track/comment?trackId=%ld&pageSize=15&pageId=%ld", trackId, self.currentPage];
-    
-    
-    [manager GET:str parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+    [DataAPI getCommentDetailWithTrackId:trackId andPageId:self.currentPage andSuccessBlock:^(NSURL *url, id data) {
         [self.dataSource removeAllObjects];
         
-        NSDictionary *json = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
-
+        NSDictionary *json = (NSDictionary *)data;
+        
         NSArray * array = json[@"list"];
         for (NSDictionary * dict in array) {
             [self.dataSource addObject:dict];
@@ -70,10 +66,11 @@
         self.totalCount = [json[@"totalCount"] integerValue];
         
         [self.tableView reloadData];
-    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+    } andFailBlock:^(NSURL *url, NSError *error) {
         
     }];
-}
+    
+   }
 
 - (void)loadmoreData
 {

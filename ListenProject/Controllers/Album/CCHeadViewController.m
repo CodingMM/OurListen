@@ -19,9 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    UIView *statusView = [[UIView alloc]initWithFrame:CGRectMake(0, -20,SCREEN_SIZE.width , 20)];
-    statusView.backgroundColor = STATUS_COLOR;
-    [self.view addSubview:statusView];
+//    UIView *statusView = [[UIView alloc]initWithFrame:CGRectMake(0, -20,SCREEN_SIZE.width , 20)];
+//    statusView.backgroundColor = STATUS_COLOR;
+    
+//    [self.view addSubview:statusView];
     
 }
 

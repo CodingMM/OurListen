@@ -206,7 +206,7 @@
             
             [self.tableView reloadData];
             
-            self.currentPageNum+1;
+            self.currentPageNum++;
             
         } andFailBlock:^(NSURL *url, NSError *error) {
             
