@@ -22,10 +22,9 @@ static BaseHttpClient * sharaBaseHttpClient = nil;
     if (self) {
         
         _baseURL = url;
-        _manager = [AFHTTPRequestOperationManager manager];
-        _manager.requestSerializer = [AFJSONRequestSerializer serializer];
-        _manager.responseSerializer = [AFJSONResponseSerializer serializer];
-        _manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"application/json", nil];
+     
+       _manager = [AFHTTPSessionManager manager];
+        _manager.responseSerializer = [AFHTTPResponseSerializer serializer];
         
     }
     return self;
@@ -62,7 +61,9 @@ static BaseHttpClient * sharaBaseHttpClient = nil;
         
         NSURL * returnURL = [NSURL URLWithString:signUrl];
         
-        NSError *error = [NSError errorWithDomain:@"无网络连接" code:000 userInfo:nil];
+        NSDictionary *userInfo = [NSDictionary dictionaryWithObject:@"网络没有连接!"                                                                      forKey:NSLocalizedDescriptionKey];
+        
+        NSError *error = [NSError errorWithDomain:kBaseServerUrlstring code:999 userInfo:userInfo];
         
         errorHandler(returnURL, error);
         
@@ -112,10 +113,13 @@ static BaseHttpClient * sharaBaseHttpClient = nil;
     
     NSURL * returnURL = [NSURL URLWithString:signUrl];
     
-    [client.manager GET:signUrl parameters:param success:^(AFHTTPRequestOperation *operation, id responseObject) {
+
+    
+    [client.manager GET:signUrl parameters:param success:^(NSURLSessionDataTask *task, id responseObject) {
         
+        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
         
-        if ([ISNull isNilOfSender:responseObject] == YES) {
+        if ([ISNull isNilOfSender:dict] == YES) {
             
             dispatch_async(dispatch_get_main_queue(), ^(void) {
                 
@@ -126,20 +130,16 @@ static BaseHttpClient * sharaBaseHttpClient = nil;
                 errorHandler(returnURL, error);
             });
         }else{
-            
-            sucHandler(returnURL, responseObject);
+        
+            sucHandler(returnURL, dict);
         }
-        
-        
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        
+            
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
         errorHandler(returnURL, error);
-        
     }];
     
     
-    
-    return returnURL;
+          return returnURL;
     
 }
 
@@ -159,11 +159,10 @@ static BaseHttpClient * sharaBaseHttpClient = nil;
     
     NSURL * returnURL = [NSURL URLWithString:signUrl];
     
-    [client.manager POST:signUrl parameters:param success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [client.manager POST:signUrl parameters:param success:^(NSURLSessionDataTask *task, id responseObject) {
+         NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
         
-        
-        
-        if ([ISNull isNilOfSender:responseObject] == YES) {
+        if ([ISNull isNilOfSender:dict] == YES) {
             
             dispatch_async(dispatch_get_main_queue(), ^(void) {
                 
@@ -175,13 +174,12 @@ static BaseHttpClient * sharaBaseHttpClient = nil;
             });
         }else{
             
-            sucHandler(returnURL, responseObject);
+            sucHandler(returnURL, dict);
         }
         
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        
-        errorHandler(returnURL, error);
-        
+
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+         errorHandler(returnURL, error);
     }];
     
     
@@ -206,10 +204,9 @@ static BaseHttpClient * sharaBaseHttpClient = nil;
     
     NSURL * returnURL = [NSURL URLWithString:signUrl];
     
-    [client.manager PUT:signUrl parameters:param success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        
-        
-        if ([ISNull isNilOfSender:responseObject] == YES) {
+    [client.manager PUT:signUrl parameters:param success:^(NSURLSessionDataTask *task, id responseObject) {
+         NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
+        if ([ISNull isNilOfSender:dict] == YES) {
             
             dispatch_async(dispatch_get_main_queue(), ^(void) {
                 
@@ -221,13 +218,12 @@ static BaseHttpClient * sharaBaseHttpClient = nil;
             });
         }else{
             
-            sucHandler(returnURL, responseObject);
+            sucHandler(returnURL, dict);
         }
+
         
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        
-        errorHandler(returnURL, error);
-        
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+         errorHandler(returnURL, error);
     }];
     
     
@@ -251,11 +247,9 @@ static BaseHttpClient * sharaBaseHttpClient = nil;
     
     NSURL * returnURL = [NSURL URLWithString:signUrl];
     
-    [client.manager DELETE:signUrl parameters:param success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        
-        
-        
-        if ([ISNull isNilOfSender:responseObject] == YES) {
+    [client.manager DELETE:signUrl parameters:param success:^(NSURLSessionDataTask *task, id responseObject) {
+         NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
+        if ([ISNull isNilOfSender:dict] == YES) {
             
             dispatch_async(dispatch_get_main_queue(), ^(void) {
                 
@@ -267,18 +261,15 @@ static BaseHttpClient * sharaBaseHttpClient = nil;
             });
         }else{
             
-            sucHandler(returnURL, responseObject);
+            sucHandler(returnURL, dict);
         }
-        
-        
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
         
         errorHandler(returnURL, error);
-        
     }];
     
-    
-    
+      
     return returnURL;
     
     

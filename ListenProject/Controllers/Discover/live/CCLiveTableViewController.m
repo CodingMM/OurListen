@@ -14,6 +14,7 @@
 #import "CCPlayerBtn.h"
 #import "CCLiveDetailViewController.h"
 #import "CCLiveDetailViewController2.h"
+#import "DataAPI.h"
 
 @interface CCLiveTableViewController ()<CCLiveCell1Delegate>
 
@@ -53,7 +54,9 @@
     
     self.tableView.tableHeaderView = view;
     
-    [SVProgressHUD showWithStatus:@"正在加载数据..." maskType:SVProgressHUDMaskTypeBlack networkIndicator:YES];
+    [self.appDelegate showLoading:@"正在加载数据..."];
+    
+    
     
     [self downloadData];
     
@@ -93,24 +96,29 @@
 }
 
 - (void)downloadData {
-    AFHTTPSessionManager * manager = [AFHTTPSessionManager manager];
-    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-    [manager GET:@"http://live.ximalaya.com/live-web/v1/getHomePageRadiosList" parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+
+    [DataAPI getLiveWithSuccessBlock:^(NSURL *url, id data) {
         
-        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
+        [self.appDelegate hideLoading];
         
-        NSDictionary * dict2 = dict[@"result"];
-        NSArray * array = dict2[@"recommandRadioList"];
-        [self.dataSource addObject:array];
-        
-        NSArray * array2 = dict2[@"topRadioList"];
-        [self.dataSource addObject:array2];
-        
-        [SVProgressHUD dismiss];
-        
-        [self.tableView reloadData];
-    } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        [SVProgressHUD dismiss];
+        if (![ISNull isNilOfSender:data]) {
+            NSDictionary *dict = (NSDictionary *)data;
+            
+            NSDictionary * dict2 = dict[@"result"];
+            NSArray * array = dict2[@"recommandRadioList"];
+            [self.dataSource addObject:array];
+            
+            NSArray * array2 = dict2[@"topRadioList"];
+            [self.dataSource addObject:array2];
+            
+           
+            
+            [self.tableView reloadData];
+            
+        }
+    } andFailBlock:^(NSURL *url, NSError *error) {
+       
+        [self.appDelegate showErrMsg:error.localizedDescription WithInterval:1.0];
         
     }];
 }

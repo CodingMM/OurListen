@@ -35,7 +35,7 @@ typedef void (^httpFailBlock)(NSURL *url, NSError * error);
 @property (nonatomic, strong) NSString * baseURL ;
 //服务器的地址“头”
 
-@property (nonatomic, strong)AFHTTPRequestOperationManager * manager;
+@property (nonatomic, strong)AFHTTPSessionManager * manager;
 //请求manager
 
 
