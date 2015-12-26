@@ -9,7 +9,7 @@
 
 #import "CCHeadViewController.h"
 #import "UIImageView+WebCache.h"
-
+#import "CCGlobalHeader.h"
 @interface CCHeadViewController ()
 
 @end
@@ -19,6 +19,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    UIView *statusView = [[UIView alloc]initWithFrame:CGRectMake(0, -20,SCREEN_SIZE.width , 20)];
+    statusView.backgroundColor = STATUS_COLOR;
+    [self.view addSubview:statusView];
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+
+    [super viewWillAppear:animated];
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    
+}
+- (void)viewDidDisappear:(BOOL)animated{
+
+//    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
+    [super viewDidDisappear:animated];
 }
 
 - (IBAction)backBtnDidClicked:(id)sender {

@@ -77,8 +77,8 @@ BOOL isHistoryShowed = NO;
 }
 - (void)viewDidDisappear:(BOOL)animated{
 
-    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
-    [super viewDidDisappear:animated];
+//    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
+//    [super viewDidDisappear:animated];
 }
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -56,6 +56,7 @@ NSInteger type = 0;
     [super viewDidLoad];
     [self.slider setThumbImage:[UIImage imageNamed:@"slider_thumb"] forState:UIControlStateNormal];
     self.slider.minimumTrackTintColor = [UIColor orangeColor];
+     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -66,8 +67,8 @@ NSInteger type = 0;
 
 - (void)viewDidDisappear:(BOOL)animated{
 
-    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
-    [super viewDidDisappear:animated];
+//    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
+//    [super viewDidDisappear:animated];
 }
 
 
