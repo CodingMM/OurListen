@@ -14,6 +14,13 @@
 #import "UIImageView+WebCache.h"
 
 #define ListenProject_CCGlobalHeader_h
+
+//版本检测相关
+//test 1067742723
+
+//product  1070849223
+#define VERSION_CHECK @"https://itunes.apple.com/lookup?id=1067742723"
+
 //屏幕尺寸
 #define SCREEN_SIZE [UIScreen mainScreen].bounds.size
 

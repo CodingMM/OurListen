@@ -40,6 +40,8 @@
 //提示网络错误
 - (void)showNetworkError;
 
+-(void)versionCheck;
+
 
 @end
 

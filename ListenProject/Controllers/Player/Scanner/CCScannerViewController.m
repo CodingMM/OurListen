@@ -10,6 +10,7 @@
 #import "CCScannerDetailController.h"
 #import "CCAlertView.h"
 #import "NSString+category.h"
+#import "CCPlayerBtn.h"
 
 #define SCREEN_W [UIScreen mainScreen].bounds.size.width
 #define SCREEN_H [UIScreen mainScreen].bounds.size.height
@@ -43,6 +44,8 @@
     
     //Start
     [self.session startRunning];
+    CCPlayerBtn * playerBtn = [CCPlayerBtn sharePlayerBtn];
+    playerBtn.hidden = YES;
    
     
 }
@@ -50,7 +53,8 @@
     
     //Stop
     [self.session stopRunning];
-    
+    CCPlayerBtn * playerBtn = [CCPlayerBtn sharePlayerBtn];
+    playerBtn.hidden = NO;
     [super viewDidDisappear:animated];
 }
 

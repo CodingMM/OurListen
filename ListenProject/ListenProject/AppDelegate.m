@@ -38,6 +38,8 @@
 //网络监测
 #import "Reachability.h"
 
+#import "CCGlobalHeader.h"
+
 
 @interface AppDelegate ()
 
@@ -56,10 +58,13 @@
     [self addJpushService:launchOptions];
     
     
-    
+    //分享
     [ShareSDK registerApp:@"7e4b6816d820"];
     [self initializePlat];
     id<ISSQZoneApp> app =(id<ISSQZoneApp>)[ShareSDK getClientWithType:ShareTypeQQSpace];
+    
+    
+    
     [app setIsAllowWebAuthorize:YES];
 
     
@@ -79,7 +84,6 @@
     /*创建播放按钮*/
     [self createPlayerBtn];
 
-    
 }
 
 #pragma mark - 创建播放按钮
@@ -213,6 +217,7 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
 }
 
 #pragma mark - ---------------
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {

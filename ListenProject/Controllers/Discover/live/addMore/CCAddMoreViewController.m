@@ -10,6 +10,8 @@
 #import "CCScannerViewController.h"
 #import "CCPlayerBtn.h"
 #import "CCGlobalHeader.h"
+#import "AppDelegate.h"
+#import "APPVersionCheck.h"
 
 #define CELL_HEIGHT 60
 
@@ -61,7 +63,12 @@
     [backBtn addTarget:self action:@selector(backClick:) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:backBtn];
-     _dataArray = [NSMutableArray arrayWithObjects:@"扫一扫",@"版本检测",nil];
+    
+    
+    CGFloat  currentVersion = [[[[NSBundle mainBundle]infoDictionary] objectForKey:@"CFBundleVersion"] floatValue];
+
+    NSString * version = [NSString stringWithFormat:@"版本检测                  %.1f",currentVersion];
+     _dataArray = [NSMutableArray arrayWithObjects:@"扫一扫",version,nil];
     
     CGRect rect = CGRectMake(0, 64, SCREEN_SIZE.width, SCREEN_SIZE.height - 64);
     
@@ -106,8 +113,34 @@
     if (indexPath.row == 0) {
         CCScannerViewController *scannerView = [[CCScannerViewController alloc]init];
         [self.navigationController pushViewController:scannerView animated:YES];
-    }
+    }else if(indexPath.row == 1)
+    {
+        __weak CCAddMoreViewController *weekSelf = self;
+       [APPVersionCheck versionCheck:^(BOOL haveNew, NSURL *downloadUrl) {
+           
+           if (haveNew) {
+               UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"新版本" message:@"有新版本上线了" preferredStyle:UIAlertControllerStyleAlert];
+               UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"稍后再说" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+                   
+               }];
+               UIAlertAction *update = [UIAlertAction actionWithTitle:@"马上更新" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                   [[UIApplication sharedApplication] openURL:downloadUrl];
+               }];
+               [alert addAction:cancel];
+               [alert addAction:update];
+               [weekSelf presentViewController:alert animated:YES completion:nil];
 
+           }else
+           {
+               UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"新版本" message:@"当前版本已是最新版本" preferredStyle:UIAlertControllerStyleAlert];
+               UIAlertAction *sure = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+               }];
+               [alert addAction:sure];
+               [weekSelf presentViewController:alert animated:YES completion:nil];
+           }
+           
+       }];
+    }
     
 }
 

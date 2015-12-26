@@ -51,6 +51,7 @@
 		8461EEEA1C2D368500E9C99B /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8461EEE91C2D368400E9C99B /* Accounts.framework */; };
 		8461EEEC1C2D369900E9C99B /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8461EEEB1C2D369900E9C99B /* libstdc++.tbd */; };
 		8461EEEE1C2D36AA00E9C99B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8461EEED1C2D36AA00E9C99B /* libsqlite3.tbd */; };
+		8461EEF11C2EEEE100E9C99B /* APPVersionCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 8461EEF01C2EEEE100E9C99B /* APPVersionCheck.m */; settings = {ASSET_TAGS = (); }; };
 		846E7C691C1EB02A00CBAE9D /* CCRecomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846E7C671C1EB02A00CBAE9D /* CCRecomViewController.m */; };
 		846E7C6A1C1EB02A00CBAE9D /* CCRecomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846E7C681C1EB02A00CBAE9D /* CCRecomViewController.xib */; };
 		846E7C6E1C1EB08000CBAE9D /* CCLiveTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846E7C6C1C1EB08000CBAE9D /* CCLiveTableViewController.m */; };
@@ -261,7 +262,7 @@
 		844CB6211C17179900710E8D /* ListenProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListenProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844CB6251C17179900710E8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		844CB6261C17179900710E8D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		844CB6281C17179900710E8D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../../../ListenProject/AppDelegate.h; sourceTree = "<group>"; };
+		844CB6281C17179900710E8D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		844CB6291C17179900710E8D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		844CB6311C17179900710E8D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		844CB6341C17179900710E8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -314,6 +315,8 @@
 		8461EEE91C2D368400E9C99B /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		8461EEEB1C2D369900E9C99B /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		8461EEED1C2D36AA00E9C99B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		8461EEEF1C2EEEE100E9C99B /* APPVersionCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPVersionCheck.h; sourceTree = "<group>"; };
+		8461EEF01C2EEEE100E9C99B /* APPVersionCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPVersionCheck.m; sourceTree = "<group>"; };
 		846E7C661C1EB02A00CBAE9D /* CCRecomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCRecomViewController.h; sourceTree = "<group>"; };
 		846E7C671C1EB02A00CBAE9D /* CCRecomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCRecomViewController.m; sourceTree = "<group>"; };
 		846E7C681C1EB02A00CBAE9D /* CCRecomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCRecomViewController.xib; sourceTree = "<group>"; };
@@ -732,6 +735,7 @@
 		844CB6231C17179900710E8D /* ListenProject */ = {
 			isa = PBXGroup;
 			children = (
+				844CB6281C17179900710E8D /* AppDelegate.h */,
 				844CB6291C17179900710E8D /* AppDelegate.m */,
 				844CB6311C17179900710E8D /* Images.xcassets */,
 				844CB6331C17179900710E8D /* LaunchScreen.xib */,
@@ -1516,6 +1520,8 @@
 				A5E30E181C1F27F900F630F8 /* NSString+category.m */,
 				84809B981C224F3C00CC7E4E /* CCMethod.h */,
 				84809B991C224F3C00CC7E4E /* CCMethod.m */,
+				8461EEEF1C2EEEE100E9C99B /* APPVersionCheck.h */,
+				8461EEF01C2EEEE100E9C99B /* APPVersionCheck.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -1586,7 +1592,6 @@
 		A5D979111C26F5FE005D259D /* search */ = {
 			isa = PBXGroup;
 			children = (
-				844CB6281C17179900710E8D /* AppDelegate.h */,
 				A5D979121C26F5FE005D259D /* CCSearchViewController.h */,
 				A5D979131C26F5FE005D259D /* CCSearchViewController.m */,
 				A5D979141C26F5FE005D259D /* CCSearchViewController.xib */,
@@ -1793,6 +1798,7 @@
 				A5F6F9541C2B005500CF421F /* CCHeaderView.m in Sources */,
 				84A0E06E1C2573A9001A9CC7 /* CCLiveCell2.m in Sources */,
 				A5E30E221C1F281C00F630F8 /* CCScannerDetailController.m in Sources */,
+				8461EEF11C2EEEE100E9C99B /* APPVersionCheck.m in Sources */,
 				84C62B8F1C25A5F10089C314 /* CCHistoryViewController.m in Sources */,
 				84D2383B1C25239D004F205C /* MJRefreshFooterView.m in Sources */,
 				84DFAD9E1C26C028000444F5 /* CCDownloadViewController.m in Sources */,

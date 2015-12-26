@@ -19,13 +19,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Controllers/Player/CCPlayerHeadViewController.m"
-            timestampString = "472459928.967608"
+            filePath = "Controllers/Album/CCAlbumDetailViewController.m"
+            timestampString = "472460976.980765"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "228"
-            endingLineNumber = "228"
-            landmarkName = "-observeValueForKeyPath:ofObject:change:context:"
+            startingLineNumber = "273"
+            endingLineNumber = "273"
+            landmarkName = "-tableView:didSelectRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -35,13 +35,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Controllers/Album/CCAlbumDetailViewController.m"
-            timestampString = "472460976.980765"
+            filePath = "Controllers/Player/CCPlayerRecomTableViewController.m"
+            timestampString = "472830956.930269"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "273"
-            endingLineNumber = "273"
-            landmarkName = "-tableView:didSelectRowAtIndexPath:"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "-downloadDataWithTrackId:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
