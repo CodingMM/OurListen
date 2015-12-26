@@ -8,5 +8,6 @@
 
 #import "CCBaseViewController.h"
 @interface CCDownloadViewController : CCBaseViewController
+@property (weak, nonatomic) IBOutlet UIView *statusView;
 
 @end

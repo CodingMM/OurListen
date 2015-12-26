@@ -36,7 +36,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.statusView.backgroundColor = STATUS_COLOR;
     [self createDataSource];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;

@@ -30,6 +30,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.statusView.backgroundColor = STATUS_COLOR;
+    
     self.tableView.showsHorizontalScrollIndicator = NO;
     self.tableView.bounces = NO;
     self.tableView.delegate = self;

@@ -42,6 +42,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.statusView.backgroundColor = STATUS_COLOR;
     [self createTopView];
     [self createScrollView];
     [self createRAMLabel];

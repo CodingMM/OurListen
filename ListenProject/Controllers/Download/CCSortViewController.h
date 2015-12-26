@@ -10,5 +10,6 @@
 @interface CCSortViewController : CCBaseViewController
 
 @property (nonatomic, strong) NSMutableArray * dataSource;
+@property (weak, nonatomic) IBOutlet UIView *statusView;
 
 @end

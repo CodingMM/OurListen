@@ -13,6 +13,7 @@
 
 @interface CCSongListViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIView *statusView;
 @property (nonatomic, strong) NSMutableArray * songList;
 
 @property (nonatomic, assign) NSInteger currentNum;

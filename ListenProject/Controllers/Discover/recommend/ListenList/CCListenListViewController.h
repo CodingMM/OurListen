@@ -14,5 +14,6 @@
 @property (nonatomic, assign) NSInteger specialId;
 
 @property (nonatomic, assign) NSInteger type;
+@property (weak, nonatomic) IBOutlet UIView *statusView;
 
 @end

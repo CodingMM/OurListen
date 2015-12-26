@@ -13,6 +13,7 @@
 
 @interface CCLiveDetailViewController ()<UITableViewDataSource,UITableViewDelegate>
 
+@property (weak, nonatomic) IBOutlet UIView *statusView;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray * dataSource;
 
@@ -23,6 +24,7 @@
 @implementation CCLiveDetailViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.statusView.backgroundColor = STATUS_COLOR;
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;

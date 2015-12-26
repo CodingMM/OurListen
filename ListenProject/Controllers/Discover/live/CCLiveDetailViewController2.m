@@ -35,6 +35,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.statusView.backgroundColor = STATUS_COLOR;
     [self createScrollView];
     
 }

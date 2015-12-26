@@ -10,6 +10,7 @@
 
 @interface CCAlbumSetDetailViewController : CCBaseViewController
 
+@property (weak, nonatomic) IBOutlet UIView *statusView;
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 

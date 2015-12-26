@@ -9,8 +9,8 @@
 #import "CCScannerDetailController.h"
 #import "CCLabel.h"
 #import "NSString+category.h"
-#define SCREEN_W [UIScreen mainScreen].bounds.size.width
-#define SCREEN_H [UIScreen mainScreen].bounds.size.hright
+#import "CCGlobalHeader.h"
+
 
 @interface CCScannerDetailController ()
 @property (nonatomic,strong) CCLabel * codeLabel;
@@ -32,15 +32,15 @@
 #pragma mark -- 创建视图
 - (void)prepareView{
 //topView
-    UIView * topView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_W, 60)];
+    UIView * topView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_SIZE.width, 64)];
     
-    topView.backgroundColor = [UIColor colorWithRed:230/255.0 green:82/255.0 blue:84/255.0 alpha:1];
+    topView.backgroundColor = STATUS_COLOR;
     
     [self.view addSubview:topView];
     
 //titleLabel
     
-    UILabel * lblTitle = [[UILabel alloc] initWithFrame:CGRectMake((SCREEN_W - 150)*0.5, 30, 150, 30)];
+    UILabel * lblTitle = [[UILabel alloc] initWithFrame:CGRectMake((SCREEN_SIZE.width - 150)*0.5, 30, 150, 30)];
     
     lblTitle.textAlignment =NSTextAlignmentCenter;
     
@@ -62,7 +62,7 @@
     [self.view addSubview:backBtn];
     
 //codeLabel
-    _codeLabel = [[CCLabel alloc]initWithFrame:CGRectMake(50, 150, SCREEN_W - 100 , 200)];
+    _codeLabel = [[CCLabel alloc]initWithFrame:CGRectMake(50, 150, SCREEN_SIZE.width - 100 , 200)];
     _codeLabel.backgroundColor = [UIColor whiteColor];
     
     _codeLabel.layer.masksToBounds = YES;

@@ -11,6 +11,7 @@
 
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UIView *statusView;
 
 
 @property (nonatomic, copy) NSString * topTitle;

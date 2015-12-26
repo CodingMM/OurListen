@@ -10,5 +10,6 @@
 #import <UIKit/UIKit.h>
 
 @interface CCListenListMoreViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIView *statusView;
 
 @end

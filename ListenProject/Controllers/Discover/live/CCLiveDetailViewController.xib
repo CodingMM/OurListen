@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CCLiveDetailViewController">
             <connections>
+                <outlet property="statusView" destination="NrD-yR-T0o" id="Rmr-bj-iJG"/>
                 <outlet property="tableView" destination="uVo-SG-lMb" id="Yt7-mE-SMQ"/>
                 <outlet property="titleLabel" destination="AqY-sc-5It" id="j5l-vF-Jfr"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
