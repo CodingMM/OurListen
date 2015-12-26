@@ -19,7 +19,7 @@
 + (NSURL *)getCommentDetailWithTrackId:(NSString *)trackId andSuccessBlock:(httpSuccessBlock)sucHandler andFailBlock:(httpFailBlock)errorHandler;
 
 //请求专辑
-+ (NSURL *)getAlbumWithTrackId:(NSString *)trackId andSuccessBlock:(httpSuccessBlock)sucHandler andFailBlock:(httpFailBlock)errorHandler;
++ (NSURL *)getAlbumWithTrackId:(NSInteger)trackId andSuccessBlock:(httpSuccessBlock)sucHandler andFailBlock:(httpFailBlock)errorHandler;
 
 //请求专辑歌曲列表
 + (NSURL *)getAlbumSongsWithSuccessBlock:(httpSuccessBlock)sucHandler andFailBlock:(httpFailBlock)errorHandler;

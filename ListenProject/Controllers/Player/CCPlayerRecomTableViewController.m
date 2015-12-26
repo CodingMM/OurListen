@@ -9,6 +9,9 @@
 #import "CCGlobalHeader.h"
 #import "CCPlayerRecomCell.h"
 #import "CCPlayerViewController.h"
+#import "AppDelegate.h"
+#import "DataAPI.h"
+
 
 @interface CCPlayerRecomTableViewController ()
 
@@ -33,34 +36,37 @@
 
 
 - (void)downloadDataWithTrackId:(NSInteger)trackId {
-    
-    AFHTTPSessionManager * manager = [AFHTTPSessionManager manager];
-    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-    
-    NSString * str = [NSString stringWithFormat:@"http://ar.ximalaya.com/rec-association/recommend/album?trackId=%ld", trackId];
-    
-    [manager GET:str parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
-        [self.dataSource removeAllObjects];
-        
-        NSDictionary *json = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
-        
-        NSDictionary * dict = json[@"baseAlbum"];
-      
-        NSArray * array = @[dict];
-        [self.dataSource addObject:array];
-        
-  
-        
-        NSArray * albumArr = json[@"albums"];
-        NSMutableArray * subArray = [[NSMutableArray alloc] init];
-        for (NSDictionary * dict in albumArr) {
-            [subArray addObject:dict];
+ 
+    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    [DataAPI getAlbumWithTrackId:trackId andSuccessBlock:^(NSURL *url, id data) {
+        if (![ISNull isNilOfSender:data]) {
+            
+            [self.dataSource removeAllObjects];
+            
+            NSDictionary *json = (NSDictionary *)data;
+            
+            NSDictionary * dict = json[@"baseAlbum"];
+            
+            NSArray * array = @[dict];
+            [self.dataSource addObject:array];
+            
+            
+            
+            NSArray * albumArr = json[@"albums"];
+            NSMutableArray * subArray = [[NSMutableArray alloc] init];
+            for (NSDictionary * dict in albumArr) {
+                [subArray addObject:dict];
+            }
+            [self.dataSource addObject:subArray];
+            [self.tableView reloadData];
         }
-        [self.dataSource addObject:subArray];
-        [self.tableView reloadData];
-    } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        
+
+    } andFailBlock:^(NSURL *url, NSError *error) {
+         [appDelegate showErrMsg:error.localizedDescription WithInterval:1.0];
     }];
+    
+  
+  
 }
 
 

@@ -29,12 +29,12 @@
 }
 
 #pragma mark -- 请求专辑
-+ (NSURL *)getAlbumWithTrackId:(NSString *)trackId andSuccessBlock:(httpSuccessBlock)sucHandler andFailBlock:(httpFailBlock)errorHandler{
++ (NSURL *)getAlbumWithTrackId:(NSInteger)trackId andSuccessBlock:(httpSuccessBlock)sucHandler andFailBlock:(httpFailBlock)errorHandler{
 
     NSMutableDictionary * param = [NSMutableDictionary dictionary];
-    [param setObject:trackId forKey:@"trackId"];
+    NSString *url = [NSString stringWithFormat:ALBUM_URL, trackId];
     
-    return [BaseHttpClient httpType:GET andUrl:ALBUM_URL andParam:param andSuccessBlock:sucHandler andFailBlock:errorHandler];
+    return [BaseHttpClient httpType:GET andUrl:url andParam:param andSuccessBlock:sucHandler andFailBlock:errorHandler];
     
 }
 

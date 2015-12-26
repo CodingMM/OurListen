@@ -13,7 +13,7 @@
 #import "CCClassViewController.h"
 #import "CCLiveTableViewController.h"
 #import "CCSearchViewController.h"
-#import "CCScannerViewController.h"
+#import "CCAddMoreViewController.h"
 
 @interface CCDiscoverViewController ()<CCRecomViewControllerDelegate>
 @property (nonatomic, retain) UIView *topView;//分栏标题的底视图
@@ -40,7 +40,11 @@
 
 -(void)navigationItemSetting
 {
+    
+   
+    
     self.navigationItem.title = @"随便听听";
+    
     UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 20, 20)];
     [btn addTarget:self action:@selector(searchBtnDidClicked:) forControlEvents:UIControlEventTouchUpInside];
     [btn setBackgroundImage:[UIImage imageNamed:@"icon_search_n"] forState:UIControlStateNormal];
@@ -52,16 +56,18 @@
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(showLeftVC)];
     
     self.navigationItem.leftBarButtonItem = leftItem;
+   
+    
 }
 -(void)showLeftVC
 {
     
     
-    CCScannerViewController *scannerView = [[CCScannerViewController alloc]init];
+    CCAddMoreViewController *addMoreView = [[CCAddMoreViewController alloc]init];
     
-     scannerView.hidesBottomBarWhenPushed = YES;
+     addMoreView.hidesBottomBarWhenPushed = YES;
     
-    [self.navigationController pushViewController:scannerView animated:YES];
+    [self.navigationController pushViewController:addMoreView animated:YES];
     
 }
 -(void)viewWillAppear:(BOOL)animated

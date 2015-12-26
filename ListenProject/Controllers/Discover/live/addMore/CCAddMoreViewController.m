@@ -7,8 +7,13 @@
 //
 
 #import "CCAddMoreViewController.h"
+#import "CCScannerViewController.h"
+#import "CCPlayerBtn.h"
+#import "CCGlobalHeader.h"
 
-@interface CCAddMoreViewController ()
+#define CELL_HEIGHT 60
+
+@interface CCAddMoreViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong)UITableView *tableView;
 @property (nonatomic, strong)NSMutableArray *dataArray;
 @end
@@ -18,8 +23,106 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self prepareView];
+}
+- (void)viewWillAppear:(BOOL)animated{
+
+    [super viewWillAppear:animated];
+    
+    [self.navigationController setNavigationBarHidden:YES];
+    CCPlayerBtn *payerBtn = [CCPlayerBtn sharePlayerBtn];
+    payerBtn.hidden = YES;
+    
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    
 }
 
+- (void)viewWillDisappear:(BOOL)animated{
+
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
+    [super viewWillDisappear:animated];
+}
+
+- (void)prepareView{
+
+    UIView *statusView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_SIZE.width, 64)];
+    statusView.backgroundColor = STATUS_COLOR;
+    [self.view addSubview:statusView];
+    
+    UILabel *titleLabel = [[UILabel  alloc]initWithFrame:CGRectMake(0, 20, SCREEN_SIZE.width, 44)];
+    titleLabel.text = @"更多";
+    titleLabel.textAlignment = NSTextAlignmentCenter;
+    titleLabel.font = [UIFont systemFontOfSize:17];
+   
+    [self.view addSubview:titleLabel];
+    
+    UIButton *backBtn = [[UIButton alloc]initWithFrame:CGRectMake(8, 20, 30, 44)];
+    [backBtn setImage:[UIImage imageNamed:@"liveRadioPlayingBack.jpg"] forState:UIControlStateNormal];
+    [backBtn addTarget:self action:@selector(backClick:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:backBtn];
+     _dataArray = [NSMutableArray arrayWithObjects:@"扫一扫",@"版本检测",nil];
+    
+    CGRect rect = CGRectMake(0, 64, SCREEN_SIZE.width, SCREEN_SIZE.height - 64);
+    
+    if (_dataArray.count * CELL_HEIGHT < rect.size.height) {
+        rect.size.height = _dataArray.count * CELL_HEIGHT;
+    }
+    _tableView = [[UITableView alloc]initWithFrame:rect style:UITableViewStylePlain];
+    
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
+    [self.view addSubview:_tableView];
+    
+   
+    
+    
+    
+}
+
+#pragma mark -- dataSource
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+
+    return _dataArray.count;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    static NSString *cellID = @"cellID";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    if (!cell) {
+        
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
+        
+    }
+    
+    cell.textLabel.text = _dataArray[indexPath.row];
+    cell.textLabel.font = [UIFont systemFontOfSize:15];
+    cell.textLabel.textColor = STATUS_COLOR;
+
+    return cell;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    if (indexPath.row == 0) {
+        CCScannerViewController *scannerView = [[CCScannerViewController alloc]init];
+        [self.navigationController pushViewController:scannerView animated:YES];
+    }
+
+    
+}
+
+#pragma mark -- delegate
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    return CELL_HEIGHT;
+}
+
+#pragma mark -- back click event
+- (void)backClick:(UIButton *)btn{
+
+    [self.navigationController popViewControllerAnimated:YES];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

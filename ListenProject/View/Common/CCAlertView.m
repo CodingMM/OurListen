@@ -96,14 +96,14 @@
                                                           
     _centerView.layer.cornerRadius = 10;
                                                           
-                                                          
+    /*
     UIImageView * imageView = [[UIImageView alloc]initWithFrame:_centerView.bounds];
                                                           
     imageView.image = [UIImage imageNamed:@"alertCenter.png"];
                                                           
                                                           
    [_centerView addSubview:imageView];
-                                                          
+  */                                                        
    _line = [[UILabel alloc]initWithFrame:CGRectMake(10, _centerView.frame.size.height - ITEM_H, _centerView.frame.size.width - 20, 0.5)];
                                                           
    _line.backgroundColor = TINT_COLOR;

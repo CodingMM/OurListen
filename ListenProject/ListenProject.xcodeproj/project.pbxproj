@@ -261,7 +261,7 @@
 		844CB6211C17179900710E8D /* ListenProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListenProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844CB6251C17179900710E8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		844CB6261C17179900710E8D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		844CB6281C17179900710E8D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		844CB6281C17179900710E8D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../../../ListenProject/AppDelegate.h; sourceTree = "<group>"; };
 		844CB6291C17179900710E8D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		844CB6311C17179900710E8D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		844CB6341C17179900710E8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -732,7 +732,6 @@
 		844CB6231C17179900710E8D /* ListenProject */ = {
 			isa = PBXGroup;
 			children = (
-				844CB6281C17179900710E8D /* AppDelegate.h */,
 				844CB6291C17179900710E8D /* AppDelegate.m */,
 				844CB6311C17179900710E8D /* Images.xcassets */,
 				844CB6331C17179900710E8D /* LaunchScreen.xib */,
@@ -1151,9 +1150,9 @@
 			children = (
 				84809B881C22468600CC7E4E /* Album */,
 				84BA232C1C18621F00251393 /* Common */,
+				84BA23331C18621F00251393 /* Player */,
 				84EE7A021C1ABBA10033BF5E /* Discover */,
 				84BA23321C18621F00251393 /* Download */,
-				84BA23331C18621F00251393 /* Player */,
 				A576314F1C1ABE9B001EF8B8 /* Scanner */,
 			);
 			path = Controllers;
@@ -1587,6 +1586,7 @@
 		A5D979111C26F5FE005D259D /* search */ = {
 			isa = PBXGroup;
 			children = (
+				844CB6281C17179900710E8D /* AppDelegate.h */,
 				A5D979121C26F5FE005D259D /* CCSearchViewController.h */,
 				A5D979131C26F5FE005D259D /* CCSearchViewController.m */,
 				A5D979141C26F5FE005D259D /* CCSearchViewController.xib */,

@@ -73,11 +73,21 @@ BOOL isHistoryShowed = NO;
 {
     [super viewWillAppear:animated];
     self.topScrollView.contentOffset = CGPointMake(0, 0);
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
 }
+- (void)viewDidDisappear:(BOOL)animated{
 
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
+    [super viewDidDisappear:animated];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    self.statusView.backgroundColor = STATUS_COLOR;
+    
     self.isFirstPlay = 0;
+    
     
     if (self.type == 2) {
         [self createAudioPlayer];
@@ -454,15 +464,7 @@ BOOL isHistoryShowed = NO;
     }
 }
 
-- (void)viewDidDisappear:(BOOL)animated
-{
-    [super viewDidDisappear:animated];
-    if (isHistoryShowed == YES) {
-        [self.history.view removeFromSuperview];
-        self.topScrollView.scrollEnabled = YES;
-        isHistoryShowed = NO;
-    }
-}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
