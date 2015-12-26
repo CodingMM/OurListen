@@ -32,8 +32,13 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
 }
+- (void)viewDidDisappear:(BOOL)animated{
 
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
+    [super viewDidDisappear:animated];
+}
 
 - (void)downloadDataWithTrackId:(NSInteger)trackId {
  
@@ -46,6 +51,9 @@
             NSDictionary *json = (NSDictionary *)data;
             
             NSDictionary * dict = json[@"baseAlbum"];
+            if ([ISNull isNilOfSender:dict]) {
+                return ;
+            }
             
             NSArray * array = @[dict];
             [self.dataSource addObject:array];
@@ -62,7 +70,7 @@
         }
 
     } andFailBlock:^(NSURL *url, NSError *error) {
-         [appDelegate showErrMsg:error.localizedDescription WithInterval:1.0];
+        [appDelegate hideLoadingWithErr:error.localizedDescription WithInterval:1.0];
     }];
     
   

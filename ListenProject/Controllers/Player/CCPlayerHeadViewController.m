@@ -58,6 +58,18 @@ NSInteger type = 0;
     self.slider.minimumTrackTintColor = [UIColor orangeColor];
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+
+    [super viewWillAppear:animated];
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+}
+
+- (void)viewDidDisappear:(BOOL)animated{
+
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
+    [super viewDidDisappear:animated];
+}
+
 
 #pragma mark - buttonDidClicked
 
