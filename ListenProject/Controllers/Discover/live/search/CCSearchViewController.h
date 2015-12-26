@@ -9,5 +9,6 @@
 #import "CCBaseViewController.h"
 
 @interface CCSearchViewController : CCBaseViewController
+@property (weak, nonatomic) IBOutlet UIView *statusView;
 
 @end

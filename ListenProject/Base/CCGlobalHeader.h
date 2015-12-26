@@ -17,6 +17,10 @@
 //屏幕尺寸
 #define SCREEN_SIZE [UIScreen mainScreen].bounds.size
 
+//状态栏颜色
+#define STATUS_COLOR [UIColor colorWithRed:254/255.f green:138/255.f blue:114/255.f alpha:1]
+//254 138 114
+
 //专辑cell
 #define CCAlbumCellID @"CCAlbumCell"
 //推荐列表cell

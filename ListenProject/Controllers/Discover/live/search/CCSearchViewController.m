@@ -46,8 +46,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [self createDataSource];
+    self.statusView.backgroundColor = STATUS_COLOR;
     
+    [self createDataSource];
     
     self.collectionView.dataSource = self;
     self.collectionView.delegate = self;
@@ -61,6 +62,15 @@
     [self.navigationController setNavigationBarHidden:YES];
     CCPlayerBtn *payerBtn = [CCPlayerBtn sharePlayerBtn];
     payerBtn.hidden = YES;
+    
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    
+}
+
+- (void)viewDidDisappear:(BOOL)animated{
+
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
+    [super viewDidDisappear:animated];
 }
 - (void)createDataSource
 {

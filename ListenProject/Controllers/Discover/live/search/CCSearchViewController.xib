@@ -10,6 +10,7 @@
                 <outlet property="collectionView" destination="744-nH-Hpx" id="hH2-HQ-fz5"/>
                 <outlet property="searchBtn" destination="FRp-Nz-82W" id="is8-vc-5gI"/>
                 <outlet property="searchTF" destination="ymQ-4q-NUO" id="Cw4-Kw-rC9"/>
+                <outlet property="statusView" destination="n3y-2v-APU" id="OCJ-4U-23X"/>
                 <outlet property="view" destination="7eY-ta-tJO" id="30a-J1-j0o"/>
             </connections>
         </placeholder>
@@ -130,7 +131,7 @@
                 <constraint firstItem="744-nH-Hpx" firstAttribute="top" secondItem="2BY-rE-PP0" secondAttribute="bottom" id="weu-KS-hLd"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-            <point key="canvasLocation" x="265.5" y="386.5"/>
+            <point key="canvasLocation" x="250.5" y="386.5"/>
         </view>
     </objects>
     <resources>
