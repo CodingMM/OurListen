@@ -37,13 +37,13 @@
 + (NSURL *)getLocalRadionWithSuccessBlock:(httpSuccessBlock)sucHandler andFailBlock:(httpFailBlock)errorHandler;
 
 //获取国家电台
-+ (NSURL *)getCountryRadionWithSuccessBlock:(httpSuccessBlock)sucHandler andFailBlock:(httpFailBlock)errorHandler;
++ (NSURL *)getCountryRadionWithPageNum:(NSInteger)pageNumber andSuccessBlock:(httpSuccessBlock)sucHandler andFailBlock:(httpFailBlock)errorHandler;
 
 //获取省电台
-+ (NSURL *)getProvinceRadionWithSuccessBlock:(httpSuccessBlock)sucHandler andFailBlock:(httpFailBlock)errorHandler;
++ (NSURL *)getProvinceRadionWithPageNum:(NSInteger)pageNumber andSuccessBlock:(httpSuccessBlock)sucHandler andFailBlock:(httpFailBlock)errorHandler;
 
 //获取网络电台
-+ (NSURL *)getWedRadionWithSuccessBlock:(httpSuccessBlock)sucHandler andFailBlock:(httpFailBlock)errorHandler;
++ (NSURL *)getWedRadionWithPageNum:(NSInteger)pageNumber andSuccessBlock:(httpSuccessBlock)sucHandler andFailBlock:(httpFailBlock)errorHandler;
 
 //获取直播首页
 + (NSURL *)getLiveWithSuccessBlock:(httpSuccessBlock)sucHandler andFailBlock:(httpFailBlock)errorHandler;

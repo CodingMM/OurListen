@@ -85,27 +85,30 @@
 }
 
 #pragma mark -- 获取国家电台
-+ (NSURL *)getCountryRadionWithSuccessBlock:(httpSuccessBlock)sucHandler andFailBlock:(httpFailBlock)errorHandler{
++ (NSURL *)getCountryRadionWithPageNum:(NSInteger)pageNumber andSuccessBlock:(httpSuccessBlock)sucHandler andFailBlock:(httpFailBlock)errorHandler{
 
     NSMutableDictionary * param = [NSMutableDictionary dictionary];
     
-    return [BaseHttpClient httpType:GET andUrl:COUNTRY_RADIO_URL andParam:param andSuccessBlock:sucHandler andFailBlock:errorHandler];
+    NSString *url = [NSString stringWithFormat:COUNTRY_RADIO_URL, pageNumber];
+    return [BaseHttpClient httpType:GET andUrl:url andParam:param andSuccessBlock:sucHandler andFailBlock:errorHandler];
 }
 
 #pragma mark -- 获取省电台
-+ (NSURL *)getProvinceRadionWithSuccessBlock:(httpSuccessBlock)sucHandler andFailBlock:(httpFailBlock)errorHandler{
++ (NSURL *)getProvinceRadionWithPageNum:(NSInteger)pageNumber andSuccessBlock:(httpSuccessBlock)sucHandler andFailBlock:(httpFailBlock)errorHandler{
 
     NSMutableDictionary * param = [NSMutableDictionary dictionary];
+    NSString *url = [NSString stringWithFormat:PROVINCE_RADIO_URL, pageNumber];
     
-    return [BaseHttpClient httpType:GET andUrl:PROVINCE_RADIO_URL andParam:param andSuccessBlock:sucHandler andFailBlock:errorHandler];
+    return [BaseHttpClient httpType:GET andUrl:url andParam:param andSuccessBlock:sucHandler andFailBlock:errorHandler];
 }
 
 #pragma mark -- 获取网络电台
-+ (NSURL *)getWedRadionWithSuccessBlock:(httpSuccessBlock)sucHandler andFailBlock:(httpFailBlock)errorHandler{
++ (NSURL *)getWedRadionWithPageNum:(NSInteger)pageNumber andSuccessBlock:(httpSuccessBlock)sucHandler andFailBlock:(httpFailBlock)errorHandler{
 
     NSMutableDictionary * param = [NSMutableDictionary dictionary];
+    NSString *url = [NSString stringWithFormat:WEB_RADIO_URL, pageNumber];
     
-    return [BaseHttpClient httpType:GET andUrl:WEB_RADIO_URL andParam:param andSuccessBlock:sucHandler andFailBlock:errorHandler];
+    return [BaseHttpClient httpType:GET andUrl:url andParam:param andSuccessBlock:sucHandler andFailBlock:errorHandler];
 }
 
 #pragma mark -- 获取直播首页

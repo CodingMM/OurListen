@@ -9,6 +9,7 @@
 #import "CCLiveCell2.h"
 #import "CCPlayerViewController.h"
 #import "CCPlayerBtn.h"
+#import "DataAPI.h"
 
 
 @interface CCLiveDetailViewController ()<UITableViewDataSource,UITableViewDelegate>
@@ -30,7 +31,7 @@
     self.tableView.dataSource = self;
     [self.tableView registerNib:[UINib nibWithNibName:@"CCLiveCell2" bundle:nil] forCellReuseIdentifier:CCLISTENCell2ID];
     
-    [SVProgressHUD showWithStatus:@"正在加载数据..." maskType:SVProgressHUDMaskTypeBlack networkIndicator:YES];
+    
     
     [self downloadData];
     
@@ -69,64 +70,148 @@
 - (void)downloadData {
     self.currentPageNum = 1;
     
-    AFHTTPSessionManager * manager = [AFHTTPSessionManager manager];
-    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    
+    [self.appDelegate showLoading:@"正在加载数据..."];
+   
 
     if (self.radioType == 1) {
-        self.urlStr = [NSString stringWithFormat:@"http://live.ximalaya.com/live-web/v1/getRadiosListByType?pageSize=15&pageNum=%ld&device=android&radioType=%ld", self.currentPageNum, self.radioType];
-    }else if (self.radioType == 2) {
-        self.urlStr = [NSString stringWithFormat:@"http://live.ximalaya.com/live-web/v1/getRadiosListByType?provinceCode=110000&pageSize=15&pageNum=%ld&device=android&radioType=%ld", self.currentPageNum, self.radioType];
-    }else if (self.radioType == 3) {
-        self.urlStr = [NSString stringWithFormat:@"http://live.ximalaya.com/live-web/v1/getRadiosListByType?pageSize=15&pageNum=%ld&device=android&radioType=%ld", self.currentPageNum, self.radioType];
-    }
     
-    [manager GET:self.urlStr parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+        [DataAPI getCountryRadionWithPageNum:self.currentPageNum andSuccessBlock:^(NSURL *url, id data) {
+            NSDictionary *dict  = (NSDictionary *)data;
+            
+            NSArray * array = dict[@"result"];
+            
+            self.dataSource = (NSMutableArray *)array;
+            
+            [self.tableView.pullToRefreshView stopAnimating];
+            
+            [self.appDelegate hideLoading];
+            
+            [self.tableView reloadData];
+            
+        } andFailBlock:^(NSURL *url, NSError *error) {
+            
+             [self.appDelegate hideLoadingWithErr:error.localizedDescription WithInterval:1.0];
+            
+        }];
         
-        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
+    }else if (self.radioType == 2) {
         
+    [DataAPI getProvinceRadionWithPageNum:self.currentPageNum andSuccessBlock:^(NSURL *url, id data) {
+        NSDictionary *dict  = (NSDictionary *)data;
+    
         NSArray * array = dict[@"result"];
-        
+    
         self.dataSource = (NSMutableArray *)array;
-        
+    
         [self.tableView.pullToRefreshView stopAnimating];
-        [SVProgressHUD dismiss];
+    
+        [self.appDelegate hideLoading];
+    
         [self.tableView reloadData];
-    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        
+    } andFailBlock:^(NSURL *url, NSError *error) {
+        
+        [self.appDelegate hideLoadingWithErr:error.localizedDescription WithInterval:1.0];
+        
         
     }];
-}
+        
+        
+    }else if (self.radioType == 3) {
+        
+        
+        [DataAPI getWedRadionWithPageNum:self.currentPageNum andSuccessBlock:^(NSURL *url, id data) {
+            NSDictionary *dict  = (NSDictionary *)data;
+            
+            NSArray * array = dict[@"result"];
+            
+            self.dataSource = (NSMutableArray *)array;
+            
+            [self.tableView.pullToRefreshView stopAnimating];
+            
+            [self.appDelegate hideLoading];
+            
+            [self.tableView reloadData];
+            
+        } andFailBlock:^(NSURL *url, NSError *error) {
+            
+             [self.appDelegate hideLoadingWithErr:error.localizedDescription WithInterval:1.0];
+        }];
+    }
+    
+    }
 
 - (void)loadmoreData
 {
-    AFHTTPSessionManager * manager = [AFHTTPSessionManager manager];
-    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+   
     
     if (self.radioType == 1) {
-        self.urlStr = [NSString stringWithFormat:@"http://live.ximalaya.com/live-web/v1/getRadiosListByType?pageSize=15&pageNum=%ld&device=android&radioType=%ld", self.currentPageNum+1, self.radioType];
+        
+        [DataAPI getCountryRadionWithPageNum:self.currentPageNum+1 andSuccessBlock:^(NSURL *url, id data) {
+            NSDictionary *dict = (NSDictionary *)data;
+            
+            NSArray * array = dict[@"result"];
+            
+            for (NSDictionary * dict in array) {
+                [self.dataSource addObject:dict];
+            }
+            
+            [self.tableView.infiniteScrollingView stopAnimating];
+            
+            [self.tableView reloadData];
+            self.currentPageNum++;
+            
+        } andFailBlock:^(NSURL *url, NSError *error) {
+            
+            NSLog(@"%@",error.localizedDescription);
+        }];
+        
+        
     }else if (self.radioType == 2) {
-        self.urlStr = [NSString stringWithFormat:@"http://live.ximalaya.com/live-web/v1/getRadiosListByType?provinceCode=110000&pageSize=15&pageNum=%ld&device=android&radioType=%ld", self.currentPageNum+1, self.radioType];
+        [DataAPI getProvinceRadionWithPageNum:self.currentPageNum+1 andSuccessBlock:^(NSURL *url, id data) {
+            NSDictionary *dict  = (NSDictionary *)data;
+            
+            NSArray * array = dict[@"result"];
+            
+            self.dataSource = (NSMutableArray *)array;
+            
+            [self.tableView.pullToRefreshView stopAnimating];
+            
+            [self.appDelegate hideLoading];
+            
+            [self.tableView reloadData];
+            
+        } andFailBlock:^(NSURL *url, NSError *error) {
+            
+            NSLog(@"%@",error.localizedDescription);
+            
+            
+        }];
+        
+
     }else if (self.radioType == 3) {
-        self.urlStr = [NSString stringWithFormat:@"http://live.ximalaya.com/live-web/v1/getRadiosListByType?pageSize=15&pageNum=%ld&device=android&radioType=%ld", self.currentPageNum+1, self.radioType];
+        [DataAPI getWedRadionWithPageNum:self.currentPageNum+1 andSuccessBlock:^(NSURL *url, id data) {
+            NSDictionary *dict  = (NSDictionary *)data;
+            
+            NSArray * array = dict[@"result"];
+            
+            self.dataSource = (NSMutableArray *)array;
+            
+            [self.tableView.pullToRefreshView stopAnimating];
+            
+            [self.appDelegate hideLoading];
+            
+            [self.tableView reloadData];
+            
+        } andFailBlock:^(NSURL *url, NSError *error) {
+            
+            [self.appDelegate hideLoadingWithErr:error.localizedDescription WithInterval:1.0];
+        }];
+  
     }
     
-    [manager GET:self.urlStr parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
-        
-        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
-        
-        NSArray * array = dict[@"result"];
-        
-        for (NSDictionary * dict in array) {
-            [self.dataSource addObject:dict];
-        }
-        
-        [self.tableView.infiniteScrollingView stopAnimating];
-        
-        [self.tableView reloadData];
-        self.currentPageNum++;
-    } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        
-    }];
-}
+    }
 
 
 
