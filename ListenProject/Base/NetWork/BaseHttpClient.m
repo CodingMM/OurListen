@@ -7,7 +7,7 @@
 //
 
 #import "BaseHttpClient.h"
-
+#import "Reachability.h"
 
 NSString * const kBaseServerUrlstring = BASE_URL;
 
@@ -43,9 +43,31 @@ static BaseHttpClient * sharaBaseHttpClient = nil;
     
 }
 
++ (BOOL)isInternetEnable{
+
+    return [[Reachability reachabilityForInternetConnection] isReachable];
+}
+
 + (NSURL *)httpType:(BaseHttpType)requestType  andUrl:(NSString *)url andParam:(NSDictionary *)param andSuccessBlock:(httpSuccessBlock)sucHandler andFailBlock:(httpFailBlock)errorHandler{
     
-    
+    if (![self isInternetEnable]) {
+        
+        
+        
+        BaseHttpClient * client = [BaseHttpClient sharedClient];
+        
+        NSString * signUrl = [NSString stringWithFormat:@"%@%@",client.baseURL, url];
+        
+        signUrl = [signUrl stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+        
+        NSURL * returnURL = [NSURL URLWithString:signUrl];
+        
+        NSError *error = [NSError errorWithDomain:@"无网络连接" code:000 userInfo:nil];
+        
+        errorHandler(returnURL, error);
+        
+        return returnURL;
+    }
     
     if (requestType == GET) {
         

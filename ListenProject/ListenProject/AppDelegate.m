@@ -35,6 +35,8 @@
 //开启QQ和Facebook网页授权需要
 #import <QZoneConnection/ISSQZoneApp.h>
 
+//网络监测
+#import "Reachability.h"
 
 
 @interface AppDelegate ()
@@ -60,6 +62,8 @@
     id<ISSQZoneApp> app =(id<ISSQZoneApp>)[ShareSDK getClientWithType:ShareTypeQQSpace];
     [app setIsAllowWebAuthorize:YES];
 
+    
+    [self monitorNetworkStatus];
     
     return YES;
 }
@@ -235,6 +239,43 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+#pragma mark - 循环检测网络连接状态
+
+-(void)monitorNetworkStatus
+{
+    //1. 创建对象 通过不断的去请求百度的地址来检测网络状态
+    Reachability * reach = [Reachability reachabilityWithHostname:@"www.baidu.com"];
+    
+    //2. 注册通知 监听网络状态
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(reachabilityChanged:)
+                                                 name:kReachabilityChangedNotification
+                                               object:nil];
+    
+    //3. 开始监听 如果网络状态发生变化 则触发通知方法
+    [reach startNotifier];
+    
+    
+}
+
+#pragma mark -- 网络状态改变触发的通知方法
+-(void)reachabilityChanged:(NSNotification*)note
+{
+    Reachability * reach = [note object];
+    
+    if([reach isReachable])
+    {
+        NSLog(@"Notification Says Reachable");
+    }
+    else
+    {
+        NSLog(@"Notification Says Unreachable");
+        [self showNoticeMsg:@"无网络连接，请检查网络" WithInterval:2.0f];
+    }
+}
+
+
 #pragma mark - 全局提示信息
 
 //提示网络状态（不带block）
